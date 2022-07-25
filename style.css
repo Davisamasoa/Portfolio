@@ -1,0 +1,256 @@
+@font-face {
+    font-family: montSerratRegular;
+    src: url(./font/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family: montSerratThin;
+    src: url(./font/Montserrat-Thin.otf);
+}
+@font-face {
+    font-family: montSerratBold;
+    src: url(./font/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family: montSerratExtraBold;
+    src: url(./font/Montserrat-ExtraBold.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    font-family: montSerratRegular;
+}
+
+body{
+    width: 100vw;
+    height: 500vh;
+    overflow-x: hidden;
+    background-color: rgb(10, 10, 10);
+    background-size: contain;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+nav{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.navegation{
+position: fixed;
+bottom: 30px;
+height: 60px;
+width: 330px;
+color: white;
+display: flex;
+justify-content: space-around;
+gap: 0px;
+align-items: center;
+list-style: none;
+border-radius: 40px;
+z-index: 50;
+background: linear-gradient(to right, rgba(22, 22, 22, 0.9), rgba(4, 83, 15, 0.1));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+
+.iconNav{
+width: 4em;
+text-align: center;
+}
+
+.navegation a{
+color: white;
+text-decoration: none;
+width: 100%;
+}
+
+.navegation img:hover{
+opacity: 0.7;
+}
+
+        /* ASIDE */
+aside{
+    position: absolute;
+    top: 500px;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+aside img{
+    width: 30px;
+    border-radius: 7px;;
+}
+
+        /* CABEÇALHO */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 900px;
+}
+
+h1{
+    font-size: 40px;
+    font-family: montSerratBold;
+    font-weight: 100;
+}
+
+h1, p, header a{
+    color: rgb(243, 239, 239);
+    text-decoration: none;
+}
+
+h1, p {
+    margin-top: 5px;
+}
+
+.pbold{
+    font-size: 15px;
+    margin-top: 60px;
+}
+
+.myWork{
+    font-family: montSerratThin;
+}
+
+header .divButton {
+    width: 390px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+header .divButton a{
+    height: 15px;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.download{
+    border: 1px solid rgba(16, 233, 63, 100);
+}
+
+.download:hover{
+    background-color: rgba(16, 233, 63, 100);
+    border-color: rgb(0, 0, 0);
+    color: black;
+}
+
+.lets{
+    background-color: rgba(16, 233, 63, 100);
+    border-color: rgb(0, 0, 0);
+    color: black;
+}
+
+.lets:hover{
+    background-color: transparent;
+    border: 1px solid rgba(16, 233, 63, 100);
+    color: white;
+}
+
+.divImg {
+    width: 450px;
+    height: 600px;
+    margin-top: 100px;
+}
+
+.divImg img{
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+    object-fit: contain;
+
+}
+
+        /* SOBRE MIM */
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.divImgAbout{
+    width: 400px;
+}
+
+.divImgAbout img{
+    width: 100%;
+    border-radius: 40px;
+}
+
+.divAbout{
+    display: flex;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.txtAndSkills p{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills{
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(16, 233, 63, 100);
+    box-shadow: 3px 3px rgba(16, 233, 63, 100);
+    margin-top: 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mySkills{
+    text-align: center;
+    font-family: montSerratBold;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.skills img{
+    width: 40px;
+}
+
+.spanSkills{
+    color: white;
+    font-family: montSerratBold;
+    margin-left: 20px;
+}
+
+.skillList{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    row-gap: 30px;
+    margin-top: 25px;
+    place-items: center;
+}
+
+.skillItem{
+    color: white;
+}
+
+.skillItem img{
+    width: 60px;
+}
