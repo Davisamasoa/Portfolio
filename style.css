@@ -25,7 +25,6 @@
 
 body{
     width: 100vw;
-    height: 500vh;
     overflow-x: hidden;
     background-color: rgb(10, 10, 10);
     background-size: contain;
@@ -58,7 +57,7 @@ align-items: center;
 list-style: none;
 border-radius: 40px;
 z-index: 50;
-background: linear-gradient(to right, rgba(22, 22, 22, 0.9), rgba(4, 83, 15, 0.1));
+background: linear-gradient(to right, rgba(22, 22, 22, 0.8), rgba(1, 17, 3, 0.5));
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 }
@@ -66,6 +65,10 @@ backdrop-filter: blur(10px);
 .iconNav{
 width: 4em;
 text-align: center;
+}
+
+.User a img{
+    opacity: 0.8;
 }
 
 .navegation a{
@@ -78,8 +81,12 @@ width: 100%;
 opacity: 0.7;
 }
 
+.User img:hover{
+opacity: 0.6;
+}
+
         /* ASIDE */
-aside{
+.sideIcons{
     position: absolute;
     top: 500px;
     left: 10%;
@@ -88,9 +95,8 @@ aside{
     gap: 35px;
 }
 
-aside img{
+.sideIcons img{
     width: 30px;
-    border-radius: 7px;;
 }
 
         /* CABEÇALHO */
@@ -346,6 +352,197 @@ header .divButton a{
     background-color: transparent;
 }
 
+        /* CONTATO */
+.section-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.section-contato h1{
+    margin-top: 50px;
+}
+
+.divFormAside{
+    display: flex;
+    margin-top: 100px;
+    gap: 200px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+form > *{
+    width: 500px;
+    height: 60px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #10e93f;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+
+}
+
+form input, form textarea{
+    padding-left: 10px ;
+    outline: none;
+}
+
+form textarea{
+padding-top: 15px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #10e93f;
+}
+
+form button{
+    width: 200px;
+    background-color: #10e93f;
+    color: black;
+    cursor: pointer;
+}
+
+.div-SocialMedia{
+    width: 200px;
+}
+
+.socialMedia{
+    background-color: #10e93f;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.socialMedia > *{
+    color: rgb(0, 0, 0);
+    font-family: montSerratRegular;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.div-SocialMedia img{
+    width: 30px;
+}
+
+.iconSocial{
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.div-linkSocial{
+    margin-top: 20px;
+}
+
+#linkSocial{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: montSerratBold;
+
+}
+
+        /* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+footer img{
+    width: 30px;
+}
+
+.imgFooter{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+        /* Pagina de agradecimento */
+.div-obrigado{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-obrigado a{
+    text-decoration: none;
+    background-color: #10e93f;
+    border: 1px solid #10e93f;
+    color: black;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+
+.div-obrigado a:hover{
+    background-color: transparent;
+    border: 1px solid #10e93f;
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 1200px){
+.projeto {
+    width: 300px;
+    height: 300px;
+}
+
+.projeto a{
+    width: 125px;
+}
+
+}
+
+@media (max-width: 1050px){
+    .projeto {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .projeto a{
+        width: 90px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .divFormAside{
+        flex-direction: column-reverse;
+    }
+
+    .div-SocialMedia{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    }
+
+
 
 @media (max-width: 900px) {
 .divAbout{
@@ -369,23 +566,59 @@ header .divButton a{
 }
 
 @media (max-width: 700px) {
+ /*About Me*/
+
 .divImg {
     width: 80%;
 }
 
-aside{
+.sideIcons{
     left: 15px;
 }
 
-aside img{
+.sideIcons img{
     width: 25px;
 }
 
 }
 
+@media (max-width: 600px) {
+.divFormAside{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 120px;
+}
+
+.divFormAside form{
+    width: 85%;
+    align-items: center;
+}
+
+.divFormAside input, textarea{
+    width: 100%;
+}
+
+.divFormAside button{
+    width: 50%;
+    height: 50px;
+}
+
+.div-SocialMedia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+}
 
 @media (max-width: 500px) {
-
+/*About Me*/
 .aboutMe{
     margin-top: 60px;
 }
@@ -398,7 +631,7 @@ aside img{
     width: 100%;
 }
 
-aside{
+.sideIcons{
     display: none;
 }
 
@@ -424,12 +657,15 @@ header .divButton{
     width: 85%;
 }
 
+  /*Meus Projetos*/
+
 .projeto-container{
     width: 100%;
 }
 
 .projeto{
     width: 85%;
+    height: 350px;
 }
 
 .botao-projeto{
@@ -440,4 +676,14 @@ header .divButton{
     margin-top: 50px;
 }
 
+.texto-projeto{
+    margin-top: 7%;
+}
+
+}
+
+@media (max-width: 400px){
+    .projeto{
+        height: 300px;
+    }
 }

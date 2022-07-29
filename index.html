@@ -15,18 +15,18 @@
     <nav>
         <ul class="navegation">
             <li class="iconNav"><a href="#Home"><img width="35px" src="./icon/casaverde.png" alt="ícone de uma casa"></a></li>
-            <li class="iconNav"><a href="#aboutMe"><img width="25px" src="./icon/userverde.png" alt="ícone de um usuário"></a></li>
+            <li class="iconNav User"><a href="#aboutMe"><img width="25px" src="./icon/userverde.png" alt="ícone de um usuário"></a></li>
             <li class="iconNav"><a href="#projetos"><img width="28px" src="./icon/work.png" alt="ícone de um bloco de notas"></a></li>
-            <li class="iconNav"><a href=""><img width="28px" src="./icon/contatoverde.png" alt="ícone de um telefone"></a></li>
+            <li class="iconNav"><a href="#contato"><img width="28px" src="./icon/contatoverde.png" alt="ícone de um telefone"></a></li>
         </ul>
     </nav>
-/    
-    <aside>
+   
+    <aside class="sideIcons">
         <div>
-           <a href="https://github.com/Davisamasoa" target="_blank"><img src="./icon/githubiconverde.png" alt=""></a>
+           <a href="https://github.com/Davisamasoa" target="_blank"><img src="./icon/githubverde.png" alt=""></a>
         </div>
         <div>
-            <a href="mailto:davisamasoa@gmail.com"><img src="./icon/emailverde(1).png" alt=""></a>
+            <a href="mailto:davisamasoa@gmail.com"><img src="./icon/mailverde.png" alt=""></a>
         </div>
         <div>
            <a href="https://www.linkedin.com/in/davi-samuel-machado-soares-4a4b9a231/" target="_blank"><img src="./icon/linkedinverde.png" alt=""></a>
@@ -39,18 +39,20 @@
         <h1>Davi Samuel</h1>
         <p class="myWork">Desenvolvedor Júnior</p>
         <div class="divButton">
-            <a href="" class="download">Download CV</a>
-            <a href="" class="lets">Vamos trabalhar juntos</a>
+            <a href="./CurriculoDavi.pdf" download class="download">Download CV</a>
+            <a href="#contato" class="lets">Vamos trabalhar juntos</a>
         </div>
-        <div class="divImg"><img src="./img/minhaFoto.jpg" alt=""></div>
+        <div class="divImg"><img src="./img/minhaFoto.png" alt=""></div>
     </header>
 
     <section id="aboutMe" class="aboutMe">
         <h1 class="h1AboutMe">Sobre mim</h1>
         <div class="divAbout">
             <div class="divImgAbout"><img src="./img/fotoAboutMe.jpeg" alt=""></div>
-            <div class="txtAndSkills"> <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <div class="txtAndSkills"> <p>Olá, tudo bem? Me chamo Davi Samuel, tenho 19 anos e nasci em Olinda - PE, mas moro em Belo Horizonte - MG desde os meus 2 anos de idade. <br> 
+                As pessoas sempre me diziam que eu tinha uma certa facilidade com coisas relacionadas à tecnologia, desde mexer em um celular ou até mesmo uma impressora. 
+                Bom, uma coisa levou a outra e a minha paixão pela área foi se expandindo, desde então nunca me enxerguei trabalhando em outra área. 
+                E quando conheci a programação ela simplesmente caiu como uma luva nos meus interesses para a vida. Espero que possamos trabalhar juntos em breve! 
             </p> 
                 <div class="skills">
                     <p class="mySkills">Minhas Habilidades</p>
@@ -100,17 +102,54 @@
          </div>
     </section>
    
-    <section class="section-contato">
+    <section class="section-contato" id="contato">
+        <h1>Contato</h1>
+        
+        <div class="divFormAside">    
+            <aside class="div-SocialMedia">
+                <div class="socialMedia">
+                    <img class="iconSocial" src="./icon/mail.png" alt="">
+                    <h3>E-mail</h3>
+                    <p>davisamasoa@gmail.com</p>
+                    <div class="div-linkSocial"><a id="linkSocial" href="mailto:davisamasoa@gmail.com">ENVIE UMA MENSAGEM</a></div>
+                </div>
 
+                <div class="socialMedia">
+                    <img class="iconSocial" src="./icon/github(3).png" alt="">
+                    <h3>Git Hub</h3>
+                    <p>davisamasoa</p>
+                    <div class="div-linkSocial"><a id="linkSocial" href="https://github.com/Davisamasoa" target="_blank">VISITAR PERFIL DO GITHUB</a></div>
+                </div>
 
+                <div class="socialMedia">
+                    <img class="iconSocial" src="./icon/linkedin.png" alt="">
+                    <h3>Linkedin</h3>
+                    <p>Davi Samuel Machado Soares</p>
+                    <div class="div-linkSocial"><a id="linkSocial" href="https://www.linkedin.com/in/davi-samuel-machado-soares-4a4b9a231/" target="_blank">VISITAR PERFIL DO LINKEDIN</a></div>
+                </div>
+                
 
-
-
-
-
-
+            </aside>
+            
+            <form action="https://formsubmit.co/davisamasoa@gmail.com" method="POST">
+                <input type="text" name="nome" placeholder="Nome e Sobrenome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="mensagem" placeholder="Mensagem" required id="mensagem" cols="30" rows="10"></textarea>
+                <button type="submit">Enviar</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="./thankYou.html">
+             </form> 
+        </div>
     </section>
 
+    <footer>
+        <p>Desenvolvido por Davi Samuel</p>
+        <div class="imgFooter">
+            <div><a href="https://github.com/Davisamasoa" target="_blank"><img src="./icon/githubverde.png" alt=""></a></div>
+            <div><a href="https://www.linkedin.com/in/davi-samuel-machado-soares-4a4b9a231/" target="_blank"><img src="./icon/linkedinverde.png" alt=""></a></div>
+
+        </div>
+    </footer>
 
 
 </body>
