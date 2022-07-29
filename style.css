@@ -479,6 +479,10 @@ footer img{
     flex-direction: column;
 }
 
+.div-obrigado h1{
+    text-align: center;
+}
+
 .div-obrigado a{
     text-decoration: none;
     background-color: #10e93f;
