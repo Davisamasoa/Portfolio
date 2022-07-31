@@ -674,6 +674,7 @@ header .divButton{
 
 .botao-projeto{
     width: 40%;
+    margin-bottom: 2.5%;
 }
 
 .h1-projetos{
@@ -681,7 +682,7 @@ header .divButton{
 }
 
 .texto-projeto{
-    margin-top: 2.5%;
+    margin-top: 5%;
 }
 
 }
@@ -704,13 +705,15 @@ header .divButton{
         margin-top: 50px;
     }
     
-    .texto-projeto{
-        margin-top: 7%;
-    }
+    
 }
 
 @media (max-width: 400px){
     .projeto{
         height: 300px;
+    }
+
+    .texto-projeto{
+        margin-top: 5px;
     }
 }
