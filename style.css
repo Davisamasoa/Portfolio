@@ -267,7 +267,7 @@ header .divButton a{
 }
 
                 /*Meus Projetos*/
-.meusProjetos{
+.myProjects{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,19 +275,19 @@ header .divButton a{
     margin-top: 100px;
 }
 
-.h1-projetos{
+.h1-projects{
     margin-bottom: 80px;
     margin-top: 100px;
 }
 
-.projeto-container{
+.project-container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-.projeto{
+.project{
     width: 350px;
     height: 320px;
     border: 1px solid rgba(16, 233, 63, 100);
@@ -298,22 +298,22 @@ header .divButton a{
 
 }
 
-.texto-projeto{
+.text-project{
     font-family: montSerratBold;
     margin-bottom: 20px;
 }
 
-.figure-projeto{
+.figure-project{
     margin: 20px;
 
 }
 
-.img-projeto{
+.img-project{
     width: 100%;
     border-radius: 10px;
 }
 
-.div-botao-projeto{
+.div-botao-project{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -321,7 +321,7 @@ header .divButton a{
     gap: 8px;
 }
 
-.botao-projeto{
+.botao-project{
     width: 150px;
     height: 50px;
     border: 1px solid white;
@@ -339,11 +339,11 @@ header .divButton a{
     background-color: #10e93f;
 }
 
-.icon-git-projeto{
+.icon-git-project{
     width: 20px;
 }
 
-.botao-projeto:hover{
+.botao-project:hover{
     background-color: #10e93f;
     color: black;
 }
@@ -509,24 +509,24 @@ footer img{
 
 
 @media (max-width: 1200px){
-.projeto {
+.project {
     width: 300px;
     height: 300px;
 }
 
-.projeto a{
+.project a{
     width: 125px;
 }
 
 }
 
 @media (max-width: 1050px){
-    .projeto {
+    .project {
         width: 250px;
         height: 250px;
     }
     
-    .projeto a{
+    .project a{
         width: 90px;
         height: 30px;
         padding: 5px;
@@ -555,11 +555,11 @@ footer img{
     justify-content: center;
 }
 
-.projeto-container{
+.project-container{
     flex-direction: column;
 }
 
-.projeto{
+.project{
     width: 400px;
     height: 340px;
 }
@@ -666,45 +666,45 @@ header .divButton{
 
   /*Meus Projetos*/
 
-.projeto-container{
+.project-container{
     width: 100%;
 }
 
-.projeto{
+.project{
     width: 85%;
     height: 350px;
 }
 
-.botao-projeto{
+.botao-project{
     width: 40%;
     margin-bottom: 2.5%;
 }
 
-.h1-projetos{
+.h1-projects{
     margin-top: 50px;
 }
 
-.texto-projeto{
+.text-project{
     margin-top: 5%;
 }
 
 }
 
 @media (max-width: 450px){
-    .projeto-container{
+    .project-container{
         width: 100%;
     }
     
-    .projeto{
+    .project{
         width: 85%;
         height: 350px;
     }
     
-    .botao-projeto{
+    .botao-project{
         width: 40%;
     }
     
-    .h1-projetos{
+    .h1-projects{
         margin-top: 50px;
     }
     
@@ -712,11 +712,11 @@ header .divButton{
 }
 
 @media (max-width: 400px){
-    .projeto{
+    .project{
         height: 300px;
     }
 
-    .texto-projeto{
+    .text-project{
         margin-top: 5px;
     }
 }
