@@ -154,21 +154,26 @@ header .divButton a{
 }
 
 .download:hover{
+    animation: ButtonHoverBlackToGreen 0.2s linear;
     background-color: rgba(16, 233, 63, 100);
     border-color: rgb(0, 0, 0);
     color: black;
 }
 
+
+
 .lets{
     background-color: rgba(16, 233, 63, 100);
-    border-color: rgb(0, 0, 0);
+    border: 1px solid #10e93f;
     color: black;
 }
 
 .lets:hover{
+    animation: ButtonHoverGreenToBlack 0.2s linear;
     background-color: transparent;
-    border: 1px solid rgba(16, 233, 63, 100);
     color: white;
+    border: 1px solid #10e93f;
+    
 }
 
 .divImg {
@@ -181,10 +186,10 @@ header .divButton a{
     width: 100%;
     border-radius: 50% 50% 0 0;
     object-fit: contain;
-
+    
 }
 
-        /* SOBRE MIM */
+/* SOBRE MIM */
 .aboutMe{
     display: flex;
     justify-content: center;
@@ -266,7 +271,7 @@ header .divButton a{
     width: 60px;
 }
 
-                /*Meus Projetos*/
+/*Meus Projetos*/
 .myProjects{
     display: flex;
     flex-direction: column;
@@ -295,7 +300,7 @@ header .divButton a{
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    
 }
 
 .text-project{
@@ -344,15 +349,17 @@ header .divButton a{
 }
 
 .botao-project:hover{
+    animation: ButtonHoverBlackToGreen 0.1s linear;
     background-color: #10e93f;
     color: black;
 }
 
 #botao-github:hover{
     background-color: transparent;
+    animation: ButtonHoverGreenToBlack 0.2s linear;
 }
 
-        /* CONTATO */
+/* CONTATO */
 .section-contato{
     display: flex;
     justify-content: center;
@@ -387,7 +394,7 @@ form > *{
     border-radius: 10px;
     color: white;
     font-size: 15px;
-
+    
 }
 
 form input, form textarea{
@@ -396,7 +403,7 @@ form input, form textarea{
 }
 
 form textarea{
-padding-top: 15px;
+    padding-top: 15px;
 }
 
 form input::placeholder, form textarea::placeholder{
@@ -447,11 +454,11 @@ form button{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: montSerratBold;
-
+    
 }
 
         /* Footer */
-footer{
+        footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -470,7 +477,7 @@ footer img{
     gap: 10px;
 }
 
-        /* Pagina de agradecimento */
+/* Pagina de agradecimento */
 .div-obrigado{
     display: flex;
     justify-content: center;
@@ -531,11 +538,11 @@ footer img{
         height: 30px;
         padding: 5px;
     }
-
+    
     .divFormAside{
         flex-direction: column-reverse;
     }
-
+    
     .div-SocialMedia{
         display: flex;
         align-items: center;
@@ -544,27 +551,27 @@ footer img{
         width: 100%;
     }
     
-    }
+}
 
 
 
 @media (max-width: 900px) {
-.divAbout{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .divAbout{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-.project-container{
-    flex-direction: column;
-}
+    .project-container{
+        flex-direction: column;
+    }
+    
+    .project{
+        width: 400px;
+        height: 340px;
+    }
 
-.project{
-    width: 400px;
-    height: 340px;
-}
-
-.verProjeto{
+    .verProjeto{
     font-size: 14px;
 }
 
@@ -574,8 +581,8 @@ footer img{
 
 @media (max-width: 700px) {
  /*About Me*/
-
-.divImg {
+ 
+ .divImg {
     width: 80%;
 }
 
@@ -590,20 +597,20 @@ footer img{
 }
 
 @media (max-width: 600px) {
-.divFormAside{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 120px;
-}
+    .divFormAside{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 120px;
+    }
 
-.divFormAside form{
-    width: 85%;
-    align-items: center;
-}
-
-.divFormAside input, textarea{
+    .divFormAside form{
+        width: 85%;
+        align-items: center;
+    }
+    
+    .divFormAside input, textarea{
     width: 100%;
 }
 
@@ -664,7 +671,7 @@ header .divButton{
     width: 85%;
 }
 
-  /*Meus Projetos*/
+/*Meus Projetos*/
 
 .project-container{
     width: 100%;
@@ -715,8 +722,32 @@ header .divButton{
     .project{
         height: 300px;
     }
-
+    
     .text-project{
         margin-top: 5px;
+    }
+}
+@keyframes ButtonHoverBlackToGreen {
+    from{
+        background-color: transparent;
+    }
+
+    to{
+        background-color: rgba(16, 233, 63, 100);
+        border-color: rgb(0, 0, 0);
+        color: black;
+    
+    }
+}
+
+@keyframes ButtonHoverGreenToBlack {
+    from{
+        background-color:#10e93f;
+    }
+
+    to{
+        background-color: transparent;
+        border: 1px solid #10e93f;
+        color: white;
     }
 }
