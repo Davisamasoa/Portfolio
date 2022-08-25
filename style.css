@@ -71,17 +71,22 @@ text-align: center;
     opacity: 0.8;
 }
 
+.navegation img{
+    transition: 0.4s;
+}
+
 .navegation a{
 color: white;
 text-decoration: none;
 width: 100%;
+transition: 0.2s;
 }
 
-.navegation img:hover{
+.navegation a:focus{
 opacity: 0.7;
 }
 
-.User img:hover{
+.User img:focus{
 opacity: 0.6;
 }
 
@@ -151,12 +156,11 @@ header .divButton a{
 
 .download{
     border: 1px solid rgba(16, 233, 63, 100);
+    transition: 0.4s;
 }
 
 .download:hover{
-    animation: ButtonHoverBlackToGreen 0.2s linear;
     background-color: rgba(16, 233, 63, 100);
-    border-color: rgb(0, 0, 0);
     color: black;
 }
 
@@ -166,14 +170,13 @@ header .divButton a{
     background-color: rgba(16, 233, 63, 100);
     border: 1px solid #10e93f;
     color: black;
+    transition: 0.4s;
 }
 
+
 .lets:hover{
-    animation: ButtonHoverGreenToBlack 0.2s linear;
     background-color: transparent;
-    color: white;
-    border: 1px solid #10e93f;
-    
+    color: white;  
 }
 
 .divImg {
@@ -338,10 +341,12 @@ header .divButton a{
     justify-content: center;
     align-items: center;
     border: 1px solid #10e93f;
+    transition: 0.4s;
 }
 
 #botao-github{
     background-color: #10e93f;
+    transition: 0.4s;
 }
 
 .icon-git-project{
@@ -349,14 +354,12 @@ header .divButton a{
 }
 
 .botao-project:hover{
-    animation: ButtonHoverBlackToGreen 0.1s linear;
-    background-color: #10e93f;
+    background-color: rgba(16, 233, 63, 100);
     color: black;
 }
 
 #botao-github:hover{
     background-color: transparent;
-    animation: ButtonHoverGreenToBlack 0.2s linear;
 }
 
 /* CONTATO */
@@ -725,29 +728,5 @@ header .divButton{
     
     .text-project{
         margin-top: 5px;
-    }
-}
-@keyframes ButtonHoverBlackToGreen {
-    from{
-        background-color: transparent;
-    }
-
-    to{
-        background-color: rgba(16, 233, 63, 100);
-        border-color: rgb(0, 0, 0);
-        color: black;
-    
-    }
-}
-
-@keyframes ButtonHoverGreenToBlack {
-    from{
-        background-color:#10e93f;
-    }
-
-    to{
-        background-color: transparent;
-        border: 1px solid #10e93f;
-        color: white;
     }
 }
