@@ -57,7 +57,8 @@ align-items: center;
 list-style: none;
 border-radius: 40px;
 z-index: 50;
-background: linear-gradient(to right, rgba(22, 22, 22, 0.8), rgba(1, 17, 3, 0.5));
+background: rgba(19, 18, 18, 0.8);
+box-shadow: 0px 0px 15px rgba(30, 31, 30, 0.8);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 }
