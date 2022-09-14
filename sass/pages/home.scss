@@ -55,35 +55,41 @@ header {
 }
 
 .download {
-	border: 1px solid rgba(16, 233, 63, 100);
-	transition: 0.4s;
-}
+	& {
+		border: 1px solid rgba(16, 233, 63, 100);
+		transition: 0.4s;
+	}
 
-.download:hover {
-	background-color: rgba(16, 233, 63, 100);
-	color: black;
+	&:hover {
+		background-color: rgba(16, 233, 63, 100);
+		color: black;
+	}
 }
 
 .lets {
-	background-color: rgba(16, 233, 63, 100);
-	border: 1px solid #10e93f;
-	color: black;
-	transition: 0.4s;
-}
+	& {
+		background-color: rgba(16, 233, 63, 100);
+		border: 1px solid #10e93f;
+		color: black;
+		transition: 0.4s;
+	}
 
-.lets:hover {
-	background-color: transparent;
-	color: white;
+	&:hover {
+		background-color: transparent;
+		color: white;
+	}
 }
 
 .divImg {
-	width: 450px;
-	height: 600px;
-	margin-top: 100px;
-}
+	& {
+		width: 450px;
+		height: 600px;
+		margin-top: 100px;
+	}
 
-.divImg img {
-	width: 100%;
-	border-radius: 50% 50% 0 0;
-	object-fit: contain;
+	img {
+		width: 100%;
+		border-radius: 50% 50% 0 0;
+		object-fit: contain;
+	}
 }

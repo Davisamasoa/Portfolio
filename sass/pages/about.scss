@@ -12,12 +12,14 @@
 }
 
 .divImgAbout {
-	width: 400px;
-}
+	& {
+		width: 400px;
+	}
 
-.divImgAbout img {
-	width: 100%;
-	border-radius: 40px;
+	img {
+		width: 100%;
+		border-radius: 40px;
+	}
 }
 
 .divAbout {
@@ -33,20 +35,22 @@
 }
 
 .skills {
-	width: 400px;
-	height: 250px;
-	border: 1px solid rgba(16, 233, 63, 100);
-	box-shadow: 0px 0px 20px rgba(16, 233, 63, 100);
-	margin-top: 30px;
-	border-radius: 20px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	flex-direction: column;
-}
+	& {
+		width: 400px;
+		height: 250px;
+		border: 1px solid rgba(16, 233, 63, 100);
+		box-shadow: 0px 0px 20px rgba(16, 233, 63, 100);
+		margin-top: 30px;
+		border-radius: 20px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+	}
 
-.skills img {
-	width: 40px;
+	img {
+		width: 40px;
+	}
 }
 
 .mySkills {
@@ -73,9 +77,11 @@
 }
 
 .skillItem {
-	color: white;
-}
+	& {
+		color: white;
+	}
 
-.skillItem img {
-	width: 60px;
+	img {
+		width: 60px;
+	}
 }
