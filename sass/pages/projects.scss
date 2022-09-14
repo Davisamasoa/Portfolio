@@ -22,7 +22,7 @@
 .project {
 	width: 350px;
 	height: 320px;
-	border: 1px solid rgba(16, 233, 63, 100);
+	border: 1px solid $primary-color;
 	border-radius: 20px;
 	display: flex;
 	align-items: center;
@@ -62,12 +62,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid #10e93f;
+	border: 1px solid $primary-color;
 	transition: 0.4s;
 }
 
 #botao-github {
-	background-color: #10e93f;
+	background-color: $primary-color;
 	transition: 0.4s;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .botao-project:hover {
-	background-color: rgba(16, 233, 63, 100);
+	background-color: $primary-color;
 	color: black;
 }
 
