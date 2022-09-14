@@ -1,0 +1,198 @@
+@media (max-width: 1200px) {
+	.project {
+		width: 300px;
+		height: 300px;
+	}
+
+	.project a {
+		width: 125px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.project {
+		width: 250px;
+		height: 250px;
+	}
+
+	.project a {
+		width: 90px;
+		height: 30px;
+		padding: 5px;
+	}
+
+	.divFormAside {
+		flex-direction: column-reverse;
+	}
+
+	.div-SocialMedia {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	.divAbout {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.project-container {
+		flex-direction: column;
+	}
+
+	.project {
+		width: 400px;
+		height: 340px;
+	}
+
+	.verProjeto {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 700px) {
+	/*About Me*/
+
+	.divImg {
+		width: 80%;
+	}
+
+	.sideIcons {
+		left: 15px;
+	}
+
+	.sideIcons img {
+		width: 25px;
+	}
+}
+
+@media (max-width: 600px) {
+	.divFormAside {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		gap: 120px;
+	}
+
+	.divFormAside form {
+		width: 85%;
+		align-items: center;
+	}
+
+	.divFormAside input,
+	textarea {
+		width: 100%;
+	}
+
+	.divFormAside button {
+		width: 50%;
+		height: 50px;
+	}
+
+	.div-SocialMedia {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 500px) {
+	/*About Me*/
+	.aboutMe {
+		margin-top: 60px;
+	}
+
+	.txtAndSkills {
+		width: 85%;
+	}
+
+	.txtAndSkills P {
+		width: 100%;
+	}
+
+	.sideIcons {
+		display: none;
+	}
+
+	header {
+		height: 700px;
+	}
+
+	header .divButton {
+		width: 300px;
+	}
+
+	.divButton a {
+		font-size: 12px;
+	}
+
+	.skills {
+		margin-top: 70px;
+		width: 100%;
+	}
+
+	.divImgAbout {
+		width: 85%;
+	}
+
+	/*Meus Projetos*/
+
+	.project-container {
+		width: 100%;
+	}
+
+	.project {
+		width: 85%;
+		height: 350px;
+	}
+
+	.botao-project {
+		width: 40%;
+		margin-bottom: 2.5%;
+	}
+
+	.h1-projects {
+		margin-top: 50px;
+	}
+
+	.text-project {
+		margin-top: 5%;
+	}
+}
+
+@media (max-width: 450px) {
+	.project-container {
+		width: 100%;
+	}
+
+	.project {
+		width: 85%;
+		height: 350px;
+	}
+
+	.botao-project {
+		width: 40%;
+	}
+
+	.h1-projects {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 400px) {
+	.project {
+		height: 300px;
+	}
+
+	.text-project {
+		margin-top: 5px;
+	}
+}

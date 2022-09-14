@@ -1,0 +1,97 @@
+/* CONTATO */
+.section-contato {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+}
+
+.section-contato h1 {
+	margin-top: 50px;
+}
+
+.divFormAside {
+	display: flex;
+	margin-top: 100px;
+	gap: 200px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+form > * {
+	width: 500px;
+	height: 60px;
+	margin-bottom: 20px;
+	background-color: transparent;
+	border: 1px solid #10e93f;
+	border-radius: 10px;
+	color: white;
+	font-size: 15px;
+}
+
+form input,
+form textarea {
+	padding-left: 10px;
+	outline: none;
+}
+
+form textarea {
+	padding-top: 15px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+	color: #10e93f;
+}
+
+form button {
+	width: 200px;
+	background-color: #10e93f;
+	color: black;
+	cursor: pointer;
+}
+
+.div-SocialMedia {
+	width: 200px;
+}
+
+.socialMedia {
+	background-color: #10e93f;
+	height: 200px;
+	width: 300px;
+	border-radius: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.socialMedia > * {
+	color: rgb(0, 0, 0);
+	font-family: montSerratRegular;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+.div-SocialMedia img {
+	width: 30px;
+}
+
+.iconSocial {
+	margin-top: 35px;
+	margin-bottom: 15px;
+}
+
+.div-linkSocial {
+	margin-top: 20px;
+}
+
+#linkSocial {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-family: montSerratBold;
+}

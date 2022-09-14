@@ -1,20 +1,20 @@
+@charset "UTF-8";
 @font-face {
 	font-family: montSerratRegular;
-	src: url(./font/Montserrat-Regular.otf);
+	src: url(../font/Montserrat-Regular.otf);
 }
 @font-face {
 	font-family: montSerratThin;
-	src: url(./font/Montserrat-Thin.otf);
+	src: url(../font/Montserrat-Thin.otf);
 }
 @font-face {
 	font-family: montSerratBold;
-	src: url(./font/Montserrat-Bold.otf);
+	src: url(../font/Montserrat-Bold.otf);
 }
 @font-face {
 	font-family: montSerratExtraBold;
-	src: url(./font/Montserrat-ExtraBold.otf);
+	src: url(../font/Montserrat-ExtraBold.otf);
 }
-
 * {
 	margin: 0;
 	padding: 0;
@@ -35,7 +35,6 @@ html {
 }
 
 /* MENU DE NAVEGAÇÃO */
-
 nav {
 	display: flex;
 	justify-content: center;
@@ -92,7 +91,7 @@ nav {
 	opacity: 0.6;
 }
 
-/* ASIDE */
+/* ICONES LATERAIS */
 .sideIcons {
 	position: absolute;
 	top: 500px;
@@ -106,8 +105,61 @@ nav {
 	width: 30px;
 }
 
-/* CABEÇALHO */
+/* Footer */
+footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
 
+footer img {
+	width: 30px;
+}
+
+.imgFooter {
+	display: flex;
+	margin-top: 20px;
+	gap: 10px;
+}
+
+/* Pagina de agradecimento */
+.div-obrigado {
+	display: flex;
+	justify-content: center;
+	height: 70vh;
+	align-items: center;
+	flex-direction: column;
+}
+
+.div-obrigado h1 {
+	text-align: center;
+}
+
+.div-obrigado a {
+	text-decoration: none;
+	background-color: #10e93f;
+	border: 1px solid #10e93f;
+	color: black;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	border-radius: 5px;
+}
+
+.div-obrigado a:hover {
+	background-color: transparent;
+	border: 1px solid #10e93f;
+	color: white;
+}
+
+/* HOME */
 header {
 	display: flex;
 	justify-content: center;
@@ -160,17 +212,17 @@ header .divButton a {
 }
 
 .download {
-	border: 1px solid rgba(16, 233, 63, 100);
+	border: 1px solid rgb(16, 233, 63);
 	transition: 0.4s;
 }
 
 .download:hover {
-	background-color: rgba(16, 233, 63, 100);
+	background-color: rgb(16, 233, 63);
 	color: black;
 }
 
 .lets {
-	background-color: rgba(16, 233, 63, 100);
+	background-color: rgb(16, 233, 63);
 	border: 1px solid #10e93f;
 	color: black;
 	transition: 0.4s;
@@ -230,8 +282,8 @@ header .divButton a {
 .skills {
 	width: 400px;
 	height: 250px;
-	border: 1px solid rgba(16, 233, 63, 100);
-	box-shadow: 0px 0px 20px rgba(16, 233, 63, 100);
+	border: 1px solid rgb(16, 233, 63);
+	box-shadow: 0px 0px 20px rgb(16, 233, 63);
 	margin-top: 30px;
 	border-radius: 20px;
 	display: flex;
@@ -240,15 +292,15 @@ header .divButton a {
 	flex-direction: column;
 }
 
+.skills img {
+	width: 40px;
+}
+
 .mySkills {
 	text-align: center;
 	font-family: montSerratBold;
 	margin-top: 10px;
 	font-size: 22px;
-}
-
-.skills img {
-	width: 40px;
 }
 
 .spanSkills {
@@ -275,7 +327,7 @@ header .divButton a {
 	width: 60px;
 }
 
-/*Meus Projetos*/
+/* Meus Projetos*/
 .myProjects {
 	display: flex;
 	flex-direction: column;
@@ -299,7 +351,7 @@ header .divButton a {
 .project {
 	width: 350px;
 	height: 320px;
-	border: 1px solid rgba(16, 233, 63, 100);
+	border: 1px solid rgb(16, 233, 63);
 	border-radius: 20px;
 	display: flex;
 	align-items: center;
@@ -353,7 +405,7 @@ header .divButton a {
 }
 
 .botao-project:hover {
-	background-color: rgba(16, 233, 63, 100);
+	background-color: rgb(16, 233, 63);
 	color: black;
 }
 
@@ -459,88 +511,28 @@ form button {
 	font-family: montSerratBold;
 }
 
-/* Footer */
-
-footer {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 200px;
-	margin-bottom: 100px;
-}
-
-footer img {
-	width: 30px;
-}
-
-.imgFooter {
-	display: flex;
-	margin-top: 20px;
-	gap: 10px;
-}
-
-/* Pagina de agradecimento */
-.div-obrigado {
-	display: flex;
-	justify-content: center;
-	height: 70vh;
-	align-items: center;
-	flex-direction: column;
-}
-
-.div-obrigado h1 {
-	text-align: center;
-}
-
-.div-obrigado a {
-	text-decoration: none;
-	background-color: #10e93f;
-	border: 1px solid #10e93f;
-	color: black;
-	width: 200px;
-	height: 40px;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 30px;
-	border-radius: 5px;
-}
-
-.div-obrigado a:hover {
-	background-color: transparent;
-	border: 1px solid #10e93f;
-	color: white;
-}
-
 @media (max-width: 1200px) {
 	.project {
 		width: 300px;
 		height: 300px;
 	}
-
 	.project a {
 		width: 125px;
 	}
 }
-
 @media (max-width: 1050px) {
 	.project {
 		width: 250px;
 		height: 250px;
 	}
-
 	.project a {
 		width: 90px;
 		height: 30px;
 		padding: 5px;
 	}
-
 	.divFormAside {
 		flex-direction: column-reverse;
 	}
-
 	.div-SocialMedia {
 		display: flex;
 		align-items: center;
@@ -549,44 +541,35 @@ footer img {
 		width: 100%;
 	}
 }
-
 @media (max-width: 900px) {
 	.divAbout {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
-
 	.project-container {
 		flex-direction: column;
 	}
-
 	.project {
 		width: 400px;
 		height: 340px;
 	}
-
 	.verProjeto {
 		font-size: 14px;
 	}
 }
-
 @media (max-width: 700px) {
 	/*About Me*/
-
 	.divImg {
 		width: 80%;
 	}
-
 	.sideIcons {
 		left: 15px;
 	}
-
 	.sideIcons img {
 		width: 25px;
 	}
 }
-
 @media (max-width: 600px) {
 	.divFormAside {
 		width: 100%;
@@ -595,22 +578,18 @@ footer img {
 		display: flex;
 		gap: 120px;
 	}
-
 	.divFormAside form {
 		width: 85%;
 		align-items: center;
 	}
-
 	.divFormAside input,
 	textarea {
 		width: 100%;
 	}
-
 	.divFormAside button {
 		width: 50%;
 		height: 50px;
 	}
-
 	.div-SocialMedia {
 		width: 100%;
 		display: flex;
@@ -619,96 +598,77 @@ footer img {
 		align-items: center;
 	}
 }
-
 @media (max-width: 500px) {
 	/*About Me*/
 	.aboutMe {
 		margin-top: 60px;
 	}
-
 	.txtAndSkills {
 		width: 85%;
 	}
-
 	.txtAndSkills P {
 		width: 100%;
 	}
-
 	.sideIcons {
 		display: none;
 	}
-
 	header {
 		height: 700px;
 	}
-
 	header .divButton {
 		width: 300px;
 	}
-
 	.divButton a {
 		font-size: 12px;
 	}
-
 	.skills {
 		margin-top: 70px;
 		width: 100%;
 	}
-
 	.divImgAbout {
 		width: 85%;
 	}
-
 	/*Meus Projetos*/
-
 	.project-container {
 		width: 100%;
 	}
-
 	.project {
 		width: 85%;
 		height: 350px;
 	}
-
 	.botao-project {
 		width: 40%;
 		margin-bottom: 2.5%;
 	}
-
 	.h1-projects {
 		margin-top: 50px;
 	}
-
 	.text-project {
 		margin-top: 5%;
 	}
 }
-
 @media (max-width: 450px) {
 	.project-container {
 		width: 100%;
 	}
-
 	.project {
 		width: 85%;
 		height: 350px;
 	}
-
 	.botao-project {
 		width: 40%;
 	}
-
 	.h1-projects {
 		margin-top: 50px;
 	}
 }
-
 @media (max-width: 400px) {
 	.project {
 		height: 300px;
 	}
-
 	.text-project {
 		margin-top: 5px;
 	}
 }
+
+/*# sourceMappingURL=style.css.map */
