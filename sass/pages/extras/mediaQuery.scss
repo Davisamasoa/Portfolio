@@ -46,7 +46,7 @@
 	}
 
 	.project-container {
-		flex-direction: column;
+		grid-template-columns: 1fr;
 	}
 
 	.project {
@@ -56,6 +56,11 @@
 
 	.verProjeto {
 		font-size: 14px;
+	}
+
+	.div-verMais button:hover {
+		background-color: transparent;
+		color: white;
 	}
 }
 
@@ -155,6 +160,7 @@
 
 	.project-container {
 		width: 100%;
+		place-items: center;
 	}
 
 	.project {

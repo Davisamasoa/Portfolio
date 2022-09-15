@@ -4,18 +4,17 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 150px;
 }
 
 .h1-projects {
 	margin-bottom: 80px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .project-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 50px;
 }
 
@@ -82,4 +81,32 @@
 
 #botao-github:hover {
 	background-color: transparent;
+}
+
+.div-verMais {
+	& {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 70px;
+	}
+
+	button {
+		background-color: transparent;
+		border: 1px solid $primary-color;
+		border-radius: 25px;
+		width: 150px;
+		height: 45px;
+		color: white;
+		font-size: 18px;
+		font-family: montSerratRegular;
+		cursor: pointer;
+		transition: 0.4s;
+	}
+
+	button:hover {
+		background-color: $primary-color;
+		color: black;
+	}
 }
