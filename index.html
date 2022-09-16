@@ -10,27 +10,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <script defer src="./script/script.js"></script>
 </head>
 <body>
     <nav>
         <ul class="navegation">
-            <li class="iconNav"><a href="#Home"><img width="35px" src="./icon/casaverde.png" alt="ícone de uma casa"></a></li>
-            <li class="iconNav User"><a href="#aboutMe"><img width="25px" src="./icon/userverde.png" alt="ícone de um usuário"></a></li>
-            <li class="iconNav"><a href="#project"><img width="28px" src="./icon/work.png" alt="ícone de um bloco de notas"></a></li>
-            <li class="iconNav"><a href="#contact"><img width="28px" src="./icon/contatoverde.png" alt="ícone de um telefone"></a></li>
+            <li class="iconNav"><a href="#Home"><i class="bi bi-house"></i></a></li>
+            <li class="iconNav"><a href="#aboutMe"><i class="bi bi-person" id="user"></i></a></li>
+            <li class="iconNav"><a href="#project"><i class="bi bi-pc-display"></i></a></li>
+            <li class="iconNav"><a href="#contact"><i class="bi bi-telephone"></i></a></li>
         </ul>
     </nav>
    
     <aside class="sideIcons">
         <div>
-           <a href="https://github.com/Davisamasoa" target="_blank"><img src="./icon/githubverde.png" alt=""></a>
+           <a href="https://github.com/Davisamasoa" target="_blank"><i class="bi bi-github"></i></a>
         </div>
         <div>
-            <a href="mailto:davisamasoa@gmail.com"><img src="./icon/mailverde.png" alt=""></a>
+            <a href="mailto:davisamasoa@gmail.com"><i class="bi bi-envelope"></i></a>
         </div>
         <div>
-           <a href="https://www.linkedin.com/in/davisamasoa/" target="_blank"><img src="./icon/linkedinverde.png" alt=""></a>
+           <a href="https://www.linkedin.com/in/davisamasoa/" target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
     
     </aside>
@@ -79,7 +80,7 @@
             <p class="text-project">Mario Bross</p>
             <div class="div-botao-project">
                 <a class="botao-project verProjeto" target="_blank" href="https://davisamasoa.github.io/JogoSuperMario/">Ver Projeto</a>
-                <a class="botao-project" target="_blank" id="botao-github" href="https://github.com/Davisamasoa/JogoSuperMario"><img src="./icon/github-projeto.png" class="icon-git-project" alt=""></a>
+                <a class="botao-project gith" target="_blank" href="https://github.com/Davisamasoa/JogoSuperMario"><i class="bi bi-github"></i></a>
              </div>
             </div>
 
@@ -88,7 +89,7 @@
                 <p class="text-project">Calculadora</p>
                 <div class="div-botao-project">
                     <a class="botao-project verProjeto" target="_blank" href="https://davisamasoa.github.io/CalculadoraJS/">Ver Projeto</a>
-                    <a class="botao-project" target="_blank" id="botao-github" href="https://github.com/Davisamasoa/CalculadoraJS"><img src="./icon/github-projeto.png" class="icon-git-project" alt=""></a>
+                    <a class="botao-project gith" target="_blank" href="https://github.com/Davisamasoa/CalculadoraJS"><i class="bi bi-github"></i></a>
                  </div>
                 </div>
 
@@ -97,7 +98,7 @@
                     <p class="text-project">Player de música</p>
                     <div class="div-botao-project">
                         <a class="botao-project verProjeto" target="_blank" href="https://davisamasoa.github.io/musicPlayer/">Ver Projeto</a>
-                        <a class="botao-project" target="_blank" id="botao-github" href="https://github.com/Davisamasoa/musicPlayer"><img src="./icon/github-projeto.png" class="icon-git-project" alt=""></a>
+                        <a class="botao-project gith" target="_blank" href="https://github.com/Davisamasoa/musicPlayer"><i class="bi bi-github"></i></a>
                      </div>
                     </div>
 
@@ -108,12 +109,12 @@
                         <p class="text-project">Pomodoro Timer</p>
                         <div class="div-botao-project">
                             <a class="botao-project verProjeto" target="_blank" href="https://davisamasoa.github.io/pomodoro/">Ver Projeto</a>
-                            <a class="botao-project" target="_blank" id="botao-github" href="https://github.com/Davisamasoa/pomodoro"><img src="./icon/github-projeto.png" class="icon-git-project" alt=""></a>
+                            <a class="botao-project gith" target="_blank" href="https://github.com/Davisamasoa/pomodoro"><i class="bi bi-github"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="div-verMais">
-                    <button class="verMais">Ver mais ▼</button>
+                    <button class="verMais"><i class="bi bi-caret-down-fill"></i></button>
                 </div>
     </section>
    
@@ -125,14 +126,20 @@
                 
 
                 <div class="socialMedia">
-                    <img class="iconSocial" src="./icon/github(3).png" alt="">
+                    <div class="iconSocial">
+                        <i class="bi bi-github iconSocial"></i>
+                    </div>
+                    
                     <h3>Git Hub</h3>
                     <p>davisamasoa</p>
                     <div class="div-linkSocial"><a id="linkSocial" href="https://github.com/Davisamasoa" target="_blank">VISITAR PERFIL DO GITHUB</a></div>
                 </div>
 
                 <div class="socialMedia">
-                    <img class="iconSocial" src="./icon/linkedin.png" alt="">
+                    <div class="iconSocial">
+                        <i class="bi bi-linkedin iconSocial"></i>
+                    </div>
+    
                     <h3>Linkedin</h3>
                     <p>Davi Samuel Machado Soares</p>
                     <div class="div-linkSocial"><a id="linkSocial" href="https://www.linkedin.com/in/davisamasoa/" target="_blank">VISITAR PERFIL DO LINKEDIN</a></div>
@@ -153,8 +160,8 @@
     <footer>
         <p>Desenvolvido por Davi Samuel</p>
         <div class="imgFooter">
-            <div><a href="https://github.com/Davisamasoa" target="_blank"><img src="./icon/githubverde.png" alt=""></a></div>
-            <div><a href="https://www.linkedin.com/in/davisamasoa/" target="_blank"><img src="./icon/linkedinverde.png" alt=""></a></div>
+            <div><a href="https://github.com/Davisamasoa" target="_blank"><i class="bi bi-github"></i></a></div>
+            <div><a href="https://www.linkedin.com/in/davisamasoa/" target="_blank"><i class="bi bi-linkedin"></i></div>
 
         </div>
     </footer>

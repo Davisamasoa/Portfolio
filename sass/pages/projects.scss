@@ -21,7 +21,7 @@
 .project {
 	width: 350px;
 	height: 320px;
-	border: 1px solid $primary-color;
+	border: 2px solid $primary-color;
 	border-radius: 20px;
 	display: flex;
 	align-items: center;
@@ -51,17 +51,16 @@
 }
 
 .botao-project {
-	width: 150px;
+	width: 120px;
 	height: 50px;
-	border: 1px solid white;
 	text-align: center;
-	color: white;
+	color: $secondary-color;
 	text-decoration: none;
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid $primary-color;
+	border: 2px solid $primary-color;
 	transition: 0.4s;
 }
 
@@ -74,14 +73,33 @@
 	width: 20px;
 }
 
+.div-botao-project i{
+	font-size: 25px;
+	color: black;
+}
+
+.gith{
+	background-color: $primary-color;
+}
+
+
 .botao-project:hover {
 	background-color: $primary-color;
 	color: black;
 }
 
-#botao-github:hover {
-	background-color: transparent;
+.gith:hover{
+	& *{
+		color: white;
+	}
+
+	&{
+		background-color: transparent;
+	}
+
+	
 }
+
 
 .div-verMais {
 	& {
@@ -93,20 +111,18 @@
 	}
 
 	button {
-		background-color: transparent;
-		border: 1px solid $primary-color;
+		background-color: $primary-color;
+		color: black;
+		
 		border-radius: 25px;
-		width: 150px;
-		height: 45px;
-		color: white;
+		width: 60px;
+		height: 35px;
 		font-size: 18px;
 		font-family: montSerratRegular;
 		cursor: pointer;
 		transition: 0.4s;
-	}
-
-	button:hover {
-		background-color: $primary-color;
-		color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }

@@ -18,7 +18,8 @@
 	src: url(../font/Montserrat-ExtraBold.otf);
 }
 
-$primary-color: #10e93f;
+$primary-color: rgb(48, 247, 230);
+$secondary-color: white;
 
 * {
 	margin: 0;
@@ -52,7 +53,7 @@ nav {
 	bottom: 30px;
 	height: 60px;
 	width: 330px;
-	color: white;
+	color: $secondary-color;
 	display: flex;
 	justify-content: space-around;
 	gap: 0px;
@@ -74,16 +75,19 @@ nav {
 	text-align: center;
 }
 
-.User a img {
-	opacity: 0.8;
+
+.navegation i {
+	transition: 0.4s;
+	font-size: 25px;
+	color: $primary-color;
 }
 
-.navegation img {
-	transition: 0.4s;
+#user{
+	font-size: 32px;
 }
 
 .navegation a {
-	color: white;
+	color: $secondary-color;
 	text-decoration: none;
 	width: 100%;
 	transition: 0.2s;
@@ -93,9 +97,6 @@ nav {
 	opacity: 0.7;
 }
 
-.User img:focus {
-	opacity: 0.6;
-}
 
 /* ICONES LATERAIS */
 .sideIcons {
@@ -107,8 +108,9 @@ nav {
 	gap: 35px;
 }
 
-.sideIcons img {
-	width: 30px;
+.sideIcons i {
+	font-size: 30px;
+	color: $primary-color;
 }
 
 /* Footer */
@@ -119,10 +121,12 @@ footer {
 	align-items: center;
 	margin-top: 200px;
 	margin-bottom: 100px;
+	gap: 5px;
 }
 
-footer img {
-	width: 30px;
+footer i {
+	font-size: 30px;
+	color: $primary-color;
 }
 
 .imgFooter {
@@ -162,7 +166,7 @@ footer img {
 .div-obrigado a:hover {
 	background-color: transparent;
 	border: 1px solid $primary-color;
-	color: white;
+	color: $secondary-color;
 }
 
 // IMPORTS

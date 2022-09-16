@@ -64,12 +64,14 @@ nav {
   text-align: center;
 }
 
-.User a img {
-  opacity: 0.8;
+.navegation i {
+  transition: 0.4s;
+  font-size: 25px;
+  color: rgb(48, 247, 230);
 }
 
-.navegation img {
-  transition: 0.4s;
+#user {
+  font-size: 32px;
 }
 
 .navegation a {
@@ -83,10 +85,6 @@ nav {
   opacity: 0.7;
 }
 
-.User img:focus {
-  opacity: 0.6;
-}
-
 /* ICONES LATERAIS */
 .sideIcons {
   position: absolute;
@@ -97,8 +95,9 @@ nav {
   gap: 35px;
 }
 
-.sideIcons img {
-  width: 30px;
+.sideIcons i {
+  font-size: 30px;
+  color: rgb(48, 247, 230);
 }
 
 /* Footer */
@@ -109,10 +108,12 @@ footer {
   align-items: center;
   margin-top: 200px;
   margin-bottom: 100px;
+  gap: 5px;
 }
 
-footer img {
-  width: 30px;
+footer i {
+  font-size: 30px;
+  color: rgb(48, 247, 230);
 }
 
 .imgFooter {
@@ -136,8 +137,8 @@ footer img {
 
 .div-obrigado a {
   text-decoration: none;
-  background-color: #10e93f;
-  border: 1px solid #10e93f;
+  background-color: rgb(48, 247, 230);
+  border: 1px solid rgb(48, 247, 230);
   color: black;
   width: 200px;
   height: 40px;
@@ -151,7 +152,7 @@ footer img {
 
 .div-obrigado a:hover {
   background-color: transparent;
-  border: 1px solid #10e93f;
+  border: 1px solid rgb(48, 247, 230);
   color: white;
 }
 
@@ -208,17 +209,17 @@ header .divButton a {
 }
 
 .download {
-  border: 1px solid #10e93f;
+  border: 2px solid rgb(48, 247, 230);
   transition: 0.4s;
 }
 .download:hover {
-  background-color: #10e93f;
+  background-color: rgb(48, 247, 230);
   color: black;
 }
 
 .lets {
-  background-color: #10e93f;
-  border: 1px solid #10e93f;
+  background-color: rgb(48, 247, 230);
+  border: 2px solid rgb(48, 247, 230);
   color: black;
   transition: 0.4s;
 }
@@ -274,8 +275,8 @@ header .divButton a {
 .skills {
   width: 400px;
   height: 250px;
-  border: 1px solid #10e93f;
-  box-shadow: 0px 0px 20px #10e93f;
+  border: 1px solid rgb(48, 247, 230);
+  box-shadow: 0px 0px 20px rgb(48, 247, 230);
   margin-top: 30px;
   border-radius: 20px;
   display: flex;
@@ -340,7 +341,7 @@ header .divButton a {
 .project {
   width: 350px;
   height: 320px;
-  border: 1px solid #10e93f;
+  border: 2px solid rgb(48, 247, 230);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -370,9 +371,8 @@ header .divButton a {
 }
 
 .botao-project {
-  width: 150px;
+  width: 120px;
   height: 50px;
-  border: 1px solid white;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -380,12 +380,12 @@ header .divButton a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #10e93f;
+  border: 2px solid rgb(48, 247, 230);
   transition: 0.4s;
 }
 
 #botao-github {
-  background-color: #10e93f;
+  background-color: rgb(48, 247, 230);
   transition: 0.4s;
 }
 
@@ -393,12 +393,24 @@ header .divButton a {
   width: 20px;
 }
 
-.botao-project:hover {
-  background-color: #10e93f;
+.div-botao-project i {
+  font-size: 25px;
   color: black;
 }
 
-#botao-github:hover {
+.gith {
+  background-color: rgb(48, 247, 230);
+}
+
+.botao-project:hover {
+  background-color: rgb(48, 247, 230);
+  color: black;
+}
+
+.gith:hover * {
+  color: white;
+}
+.gith:hover {
   background-color: transparent;
 }
 
@@ -410,20 +422,18 @@ header .divButton a {
   margin-top: 70px;
 }
 .div-verMais button {
-  background-color: transparent;
-  border: 1px solid #10e93f;
+  background-color: rgb(48, 247, 230);
+  color: black;
   border-radius: 25px;
-  width: 150px;
-  height: 45px;
-  color: white;
+  width: 60px;
+  height: 35px;
   font-size: 18px;
   font-family: montSerratRegular;
   cursor: pointer;
   transition: 0.4s;
-}
-.div-verMais button:hover {
-  background-color: #10e93f;
-  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CONTATO */
@@ -455,7 +465,7 @@ form > * {
   height: 60px;
   margin-bottom: 20px;
   background-color: transparent;
-  border: 1px solid #10e93f;
+  border: 1px solid rgb(48, 247, 230);
   border-radius: 10px;
   color: white;
   font-size: 15px;
@@ -468,11 +478,11 @@ form textarea {
   padding-top: 15px;
 }
 form input::placeholder, form textarea::placeholder {
-  color: #10e93f;
+  color: rgb(48, 247, 230);
 }
 form button {
   width: 200px;
-  background-color: #10e93f;
+  background-color: rgb(48, 247, 230);
   color: black;
   cursor: pointer;
 }
@@ -482,12 +492,16 @@ form button {
 }
 
 .socialMedia {
-  background-color: #10e93f;
+  background-color: rgb(48, 247, 230);
   height: 200px;
   width: 300px;
   border-radius: 20px;
   text-align: center;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .socialMedia > * {
   color: rgb(0, 0, 0);
@@ -496,13 +510,8 @@ form button {
   font-size: 15px;
 }
 
-.div-SocialMedia img {
-  width: 30px;
-}
-
-.iconSocial {
-  margin-top: 35px;
-  margin-bottom: 15px;
+.div-SocialMedia i {
+  font-size: 30px;
 }
 
 .div-linkSocial {
@@ -533,6 +542,9 @@ form button {
     width: 90px;
     height: 30px;
     padding: 5px;
+  }
+  .project .verProjeto {
+    font-size: 0.8rem;
   }
   .divFormAside {
     flex-direction: column-reverse;

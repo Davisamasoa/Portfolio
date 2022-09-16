@@ -61,7 +61,7 @@
 }
 
 .spanSkills {
-	color: white;
+	color: $secondary-color;
 	font-family: montSerratBold;
 	margin-left: 20px;
 }
@@ -78,7 +78,7 @@
 
 .skillItem {
 	& {
-		color: white;
+		color: $secondary-color;
 	}
 
 	img {
