@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script defer src="./script/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav>
@@ -24,7 +25,7 @@
         </ul>
     </nav>
    
-    <aside class="sideIcons">
+    <aside class="sideIcons" data-aos="fade-right" data-aos-duration="1200">
         <div>
            <a href="https://github.com/Davisamasoa" target="_blank"><i class="bi bi-github"></i></a>
         </div>
@@ -37,7 +38,7 @@
     
     </aside>
 
-    <header id="Home">
+    <header id="Home" data-aos="fade-down" data-aos-duration="1000">
         <p class="pbold">Olá, prazer!</p>
         <h1>Davi Samuel</h1>
         <p class="myWork">Desenvolvedor Júnior</p>
@@ -48,11 +49,11 @@
         <div class="divImg"><img src="./img/eu.png" alt=""></div>
     </header>
 
-    <section id="aboutMe" class="aboutMe">
+    <section id="aboutMe" class="aboutMe" data-aos="fade-down" data-aos-duration="1200">
         <h1 class="h1AboutMe">Sobre mim</h1>
         <div class="divAbout">
             <div class="divImgAbout"><img src="./img/fotoAboutMe.jpeg" alt=""></div>
-            <div class="txtAndSkills"> <p>Olá, tudo bem? Me chamo Davi Samuel, tenho 19 anos e nasci em Olinda - PE, mas moro em Belo Horizonte - MG desde os meus 2 anos de idade. <br> 
+            <div class="txtAndSkills" > <p>Olá, tudo bem? Me chamo Davi Samuel, tenho 19 anos e nasci em Olinda - PE, mas moro em Belo Horizonte - MG desde os meus 2 anos de idade. <br> 
                 As pessoas sempre me diziam que eu tinha uma certa facilidade com coisas relacionadas à tecnologia, desde mexer em um celular ou até mesmo uma impressora. 
                 Bom, uma coisa levou a outra e a minha paixão pela área foi se expandindo, desde então nunca me enxerguei trabalhando em outra área. 
                 E quando conheci a programação ela simplesmente caiu como uma luva nos meus interesses para a vida. Espero que possamos trabalhar juntos em breve! 
@@ -73,7 +74,7 @@
         </div>
     </section>
 
-    <section class="myProjects" id="project">
+    <section class="myProjects" id="project" data-aos="fade-down" data-aos-duration="1200">
         <h1 class="h1-projects">Meus Projetos</h1>
         <div class="project-container">
             <div class="project">
@@ -119,7 +120,7 @@
                 </div>
     </section>
    
-    <section class="section-contato" id="contact">
+    <section class="section-contato" id="contact" data-aos="fade-down" data-aos-duration="1200"> 
         <h1>Contato</h1>
         
         <div class="divFormAside">    
@@ -167,6 +168,9 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
