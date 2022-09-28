@@ -150,12 +150,6 @@ footer i {
   border-radius: 5px;
 }
 
-.div-obrigado a:hover {
-  background-color: transparent;
-  border: 1px solid rgb(48, 247, 230);
-  color: white;
-}
-
 /* HOME */
 header {
   display: flex;
