@@ -8,7 +8,7 @@ btnVerMais.addEventListener("click", () => {
 		}
 
 		btnVerMais.innerHTML = '<i class="bi bi-caret-up-fill"></i>';
-		window.location.href = "#music";
+		window.location.href = "#anchor";
 	} else {
 		for (let i = 0; i < hiddenProjects.length; i++) {
 			hiddenProjects[i].style.display = "none";
