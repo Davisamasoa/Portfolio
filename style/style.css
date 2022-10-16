@@ -54,7 +54,7 @@ nav {
   list-style: none;
   border-radius: 40px;
   z-index: 50;
-  background: rgba(140, 179, 175, 0.1);
+  background: rgba(99, 99, 99, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
