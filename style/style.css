@@ -67,7 +67,7 @@ nav {
 .navegation i {
   transition: 0.4s;
   font-size: 25px;
-  color: rgb(48, 247, 230);
+  color: rgb(255, 255, 255);
 }
 
 #user {
@@ -97,7 +97,7 @@ nav {
 
 .sideIcons i {
   font-size: 30px;
-  color: rgb(48, 247, 230);
+  color: rgb(255, 255, 255);
 }
 
 /* Footer */
@@ -113,7 +113,7 @@ footer {
 
 footer i {
   font-size: 30px;
-  color: rgb(48, 247, 230);
+  color: rgb(255, 255, 255);
 }
 
 .imgFooter {
@@ -137,8 +137,8 @@ footer i {
 
 .div-obrigado a {
   text-decoration: none;
-  background-color: rgb(48, 247, 230);
-  border: 1px solid rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   color: black;
   width: 200px;
   height: 40px;
@@ -203,17 +203,17 @@ header .divButton a {
 }
 
 .download {
-  border: 2px solid rgb(48, 247, 230);
+  border: 2px solid rgb(255, 255, 255);
   transition: 0.4s;
 }
 .download:hover {
-  background-color: rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
 .lets {
-  background-color: rgb(48, 247, 230);
-  border: 2px solid rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
   color: black;
   transition: 0.4s;
 }
@@ -269,8 +269,8 @@ header .divButton a {
 .skills {
   width: 400px;
   height: 250px;
-  border: 2px solid rgb(48, 247, 230);
-  box-shadow: 0px 0px 20px rgb(48, 247, 230);
+  border: 0px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
   margin-top: 30px;
   border-radius: 20px;
   display: flex;
@@ -334,9 +334,9 @@ header .divButton a {
 
 .project {
   width: 350px;
-  height: 320px;
-  border: 2px solid rgb(48, 247, 230);
-  border-radius: 20px;
+  height: 300px;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -374,12 +374,12 @@ header .divButton a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgb(48, 247, 230);
+  border: 2px solid rgb(255, 255, 255);
   transition: 0.4s;
 }
 
 #botao-github {
-  background-color: rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
   transition: 0.4s;
 }
 
@@ -393,11 +393,11 @@ header .divButton a {
 }
 
 .gith {
-  background-color: rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
 }
 
 .botao-project:hover {
-  background-color: rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
@@ -416,7 +416,7 @@ header .divButton a {
   margin-top: 70px;
 }
 .div-verMais button {
-  background-color: rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
   color: black;
   border-radius: 25px;
   width: 60px;
@@ -460,7 +460,7 @@ form > * {
   height: 60px;
   margin-bottom: 20px;
   background-color: transparent;
-  border: 1px solid rgb(48, 247, 230);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
   color: white;
   font-size: 15px;
@@ -473,11 +473,11 @@ form textarea {
   padding-top: 15px;
 }
 form input::placeholder, form textarea::placeholder {
-  color: rgb(48, 247, 230);
+  color: rgb(255, 255, 255);
 }
 form button {
   width: 200px;
-  background-color: rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
   color: black;
   cursor: pointer;
 }
@@ -487,7 +487,7 @@ form button {
 }
 
 .socialMedia {
-  background-color: rgb(48, 247, 230);
+  background-color: rgb(255, 255, 255);
   height: 200px;
   width: 300px;
   border-radius: 20px;
