@@ -21,9 +21,8 @@
 .project {
 	width: 350px;
 	height: 320px;
-	border: 0px solid $primary-color;
+	// border: 2px solid $primary-color;
 	border-radius: 15px;
-
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -41,7 +40,7 @@
 .img-project {
 	width: 100%;
 	border-radius: 10px;
-	border: 2px solid $primary-color;
+	// border: 2px solid $primary-color;
 	padding: 0px;
 }
 

@@ -334,7 +334,6 @@ header .divButton a {
 .project {
   width: 350px;
   height: 320px;
-  border: 0px solid rgb(255, 255, 255);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -353,7 +352,6 @@ header .divButton a {
 .img-project {
   width: 100%;
   border-radius: 10px;
-  border: 2px solid rgb(255, 255, 255);
   padding: 0px;
 }
 
