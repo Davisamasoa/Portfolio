@@ -61,6 +61,14 @@
 	.verProjeto {
 		font-size: 14px;
 	}
+
+	.h1-projects {
+		margin: 0px;
+	}
+
+	.mySkills {
+		margin: 30px;
+	}
 }
 
 @media (max-width: 850px) {
@@ -167,7 +175,6 @@
 	}
 
 	.skills {
-		margin-top: 120px;
 		width: 100%;
 	}
 
@@ -176,10 +183,6 @@
 	}
 
 	/*Meus Projetos*/
-
-	.myProjects {
-		margin-top: 70px;
-	}
 
 	.project-container {
 		width: 100%;
@@ -194,10 +197,6 @@
 	.botao-project {
 		width: 40%;
 		margin-bottom: 2.5%;
-	}
-
-	.h1-projects {
-		margin-top: 50px;
 	}
 
 	.text-project {
@@ -217,10 +216,6 @@
 
 	.botao-project {
 		width: 40%;
-	}
-
-	.h1-projects {
-		margin-top: 50px;
 	}
 
 	.skills p {

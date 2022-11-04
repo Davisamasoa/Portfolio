@@ -239,7 +239,7 @@ header .divButton a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .h1AboutMe {
@@ -276,13 +276,13 @@ header .divButton a {
 .skills {
   width: 850px;
   height: 450px;
-  margin-top: 150px;
   border-radius: 20px;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
   gap: 70px;
+  margin-top: 150px;
 }
 .skills img {
   width: 40px;
@@ -292,6 +292,7 @@ header .divButton a {
   text-align: center;
   font-family: montSerratBold;
   font-size: 40px;
+  margin-top: 50px;
 }
 
 .mySkills i {
@@ -349,7 +350,7 @@ header .divButton a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 170px;
 }
 
 .h1-projects {
@@ -599,6 +600,12 @@ form button {
   .verProjeto {
     font-size: 14px;
   }
+  .h1-projects {
+    margin: 0px;
+  }
+  .mySkills {
+    margin: 30px;
+  }
 }
 @media (max-width: 850px) {
   .skills {
@@ -680,16 +687,12 @@ form button {
     font-size: 12px;
   }
   .skills {
-    margin-top: 120px;
     width: 100%;
   }
   .divImgAbout {
     width: 85%;
   }
   /*Meus Projetos*/
-  .myProjects {
-    margin-top: 70px;
-  }
   .project-container {
     width: 100%;
     place-items: center;
@@ -701,9 +704,6 @@ form button {
   .botao-project {
     width: 40%;
     margin-bottom: 2.5%;
-  }
-  .h1-projects {
-    margin-top: 50px;
   }
   .text-project {
     margin-top: 5%;
@@ -719,9 +719,6 @@ form button {
   }
   .botao-project {
     width: 40%;
-  }
-  .h1-projects {
-    margin-top: 50px;
   }
   .skills p {
     font-size: 30px;
