@@ -308,7 +308,7 @@ header .divButton a {
 }
 
 .skillList {
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(22, 22, 22);
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -370,7 +370,7 @@ header .divButton a {
 .project {
   width: 350px;
   height: 320px;
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(22, 22, 22);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -571,8 +571,8 @@ form button {
     height: 250px;
   }
   .project a {
-    width: 90px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     padding: 5px;
   }
   .project .verProjeto {
@@ -606,10 +606,10 @@ form button {
     font-size: 14px;
   }
   .h1-projects {
-    margin: 0px;
+    margin-bottom: 50px;
   }
   .mySkills {
-    margin: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 850px) {
@@ -724,7 +724,8 @@ form button {
     margin-top: 5%;
   }
   .skillList {
-    padding: 5%;
+    padding: 30px;
+    row-gap: 20px;
   }
   .skillList li img {
     width: 45px;
@@ -748,9 +749,6 @@ form button {
   }
   .text-project {
     margin-top: 5px;
-  }
-  .skillList {
-    padding: 10px;
   }
   .skillList li img {
     width: 35px;

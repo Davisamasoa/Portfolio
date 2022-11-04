@@ -19,8 +19,8 @@
 		}
 
 		a {
-			width: 90px;
-			height: 30px;
+			width: 100px;
+			height: 40px;
 			padding: 5px;
 		}
 
@@ -63,11 +63,11 @@
 	}
 
 	.h1-projects {
-		margin: 0px;
+		margin-bottom: 50px;
 	}
 
 	.mySkills {
-		margin: 30px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -217,7 +217,8 @@
 	}
 
 	.skillList {
-		padding: 5%;
+		padding: 30px;
+		row-gap: 20px;
 	}
 
 	.skillList li img {
@@ -247,10 +248,6 @@
 
 	.text-project {
 		margin-top: 5px;
-	}
-
-	.skillList {
-		padding: 10px;
 	}
 
 	.skillList li img {
