@@ -24,7 +24,7 @@
 			padding: 5px;
 		}
 
-		.verProjeto{
+		.verProjeto {
 			font-size: 0.8rem;
 		}
 	}
@@ -63,6 +63,12 @@
 	}
 }
 
+@media (max-width: 850px) {
+	.skills {
+		width: 100%;
+	}
+}
+
 @media (max-width: 700px) {
 	/*About Me*/
 
@@ -72,6 +78,7 @@
 
 	.sideIcons {
 		left: 15px;
+		display: none;
 	}
 
 	.sideIcons img {
@@ -112,6 +119,19 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	.skills {
+		height: 400px;
+		gap: 20px;
+	}
+
+	.skills p {
+		font-size: 35px;
+	}
+
+	.skills li img {
+		width: 60px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -147,7 +167,7 @@
 	}
 
 	.skills {
-		margin-top: 70px;
+		margin-top: 120px;
 		width: 100%;
 	}
 
@@ -156,6 +176,10 @@
 	}
 
 	/*Meus Projetos*/
+
+	.myProjects {
+		margin-top: 70px;
+	}
 
 	.project-container {
 		width: 100%;
@@ -197,6 +221,14 @@
 
 	.h1-projects {
 		margin-top: 50px;
+	}
+
+	.skills p {
+		font-size: 30px;
+	}
+
+	.skills li img {
+		width: 55px;
 	}
 }
 

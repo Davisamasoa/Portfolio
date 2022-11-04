@@ -260,22 +260,29 @@ header .divButton a {
   margin-top: 60px;
 }
 
+.txtAndSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .txtAndSkills p {
   width: 400px;
   display: flex;
   flex-direction: column;
+  font-size: 20px;
 }
 
 .skills {
-  width: 400px;
-  height: 250px;
-  border: 2px solid rgb(255, 255, 255);
-  margin-top: 30px;
+  width: 850px;
+  height: 450px;
+  margin-top: 150px;
   border-radius: 20px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: start;
+  align-items: center;
   flex-direction: column;
+  gap: 70px;
 }
 .skills img {
   width: 40px;
@@ -284,8 +291,12 @@ header .divButton a {
 .mySkills {
   text-align: center;
   font-family: montSerratBold;
-  margin-top: 10px;
-  font-size: 22px;
+  font-size: 40px;
+}
+
+.mySkills i {
+  color: white;
+  font-size: 80px;
 }
 
 .spanSkills {
@@ -297,27 +308,48 @@ header .divButton a {
 .skillList {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  row-gap: 30px;
-  margin-top: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  row-gap: 50px;
   place-items: center;
+  border-radius: 20px;
+  padding: 4em;
 }
 
 .skillItem {
   color: white;
 }
 .skillItem img {
-  width: 60px;
+  width: 70px;
+}
+.skillItem #gitIcone {
+  border-radius: 100%;
 }
 
+@keyframes flashing {
+  0% {
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+  }
+  25% {
+    box-shadow: 0px 0px 25px rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: 0px 0px 35px rgb(255, 255, 255);
+  }
+  75% {
+    box-shadow: 0px 0px 25px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+  }
+}
 /* Meus Projetos*/
 .myProjects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 .h1-projects {
@@ -568,6 +600,11 @@ form button {
     font-size: 14px;
   }
 }
+@media (max-width: 850px) {
+  .skills {
+    width: 100%;
+  }
+}
 @media (max-width: 700px) {
   /*About Me*/
   .divImg {
@@ -575,6 +612,7 @@ form button {
   }
   .sideIcons {
     left: 15px;
+    display: none;
   }
   .sideIcons img {
     width: 25px;
@@ -607,6 +645,16 @@ form button {
     justify-content: center;
     align-items: center;
   }
+  .skills {
+    height: 400px;
+    gap: 20px;
+  }
+  .skills p {
+    font-size: 35px;
+  }
+  .skills li img {
+    width: 60px;
+  }
 }
 @media (max-width: 500px) {
   /*About Me*/
@@ -632,13 +680,16 @@ form button {
     font-size: 12px;
   }
   .skills {
-    margin-top: 70px;
+    margin-top: 120px;
     width: 100%;
   }
   .divImgAbout {
     width: 85%;
   }
   /*Meus Projetos*/
+  .myProjects {
+    margin-top: 70px;
+  }
   .project-container {
     width: 100%;
     place-items: center;
@@ -671,6 +722,12 @@ form button {
   }
   .h1-projects {
     margin-top: 50px;
+  }
+  .skills p {
+    font-size: 30px;
+  }
+  .skills li img {
+    width: 55px;
   }
 }
 @media (max-width: 400px) {
