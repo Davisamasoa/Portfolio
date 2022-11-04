@@ -79,10 +79,13 @@
 }
 
 .skillList {
+	background-color: $terciary-color;
 	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	width: 80%;
+	width: 70%;
+
+	gap: 10%;
 	row-gap: 50px;
 
 	place-items: center;
@@ -99,7 +102,7 @@
 	}
 
 	img {
-		width: 70px;
+		width: 60px;
 	}
 	#gitIcone {
 		border-radius: 100%;

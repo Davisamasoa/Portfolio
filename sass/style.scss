@@ -20,12 +20,13 @@
 
 $primary-color: rgb(255, 255, 255);
 $secondary-color: white;
-
+$terciary-color: rgb(15, 15, 15);
 * {
 	margin: 0;
 	padding: 0;
 	z-index: 0;
 	font-family: montSerratRegular;
+	box-sizing: border-box;
 }
 
 body {

@@ -92,6 +92,11 @@
 	.sideIcons img {
 		width: 25px;
 	}
+
+	.skillList {
+		width: 85%;
+		gap: 40px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -133,12 +138,16 @@
 		gap: 20px;
 	}
 
+	.skillList {
+		padding: 10%;
+	}
+
 	.skills p {
 		font-size: 35px;
 	}
 
 	.skills li img {
-		width: 60px;
+		width: 50px;
 	}
 }
 
@@ -178,6 +187,10 @@
 		width: 100%;
 	}
 
+	.skillList {
+		width: 85%;
+	}
+
 	.divImgAbout {
 		width: 85%;
 	}
@@ -202,6 +215,14 @@
 	.text-project {
 		margin-top: 5%;
 	}
+
+	.skillList {
+		padding: 5%;
+	}
+
+	.skillList li img {
+		width: 45px;
+	}
 }
 
 @media (max-width: 450px) {
@@ -217,14 +238,6 @@
 	.botao-project {
 		width: 40%;
 	}
-
-	.skills p {
-		font-size: 30px;
-	}
-
-	.skills li img {
-		width: 55px;
-	}
 }
 
 @media (max-width: 400px) {
@@ -234,5 +247,13 @@
 
 	.text-project {
 		margin-top: 5px;
+	}
+
+	.skillList {
+		padding: 10px;
+	}
+
+	.skillList li img {
+		width: 35px;
 	}
 }

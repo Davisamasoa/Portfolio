@@ -20,6 +20,7 @@
   padding: 0;
   z-index: 0;
   font-family: montSerratRegular;
+  box-sizing: border-box;
 }
 
 body {
@@ -196,7 +197,7 @@ header .divButton {
   margin-top: 20px;
 }
 header .divButton a {
-  height: 15px;
+  height: 50px;
   margin-top: 50px;
   padding: 15px;
   border-radius: 5px;
@@ -307,10 +308,12 @@ header .divButton a {
 }
 
 .skillList {
+  background-color: rgb(15, 15, 15);
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 80%;
+  width: 70%;
+  gap: 10%;
   row-gap: 50px;
   place-items: center;
   border-radius: 20px;
@@ -321,7 +324,7 @@ header .divButton a {
   color: white;
 }
 .skillItem img {
-  width: 70px;
+  width: 60px;
 }
 .skillItem #gitIcone {
   border-radius: 100%;
@@ -367,6 +370,7 @@ header .divButton a {
 .project {
   width: 350px;
   height: 320px;
+  background-color: rgb(15, 15, 15);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -385,6 +389,7 @@ header .divButton a {
 .img-project {
   width: 100%;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   padding: 0px;
 }
 
@@ -624,6 +629,10 @@ form button {
   .sideIcons img {
     width: 25px;
   }
+  .skillList {
+    width: 85%;
+    gap: 40px;
+  }
 }
 @media (max-width: 600px) {
   .divFormAside {
@@ -656,11 +665,14 @@ form button {
     height: 400px;
     gap: 20px;
   }
+  .skillList {
+    padding: 10%;
+  }
   .skills p {
     font-size: 35px;
   }
   .skills li img {
-    width: 60px;
+    width: 50px;
   }
 }
 @media (max-width: 500px) {
@@ -689,6 +701,9 @@ form button {
   .skills {
     width: 100%;
   }
+  .skillList {
+    width: 85%;
+  }
   .divImgAbout {
     width: 85%;
   }
@@ -708,6 +723,12 @@ form button {
   .text-project {
     margin-top: 5%;
   }
+  .skillList {
+    padding: 5%;
+  }
+  .skillList li img {
+    width: 45px;
+  }
 }
 @media (max-width: 450px) {
   .project-container {
@@ -720,12 +741,6 @@ form button {
   .botao-project {
     width: 40%;
   }
-  .skills p {
-    font-size: 30px;
-  }
-  .skills li img {
-    width: 55px;
-  }
 }
 @media (max-width: 400px) {
   .project {
@@ -733,6 +748,12 @@ form button {
   }
   .text-project {
     margin-top: 5px;
+  }
+  .skillList {
+    padding: 10px;
+  }
+  .skillList li img {
+    width: 35px;
   }
 }
 
