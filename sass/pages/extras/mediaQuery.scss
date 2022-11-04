@@ -69,6 +69,9 @@
 	.mySkills {
 		margin-bottom: 30px;
 	}
+	.skills {
+		margin-top: 80px;
+	}
 }
 
 @media (max-width: 850px) {
@@ -200,6 +203,10 @@
 	.project-container {
 		width: 100%;
 		place-items: center;
+	}
+
+	.myProjects {
+		margin-top: 40px;
 	}
 
 	.project {

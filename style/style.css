@@ -388,7 +388,6 @@ header .divButton a {
 .img-project {
   width: 100%;
   border-radius: 10px;
-  border: 2px solid rgb(36, 35, 35);
   padding: 0px;
 }
 
@@ -610,6 +609,9 @@ form button {
   .mySkills {
     margin-bottom: 30px;
   }
+  .skills {
+    margin-top: 80px;
+  }
 }
 @media (max-width: 850px) {
   .skills {
@@ -710,6 +712,9 @@ form button {
   .project-container {
     width: 100%;
     place-items: center;
+  }
+  .myProjects {
+    margin-top: 40px;
   }
   .project {
     width: 85%;
