@@ -246,6 +246,11 @@
 	.botao-project {
 		width: 40%;
 	}
+
+	.skillList {
+		column-gap: 0px;
+		row-gap: 20px;
+	}
 }
 
 @media (max-width: 400px) {
