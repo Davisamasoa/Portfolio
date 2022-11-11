@@ -13,20 +13,20 @@ export function Projects() {
 			<div className="project-container">
 				<ProjectItem
 					projectName="Urna Eletrônica"
-					projectImg="./assets/img/urna.png"
+					projectImg="./public/assets/img/urna.png"
 					projectSite="https://eleicao2022.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/urnaEleitoral"
 				/>
 
 				<ProjectItem
 					projectName="Calculadora"
-					projectImg="./assets/img/calculadora.png"
+					projectImg="./public/assets/img/calculadora.png"
 					projectSite="https://calculatorjs.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/CalculadoraJS"
 				/>
 				<ProjectItem
 					projectName="Player de música"
-					projectImg="./assets/img/musicPlayer.png"
+					projectImg="./public/assets/img/musicPlayer.png"
 					projectSite="https://music-player-react.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/musicPlayer-React"
 					id="anchor"
@@ -34,42 +34,42 @@ export function Projects() {
 
 				<ProjectItem
 					projectName="Pomodoro Timer"
-					projectImg="./assets/img/pomo.png"
+					projectImg="./public/assets/img/pomo.png"
 					projectSite="https://pomodoro.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/pomodoro"
 				/>
 
 				<ProjectItem
 					projectName="Conversor Dolar/Real"
-					projectImg="./assets/img/conversor.png"
+					projectImg="./public/assets/img/conversor.png"
 					projectSite="https://conversor-dolar-real.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/ConversorDolar"
 				/>
 
 				<ProjectItem
 					projectName="Mario Bross"
-					projectImg="./assets/img/Mario.png"
+					projectImg="./public/assets/img/Mario.png"
 					projectSite="https://supermario.davisamasoa.vercel.app"
 					projectGit="https://github.com/Davisamasoa/JogoSuperMario"
 				/>
 
 				<ProjectItem
 					projectName="Jogo da Velha"
-					projectImg="./assets/img/ticTacToe.png"
+					projectImg="./public/assets/img/ticTacToe.png"
 					projectSite="https://tictactoe.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/ticTacToe"
 				/>
 
 				<ProjectItem
 					projectName="Lista de Tarefas"
-					projectImg="./assets/img/taskList.png"
+					projectImg="./public/assets/img/taskList.png"
 					projectSite="https://tasklist.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/taskList"
 				/>
 
 				<ProjectItem
 					projectName="Gerador de senha"
-					projectImg="./assets/img/passwordGenerator.png"
+					projectImg="./public/assets/img/passwordGenerator.png"
 					projectSite="https://passwordgenerator.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/passwordGenerator"
 				/>

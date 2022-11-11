@@ -3,19 +3,19 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @font-face {
 	font-family: montSerratRegular;
-	src: url(./assets/font/Montserrat-Regular.otf);
+	src: url(./public/assets/font/Montserrat-Regular.otf);
 }
 @font-face {
 	font-family: montSerratThin;
-	src: url(./assets/font/Montserrat-Thin.otf);
+	src: url(./public/assets/font/Montserrat-Thin.otf);
 }
 @font-face {
 	font-family: montSerratBold;
-	src: url(./assets/font/Montserrat-Bold.otf);
+	src: url(./public/assets/font/Montserrat-Bold.otf);
 }
 @font-face {
 	font-family: montSerratExtraBold;
-	src: url(./assets/font/Montserrat-ExtraBold.otf);
+	src: url(./public/assets/font/Montserrat-ExtraBold.otf);
 }
 
 $primary-color: rgb(255, 255, 255);
