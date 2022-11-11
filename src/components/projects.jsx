@@ -12,6 +12,14 @@ export function Projects() {
 			<h1 className="h1-projects">Meus Projetos</h1>
 			<div className="project-container">
 				<ProjectItem
+					projectName="Movie app"
+					projectImg="./assets/img/movie.png"
+					projectSite="https://movieapp-project.vercel.app/"
+					projectGit="https://github.com/Davisamasoa/movie-app"
+					display={true}
+				/>
+
+				<ProjectItem
 					projectName="Urna Eletrônica"
 					projectImg="./assets/img/urna.png"
 					projectSite="https://eleicao2022.davisamasoa.vercel.app/"
@@ -19,13 +27,6 @@ export function Projects() {
 					display={true}
 				/>
 
-				<ProjectItem
-					projectName="Calculadora"
-					projectImg="./assets/img/calculadora.png"
-					projectSite="https://calculatorjs.davisamasoa.vercel.app/"
-					projectGit="https://github.com/Davisamasoa/CalculadoraJS"
-					display={true}
-				/>
 				<ProjectItem
 					projectName="Player de música"
 					projectImg="./assets/img/musicPlayer.png"
@@ -35,6 +36,13 @@ export function Projects() {
 					display={true}
 				/>
 
+				<ProjectItem
+					projectName="Calculadora"
+					projectImg="./assets/img/calculadora.png"
+					projectSite="https://calculatorjs.davisamasoa.vercel.app/"
+					projectGit="https://github.com/Davisamasoa/CalculadoraJS"
+					display={false}
+				/>
 				<ProjectItem
 					projectName="Pomodoro Timer"
 					projectImg="./assets/img/pomo.png"
