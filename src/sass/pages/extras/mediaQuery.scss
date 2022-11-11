@@ -145,10 +145,6 @@
 		padding: 10%;
 	}
 
-	.skills p {
-		font-size: 35px;
-	}
-
 	.skills li img {
 		width: 50px;
 	}
@@ -224,12 +220,11 @@
 	}
 
 	.skillList {
-		padding: 30px;
-		row-gap: 20px;
+		padding: 20px;
 	}
 
 	.skillList li img {
-		width: 45px;
+		width: 50px;
 	}
 }
 
@@ -248,8 +243,12 @@
 	}
 
 	.skillList {
-		column-gap: 0px;
-		row-gap: 20px;
+		column-gap: 8px;
+		row-gap: 25px;
+	}
+
+	.mySkills {
+		width: 85%;
 	}
 }
 

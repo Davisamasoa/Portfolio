@@ -24,9 +24,7 @@ export function AboutMe() {
 			</div>
 
 			<div className="skills" id="skills" data-aos="fade-down" data-aos-duration="1000">
-				<p className="mySkills">
-					Minhas Habilidades <br /> de programação
-				</p>
+				<p className="mySkills">Habilidades</p>
 				<ul className="skillList">
 					<SkillItem
 						tecLink="https://reactjs.org/"

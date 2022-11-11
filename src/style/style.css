@@ -484,7 +484,7 @@ form > * {
   height: 60px;
   margin-bottom: 20px;
   background-color: transparent;
-  border: 1px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
   color: white;
   font-size: 15px;
@@ -657,9 +657,6 @@ form button {
   .skillList {
     padding: 10%;
   }
-  .skills p {
-    font-size: 35px;
-  }
   .skills li img {
     width: 50px;
   }
@@ -716,11 +713,10 @@ form button {
     margin-top: 5%;
   }
   .skillList {
-    padding: 30px;
-    row-gap: 20px;
+    padding: 20px;
   }
   .skillList li img {
-    width: 45px;
+    width: 50px;
   }
 }
 @media (max-width: 450px) {
@@ -735,8 +731,11 @@ form button {
     width: 40%;
   }
   .skillList {
-    column-gap: 0px;
-    row-gap: 20px;
+    column-gap: 8px;
+    row-gap: 25px;
+  }
+  .mySkills {
+    width: 85%;
   }
 }
 @media (max-width: 400px) {
