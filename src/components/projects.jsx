@@ -8,7 +8,7 @@ export function Projects() {
 	}, []);
 
 	return (
-		<section className="myProjects" id="project" data-aos="fade-down" data-aos-duration="1000">
+		<section className="myProjects" id="project" >
 			<h1 className="h1-projects">Meus Projetos</h1>
 			<div className="project-container">
 				<ProjectItem
