@@ -1,0 +1,95 @@
+/* HOME */
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 900px;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: montSerratBold;
+	font-weight: 100;
+}
+
+h1,
+p,
+header a {
+	color: rgb(243, 239, 239);
+	text-decoration: none;
+}
+
+h1,
+p {
+	margin-top: 5px;
+}
+
+.pbold {
+	font-size: 15px;
+	margin-top: 60px;
+}
+
+.myWork {
+	font-family: montSerratThin;
+}
+
+header {
+	.divButton {
+		width: 390px;
+		height: 70px;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+
+	.divButton a {
+		height: 50px;
+		margin-top: 50px;
+		padding: 15px;
+		border-radius: 5px;
+	}
+}
+
+.download {
+	& {
+		border: 2px solid $primary-color;
+		transition: 0.4s;
+	}
+
+	&:hover {
+		background-color: $primary-color;
+		color: black;
+	}
+}
+
+.lets {
+	& {
+		background-color: $primary-color;
+		border: 2px solid $primary-color;
+		color: black;
+		transition: 0.4s;
+	}
+
+	&:hover {
+		background-color: transparent;
+		color: $secondary-color;
+	}
+}
+
+.divImg {
+	& {
+		width: 450px;
+		height: 600px;
+		margin-top: 100px;
+	}
+
+	img {
+		width: 100%;
+		border-radius: 50% 50% 0 0;
+		object-fit: contain;
+	}
+}

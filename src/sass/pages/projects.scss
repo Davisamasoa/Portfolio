@@ -1,0 +1,127 @@
+/* Meus Projetos*/
+.myProjects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 170px;
+}
+
+.h1-projects {
+	margin-bottom: 80px;
+	margin-top: 50px;
+}
+
+.project-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+}
+
+.project {
+	width: 350px;
+	height: 320px;
+	// border: 2px solid $primary-color;
+	// background-color: $terciary-color;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.text-project {
+	font-family: montSerratBold;
+	margin-bottom: 20px;
+}
+
+.figure-project {
+	margin: 20px;
+}
+
+.img-project {
+	width: 100%;
+	border-radius: 10px;
+	padding: 0px;
+}
+
+.div-botao-project {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.botao-project {
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	color: $secondary-color;
+	text-decoration: none;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid $primary-color;
+	transition: 0.4s;
+}
+
+#botao-github {
+	background-color: $primary-color;
+	transition: 0.4s;
+}
+
+.icon-git-project {
+	width: 20px;
+}
+
+.div-botao-project i {
+	font-size: 25px;
+	color: black;
+}
+
+.gith {
+	background-color: $primary-color;
+}
+
+.botao-project:hover {
+	background-color: $primary-color;
+	color: black;
+}
+
+.gith:hover {
+	& * {
+		color: white;
+	}
+
+	& {
+		background-color: transparent;
+	}
+}
+
+.div-verMais {
+	& {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 70px;
+	}
+
+	button {
+		background-color: $primary-color;
+		color: black;
+
+		border-radius: 25px;
+		width: 60px;
+		height: 35px;
+		font-size: 18px;
+		font-family: montSerratRegular;
+		cursor: pointer;
+		transition: 0.4s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+	}
+}

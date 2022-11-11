@@ -1,0 +1,764 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@font-face {
+  font-family: montSerratRegular;
+  src: url(./assets/font/Montserrat-Regular.otf);
+}
+@font-face {
+  font-family: montSerratThin;
+  src: url(./assets/font/Montserrat-Thin.otf);
+}
+@font-face {
+  font-family: montSerratBold;
+  src: url(./assets/font/Montserrat-Bold.otf);
+}
+@font-face {
+  font-family: montSerratExtraBold;
+  src: url(./assets/font/Montserrat-ExtraBold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  font-family: montSerratRegular;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #050505;
+  background-size: contain;
+  max-width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegation {
+  position: fixed;
+  bottom: 30px;
+  height: 60px;
+  width: 330px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 0px;
+  align-items: center;
+  list-style: none;
+  border-radius: 40px;
+  z-index: 50;
+  background: rgba(99, 99, 99, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.iconNav {
+  width: 4em;
+  text-align: center;
+}
+
+.navegation i {
+  transition: 0.4s;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+#user {
+  font-size: 32px;
+}
+
+.navegation a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.navegation a:focus {
+  opacity: 0.7;
+}
+
+/* ICONES LATERAIS */
+.sideIcons {
+  position: absolute;
+  top: 500px;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.sideIcons i {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  gap: 5px;
+}
+
+footer i {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.imgFooter {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Pagina de agradecimento */
+.div-obrigado {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-obrigado h1 {
+  text-align: center;
+}
+
+.div-obrigado a {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  color: black;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+/* HOME */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 900px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: montSerratBold;
+  font-weight: 100;
+}
+
+h1,
+p,
+header a {
+  color: rgb(243, 239, 239);
+  text-decoration: none;
+}
+
+h1,
+p {
+  margin-top: 5px;
+}
+
+.pbold {
+  font-size: 15px;
+  margin-top: 60px;
+}
+
+.myWork {
+  font-family: montSerratThin;
+}
+
+header .divButton {
+  width: 390px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+header .divButton a {
+  height: 50px;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.download {
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.4s;
+}
+.download:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.lets {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  color: black;
+  transition: 0.4s;
+}
+.lets:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.divImg {
+  width: 450px;
+  height: 600px;
+  margin-top: 100px;
+}
+.divImg img {
+  width: 100%;
+  border-radius: 50% 50% 0 0;
+  object-fit: contain;
+}
+
+/* SOBRE MIM */
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.h1AboutMe {
+  margin-top: 50px;
+}
+
+.divImgAbout {
+  width: 400px;
+}
+.divImgAbout img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.divAbout {
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.txtAndSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtAndSkills p {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.skills {
+  width: 850px;
+  height: 450px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+  margin-top: 150px;
+}
+.skills img {
+  width: 40px;
+}
+
+.mySkills {
+  text-align: center;
+  font-family: montSerratBold;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.mySkills i {
+  color: white;
+  font-size: 80px;
+}
+
+.spanSkills {
+  color: white;
+  font-family: montSerratBold;
+  margin-left: 20px;
+}
+
+.skillList {
+  background-color: rgb(22, 22, 22);
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 70%;
+  gap: 10%;
+  row-gap: 50px;
+  place-items: center;
+  border-radius: 20px;
+  padding: 4em;
+}
+
+.skillItem {
+  color: white;
+}
+.skillItem img {
+  width: 60px;
+}
+.skillItem #gitIcone {
+  border-radius: 100%;
+}
+
+@keyframes flashing {
+  0% {
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+  }
+  25% {
+    box-shadow: 0px 0px 25px rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: 0px 0px 35px rgb(255, 255, 255);
+  }
+  75% {
+    box-shadow: 0px 0px 25px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+  }
+}
+/* Meus Projetos*/
+.myProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+}
+
+.h1-projects {
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.project {
+  width: 350px;
+  height: 320px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-project {
+  font-family: montSerratBold;
+  margin-bottom: 20px;
+}
+
+.figure-project {
+  margin: 20px;
+}
+
+.img-project {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.div-botao-project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.botao-project {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+#botao-github {
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.icon-git-project {
+  width: 20px;
+}
+
+.div-botao-project i {
+  font-size: 25px;
+  color: black;
+}
+
+.gith {
+  background-color: rgb(255, 255, 255);
+}
+
+.botao-project:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.gith:hover * {
+  color: white;
+}
+.gith:hover {
+  background-color: transparent;
+}
+
+.div-verMais {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.div-verMais button {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 25px;
+  width: 60px;
+  height: 35px;
+  font-size: 18px;
+  font-family: montSerratRegular;
+  cursor: pointer;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+/* CONTATO */
+.section-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.section-contato h1 {
+  margin-top: 50px;
+}
+
+.divFormAside {
+  display: flex;
+  margin-top: 100px;
+  gap: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+form > * {
+  width: 500px;
+  height: 60px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+}
+form input, form textarea {
+  padding-left: 10px;
+  outline: none;
+}
+form textarea {
+  padding-top: 15px;
+}
+form input::placeholder, form textarea::placeholder {
+  color: rgb(255, 255, 255);
+}
+form button {
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+}
+
+.div-SocialMedia {
+  width: 200px;
+}
+
+.socialMedia {
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.socialMedia > * {
+  color: rgb(0, 0, 0);
+  font-family: montSerratRegular;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.div-SocialMedia i {
+  font-size: 30px;
+}
+
+.div-linkSocial {
+  margin-top: 20px;
+}
+
+#linkSocial {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: montSerratBold;
+}
+
+@media (max-width: 1200px) {
+  .project {
+    width: 300px;
+    height: 300px;
+  }
+  .project a {
+    width: 125px;
+  }
+}
+@media (max-width: 1050px) {
+  .project {
+    width: 250px;
+    height: 250px;
+  }
+  .project a {
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+  }
+  .project .verProjeto {
+    font-size: 0.8rem;
+  }
+  .divFormAside {
+    flex-direction: column-reverse;
+  }
+  .div-SocialMedia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .divAbout {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+  .project {
+    width: 400px;
+    height: 340px;
+  }
+  .verProjeto {
+    font-size: 14px;
+  }
+  .h1-projects {
+    margin-bottom: 50px;
+  }
+  .mySkills {
+    margin-bottom: 30px;
+  }
+  .skills {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 850px) {
+  .skills {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  /*About Me*/
+  .divImg {
+    width: 80%;
+  }
+  .sideIcons {
+    left: 15px;
+    display: none;
+  }
+  .sideIcons img {
+    width: 25px;
+  }
+  .skillList {
+    width: 85%;
+    gap: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .divFormAside {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 120px;
+  }
+  .divFormAside form {
+    width: 85%;
+    align-items: center;
+  }
+  .divFormAside input,
+.divFormAside textarea {
+    width: 100%;
+  }
+  .divFormAside button {
+    width: 50%;
+    height: 50px;
+  }
+  .div-SocialMedia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills {
+    height: 400px;
+    gap: 20px;
+  }
+  .skillList {
+    padding: 10%;
+  }
+  .skills p {
+    font-size: 35px;
+  }
+  .skills li img {
+    width: 50px;
+  }
+}
+@media (max-width: 500px) {
+  /*About Me*/
+  .aboutMe {
+    margin-top: 60px;
+  }
+  .txtAndSkills {
+    width: 85%;
+  }
+  .txtAndSkills P {
+    width: 100%;
+  }
+  .sideIcons {
+    display: none;
+  }
+  header {
+    height: 700px;
+  }
+  header .divButton {
+    width: 300px;
+  }
+  .divButton a {
+    font-size: 12px;
+  }
+  .skills {
+    width: 100%;
+  }
+  .skillList {
+    width: 85%;
+  }
+  .divImgAbout {
+    width: 85%;
+  }
+  /*Meus Projetos*/
+  .project-container {
+    width: 100%;
+    place-items: center;
+  }
+  .myProjects {
+    margin-top: 40px;
+  }
+  .project {
+    width: 85%;
+    height: 350px;
+  }
+  .botao-project {
+    width: 40%;
+    margin-bottom: 2.5%;
+  }
+  .text-project {
+    margin-top: 5%;
+  }
+  .skillList {
+    padding: 30px;
+    row-gap: 20px;
+  }
+  .skillList li img {
+    width: 45px;
+  }
+}
+@media (max-width: 450px) {
+  .project-container {
+    width: 100%;
+  }
+  .project {
+    width: 85%;
+    height: 350px;
+  }
+  .botao-project {
+    width: 40%;
+  }
+  .skillList {
+    column-gap: 0px;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .project {
+    height: 300px;
+  }
+  .text-project {
+    margin-top: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
