@@ -81,7 +81,6 @@ form {
 
 	& > * {
 		color: rgb(0, 0, 0);
-		font-family: montSerratRegular;
 		margin-bottom: 5px;
 		font-size: 15px;
 	}
@@ -91,7 +90,6 @@ form {
 	font-size: 30px;
 }
 
-
 .div-linkSocial {
 	margin-top: 20px;
 }
@@ -99,5 +97,5 @@ form {
 #linkSocial {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
-	font-family: montSerratBold;
+	font-weight: 700;
 }

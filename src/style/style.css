@@ -1,26 +1,12 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-@font-face {
-  font-family: montSerratRegular;
-  src: url(./assets/font/Montserrat-Regular.otf);
-}
-@font-face {
-  font-family: montSerratThin;
-  src: url(./assets/font/Montserrat-Thin.otf);
-}
-@font-face {
-  font-family: montSerratBold;
-  src: url(./assets/font/Montserrat-Bold.otf);
-}
-@font-face {
-  font-family: montSerratExtraBold;
-  src: url(./assets/font/Montserrat-ExtraBold.otf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   z-index: 0;
-  font-family: montSerratRegular;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -137,7 +123,7 @@ footer i {
   text-align: center;
 }
 
-.div-obrigado a {
+.div-obrigado .a {
   text-decoration: none;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
@@ -163,8 +149,7 @@ header {
 
 h1 {
   font-size: 40px;
-  font-family: montSerratBold;
-  font-weight: 100;
+  font-weight: 700;
 }
 
 h1,
@@ -185,7 +170,7 @@ p {
 }
 
 .myWork {
-  font-family: montSerratThin;
+  font-weight: 100;
 }
 
 header .divButton {
@@ -292,7 +277,7 @@ header .divButton a {
 
 .mySkills {
   text-align: center;
-  font-family: montSerratBold;
+  font-weight: 700;
   font-size: 40px;
   margin-top: 50px;
 }
@@ -304,7 +289,7 @@ header .divButton a {
 
 .spanSkills {
   color: white;
-  font-family: montSerratBold;
+  font-weight: 700;
   margin-left: 20px;
 }
 
@@ -378,7 +363,7 @@ header .divButton a {
 }
 
 .text-project {
-  font-family: montSerratBold;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -458,7 +443,6 @@ header .divButton a {
   width: 60px;
   height: 35px;
   font-size: 18px;
-  font-family: montSerratRegular;
   cursor: pointer;
   transition: 0.4s;
   display: flex;
@@ -536,7 +520,6 @@ form button {
 }
 .socialMedia > * {
   color: rgb(0, 0, 0);
-  font-family: montSerratRegular;
   margin-bottom: 5px;
   font-size: 15px;
 }
@@ -552,7 +535,7 @@ form button {
 #linkSocial {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-family: montSerratBold;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {

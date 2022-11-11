@@ -49,7 +49,7 @@ export function Contact() {
 					></textarea>
 					<button type="submit">Enviar</button>
 					<input type="hidden" name="_captcha" value="false" />
-					<input type="hidden" name="_next" value="https://davisamasoa.vercel.app/thanks" />
+					<input type="hidden" name="_next" value="https://davisamasoa.vercel.app/thanks.html" />
 				</form>
 			</div>
 		</section>

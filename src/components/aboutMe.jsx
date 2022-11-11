@@ -7,7 +7,7 @@ export function AboutMe() {
 			<h1 className="h1AboutMe">Sobre mim</h1>
 			<div className="divAbout">
 				<div className="divImgAbout">
-					<img src="./public/assets/img/fotoAboutMe.jpeg" alt="" />
+					<img src="./assets/img/fotoAboutMe.jpeg" alt="" />
 				</div>
 				<div className="txtAndSkills">
 					{" "}
