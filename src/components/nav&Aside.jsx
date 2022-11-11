@@ -33,22 +33,18 @@ export function NavAside() {
 				</ul>
 			</nav>
 
-			<aside className="sideIcons" data-aos="fade-right" data-aos-duration="1000">
-				<div>
-					<a href="https://github.com/Davisamasoa" target="_blank">
-						<i className="bi bi-github"></i>
-					</a>
-				</div>
-				<div>
-					<a href="mailto:davisamasoa@gmail.com">
-						<i className="bi bi-envelope"></i>
-					</a>
-				</div>
-				<div>
-					<a href="https://www.linkedin.com/in/davisamasoa/" target="_blank">
-						<i className="bi bi-linkedin"></i>
-					</a>
-				</div>
+			<aside className="sideIcons">
+				<a href="https://github.com/Davisamasoa" target="_blank">
+					<i className="bi bi-github"></i>
+				</a>
+
+				<a href="https://www.linkedin.com/in/davisamasoa/" target="_blank">
+					<i className="bi bi-linkedin"></i>
+				</a>
+
+				<a href="mailto:davisamasoa@gmail.com">
+					<i className="bi bi-envelope"></i>
+				</a>
 			</aside>
 		</>
 	);

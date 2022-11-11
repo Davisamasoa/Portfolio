@@ -86,6 +86,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	gap: 35px;
+	z-index: 10;
 }
 
 .sideIcons i {

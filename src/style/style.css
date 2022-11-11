@@ -81,6 +81,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 35px;
+  z-index: 10;
 }
 
 .sideIcons i {
@@ -145,6 +146,7 @@ header {
   align-items: center;
   flex-direction: column;
   height: 900px;
+  z-index: 0;
 }
 
 h1 {
