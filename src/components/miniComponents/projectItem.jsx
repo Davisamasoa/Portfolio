@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ProjectItem(props) {
 	return (
-		<div className="project" id={props.id}>
+		<div className={!props.display ? "project none" : "project"} id={props.id}>
 			<figure className="figure-project">
 				<img src={props.projectImg} className="img-project" alt="" />
 			</figure>

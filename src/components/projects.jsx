@@ -8,7 +8,7 @@ export function Projects() {
 	}, []);
 
 	return (
-		<section className="myProjects" id="project" >
+		<section className="myProjects" id="project">
 			<h1 className="h1-projects">Meus Projetos</h1>
 			<div className="project-container">
 				<ProjectItem
@@ -16,6 +16,7 @@ export function Projects() {
 					projectImg="./assets/img/urna.png"
 					projectSite="https://eleicao2022.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/urnaEleitoral"
+					display={true}
 				/>
 
 				<ProjectItem
@@ -23,6 +24,7 @@ export function Projects() {
 					projectImg="./assets/img/calculadora.png"
 					projectSite="https://calculatorjs.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/CalculadoraJS"
+					display={true}
 				/>
 				<ProjectItem
 					projectName="Player de música"
@@ -30,6 +32,7 @@ export function Projects() {
 					projectSite="https://music-player-react.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/musicPlayer-React"
 					id="anchor"
+					display={true}
 				/>
 
 				<ProjectItem
@@ -37,6 +40,7 @@ export function Projects() {
 					projectImg="./assets/img/pomo.png"
 					projectSite="https://pomodoro.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/pomodoro"
+					display={false}
 				/>
 
 				<ProjectItem
@@ -44,6 +48,7 @@ export function Projects() {
 					projectImg="./assets/img/conversor.png"
 					projectSite="https://conversor-dolar-real.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/ConversorDolar"
+					display={false}
 				/>
 
 				<ProjectItem
@@ -51,6 +56,7 @@ export function Projects() {
 					projectImg="./assets/img/Mario.png"
 					projectSite="https://supermario.davisamasoa.vercel.app"
 					projectGit="https://github.com/Davisamasoa/JogoSuperMario"
+					display={false}
 				/>
 
 				<ProjectItem
@@ -58,6 +64,7 @@ export function Projects() {
 					projectImg="./assets/img/ticTacToe.png"
 					projectSite="https://tictactoe.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/ticTacToe"
+					display={false}
 				/>
 
 				<ProjectItem
@@ -65,6 +72,7 @@ export function Projects() {
 					projectImg="./assets/img/taskList.png"
 					projectSite="https://tasklist.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/taskList"
+					display={false}
 				/>
 
 				<ProjectItem
@@ -72,6 +80,7 @@ export function Projects() {
 					projectImg="./assets/img/passwordGenerator.png"
 					projectSite="https://passwordgenerator.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/passwordGenerator"
+					display={false}
 				/>
 			</div>
 			<div className="div-verMais">
