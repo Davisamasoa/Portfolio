@@ -78,7 +78,7 @@ export function Projects() {
 				<ProjectItem
 					projectName="Lista de Tarefas"
 					projectImg="./assets/img/taskList.png"
-					projectSite="https://tasklist.davisamasoa.vercel.app/"
+					projectSite="https://tasklist-react.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/taskList"
 					display={false}
 				/>
