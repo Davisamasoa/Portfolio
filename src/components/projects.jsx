@@ -14,7 +14,7 @@ export function Projects() {
 				<ProjectItem
 					projectName="Movie app"
 					projectImg="./assets/img/movie.png"
-					projectSite="https://movieapp-project.vercel.app/"
+					projectSite="https://movieapp.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/movie-app"
 					display={true}
 				/>
