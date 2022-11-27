@@ -1,8 +1,13 @@
 import React from "react";
 
 export default function ProjectItem(props) {
+	const hoverProject = "hover:scale-105";
+
 	return (
-		<div className={!props.display ? "project none" : "project"} id={props.id}>
+		<div
+			className={!props.display ? `project none ${hoverProject}` : `project ${hoverProject}`}
+			id={props.id}
+		>
 			<figure className="figure-project">
 				<img src={props.projectImg} className="img-project" alt="" />
 			</figure>

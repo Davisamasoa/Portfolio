@@ -4,7 +4,7 @@ import { SkillItem } from "./miniComponents/skillItem";
 export function AboutMe() {
 	return (
 		<section id="aboutMe" className="aboutMe" data-aos="fade-down" data-aos-duration="1000">
-			<h1 className="h1AboutMe">Sobre mim</h1>
+			<h1 className="h1AboutMe text-[40px] font-bold">Sobre mim</h1>
 			<div className="divAbout">
 				<div className="divImgAbout">
 					<img src="./assets/img/fotoAboutMe.jpeg" alt="" />

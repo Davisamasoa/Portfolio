@@ -9,7 +9,7 @@ export function Projects() {
 
 	return (
 		<section className="myProjects" id="project" data-aos="fade-down" data-aos-duration="1000">
-			<h1 className="h1-projects">Meus Projetos</h1>
+			<h1 className="h1-projects text-[40px] font-bold">Meus Projetos</h1>
 			<div className="project-container">
 				<ProjectItem
 					projectName="Movie app"
