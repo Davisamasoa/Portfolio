@@ -33,7 +33,7 @@ export function NavAside() {
 				</ul>
 			</nav>
 
-			<aside className="sideIcons">
+			<aside className="sideIcons" data-aos="fade-right" data-aos-duration="1000">
 				<a className="hover:scale-125" href="https://github.com/Davisamasoa" target="_blank">
 					<i className="bi bi-github"></i>
 				</a>

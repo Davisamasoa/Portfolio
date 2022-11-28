@@ -155,98 +155,68 @@
 	.aboutMe {
 		margin-top: 60px;
 	}
-
 	.txtAndSkills {
 		width: 85%;
 	}
-
 	.txtAndSkills P {
 		width: 100%;
 	}
-
 	.sideIcons {
 		display: none;
 	}
-
 	header {
-		& {
-			height: 700px;
-		}
-
-		.divButton {
-			width: 300px;
-		}
+		height: 700px;
 	}
-
+	header .divButton {
+		width: 300px;
+	}
 	.divButton a {
 		font-size: 12px;
 	}
-
 	.skills {
 		width: 100%;
 	}
-
 	.skillList {
 		width: 85%;
 	}
-
 	.divImgAbout {
 		width: 85%;
 	}
-
 	/*Meus Projetos*/
-
 	.project-container {
 		width: 100%;
 		place-items: center;
 	}
-
 	.myProjects {
 		margin-top: 40px;
 	}
-
 	.project {
 		width: 85%;
 		height: 350px;
 	}
-
 	.botao-project {
 		width: 40%;
 		margin-bottom: 2.5%;
 	}
-
 	.text-project {
 		margin-top: 5%;
 	}
-
-	.skillList {
-		padding: 20px;
-	}
-
-	.skillList li img {
-		width: 50px;
-	}
 }
-
 @media (max-width: 450px) {
 	.project-container {
 		width: 100%;
 	}
-
 	.project {
 		width: 85%;
 		height: 350px;
 	}
-
 	.botao-project {
 		width: 40%;
 	}
-
 	.skillList {
-		column-gap: 8px;
+		column-gap: 25px;
 		row-gap: 25px;
 	}
-
 	.mySkills {
 		width: 85%;
 	}
