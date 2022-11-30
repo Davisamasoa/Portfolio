@@ -28,12 +28,20 @@ export function Projects() {
 				/>
 
 				<ProjectItem
+					projectName="Blog"
+					projectImg="./assets/img/blog.png"
+					projectSite="https://blog-react.davisamasoa.vercel.app/"
+					projectGit="https://github.com/Davisamasoa/blog-next"
+					id="anchor"
+					display={true}
+				/>
+
+				<ProjectItem
 					projectName="Player de música"
 					projectImg="./assets/img/musicPlayer.png"
 					projectSite="https://music-player-react.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/musicPlayer-React"
-					id="anchor"
-					display={true}
+					display={false}
 				/>
 
 				<ProjectItem
