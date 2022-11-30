@@ -41,14 +41,6 @@ export function Projects() {
 					projectImg="./assets/img/musicPlayer.png"
 					projectSite="https://music-player-react.davisamasoa.vercel.app/"
 					projectGit="https://github.com/Davisamasoa/musicPlayer-React"
-					display={false}
-				/>
-
-				<ProjectItem
-					projectName="Player de música"
-					projectImg="./assets/img/musicPlayer.png"
-					projectSite="https://music-player-react.davisamasoa.vercel.app/"
-					projectGit="https://github.com/Davisamasoa/musicPlayer-React"
 					id="anchor"
 					display={false}
 				/>
