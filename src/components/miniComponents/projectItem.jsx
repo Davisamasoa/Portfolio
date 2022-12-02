@@ -8,18 +8,20 @@ export default function ProjectItem(props) {
 			className={!props.display ? `project none ${hoverProject}` : `project ${hoverProject}`}
 			id={props.id}
 		>
-			<figure className="figure-project">
-				<img src={props.projectImg} className="img-project" alt="" />
-			</figure>
-			<p className="text-project">{props.projectName}</p>
-			<div className="div-botao-project">
-				<a className="botao-project verProjeto" target="_blank" href={props.projectSite}>
-					Ver Projeto
-				</a>
-				<a className="botao-project gith" target="_blank" href={props.projectGit}>
-					<i className="bi bi-github"></i>
-				</a>
-			</div>
+			<a target={"_blank"} href={props.projectSite}>
+				<figure className="figure-project">
+					<img src={props.projectImg} className="img-project" alt="" />
+				</figure>
+				<p className="text-project w-full text-center">{props.projectName}</p>
+				<div className="div-botao-project">
+					<a className="botao-project verProjeto" target="_blank" href={props.projectSite}>
+						Ver Projeto
+					</a>
+					<a className="botao-project gith" target="_blank" href={props.projectGit}>
+						<i className="bi bi-github"></i>
+					</a>
+				</div>
+			</a>
 		</div>
 	);
 }
