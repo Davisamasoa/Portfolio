@@ -99,10 +99,13 @@
 .skillItem {
 	& {
 		color: $secondary-color;
+		background-color: rgb(58, 58, 58);
+		border-radius: 10px;
+		padding: 15%;
 	}
 
 	img {
-		width: 60px;
+		width: 70px;
 	}
 	#gitIcone {
 		border-radius: 100%;
