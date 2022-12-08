@@ -7,7 +7,7 @@ export function Home() {
 			<h1 className="text-[40px] font-bold">Davi Samuel</h1>
 			<p className="myWork">Desenvolvedor Front-End Júnior</p>
 			<div className="divButton">
-				<a href="./assets/CV - DAVI SAMUEL.pdf" download className="download">
+				<a href="./assets/Currículo  Davi Samuel.pdf" download className="download">
 					Download CV
 				</a>
 				<a href="#contact" className="lets">
