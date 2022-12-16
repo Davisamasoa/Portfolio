@@ -37,7 +37,6 @@ export function Contact() {
 				</aside>
 
 				<form className="gap-5" action="https://formsubmit.co/davisamasoa@gmail.com" method="POST">
-					eldset>
 					<input type="text" name="nome" id="name" placeholder="Nome e Sobrenome" required />
 					<input type="email" name="email" placeholder="E-mail" required />
 					<textarea
