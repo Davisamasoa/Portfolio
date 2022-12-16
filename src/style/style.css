@@ -310,7 +310,7 @@ header .divButton a {
 
 .skillItem {
   color: white;
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(36, 35, 35);
   border-radius: 10px;
   padding: 15%;
 }
@@ -321,23 +321,6 @@ header .divButton a {
   border-radius: 100%;
 }
 
-@keyframes flashing {
-  0% {
-    box-shadow: 0px 0px 15px rgb(255, 255, 255);
-  }
-  25% {
-    box-shadow: 0px 0px 25px rgb(255, 255, 255);
-  }
-  50% {
-    box-shadow: 0px 0px 35px rgb(255, 255, 255);
-  }
-  75% {
-    box-shadow: 0px 0px 25px rgb(255, 255, 255);
-  }
-  100% {
-    box-shadow: 0px 0px 15px rgb(255, 255, 255);
-  }
-}
 /* Meus Projetos*/
 .myProjects {
   display: flex;
@@ -506,7 +489,7 @@ form input::placeholder, form textarea::placeholder {
 }
 form button {
   width: 200px;
-  background-color: white;
+  background-color: rgb(255, 255, 255) !important;
   color: black;
   cursor: pointer;
 }
@@ -578,6 +561,12 @@ form button {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+  .txtAndSkills p {
+    font-size: 18px;
+  }
+  .divImgAbout {
+    width: 350px;
   }
 }
 @media (max-width: 900px) {

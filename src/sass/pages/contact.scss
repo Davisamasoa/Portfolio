@@ -55,7 +55,7 @@ form {
 
 	& button {
 		width: 200px;
-		background-color: white;
+		background-color: $primary-color !important;
 		color: black;
 		cursor: pointer;
 	}
