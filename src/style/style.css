@@ -239,13 +239,13 @@ header .divButton a {
   width: 400px;
 }
 .divImgAbout img {
-  width: 100%;
+  width: 95%;
   border-radius: 40px;
 }
 
 .divAbout {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   margin-top: 60px;
 }
 
@@ -256,10 +256,10 @@ header .divButton a {
 }
 
 .txtAndSkills p {
-  width: 400px;
+  width: 360px;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .skills {
@@ -331,8 +331,8 @@ header .divButton a {
 }
 
 .h1-projects {
-  margin-bottom: 80px;
-  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-top: 40px;
 }
 
 .project-container {
@@ -457,7 +457,7 @@ header .divButton a {
 
 .divFormAside {
   display: flex;
-  margin-top: 100px;
+  margin-top: 75px;
   gap: 200px;
 }
 
@@ -561,12 +561,6 @@ form button {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-  }
-  .txtAndSkills p {
-    font-size: 18px;
-  }
-  .divImgAbout {
-    width: 350px;
   }
 }
 @media (max-width: 900px) {

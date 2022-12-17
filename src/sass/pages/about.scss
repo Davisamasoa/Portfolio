@@ -17,14 +17,14 @@
 	}
 
 	img {
-		width: 100%;
+		width: 95%;
 		border-radius: 40px;
 	}
 }
 
 .divAbout {
 	display: flex;
-	gap: 50px;
+	gap: 20px;
 	margin-top: 60px;
 }
 
@@ -35,10 +35,10 @@
 }
 
 .txtAndSkills p {
-	width: 400px;
+	width: 360px;
 	display: flex;
 	flex-direction: column;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .skills {
