@@ -271,7 +271,7 @@ header .divButton a {
   align-items: center;
   flex-direction: column;
   gap: 70px;
-  margin-top: 150px;
+  margin-top: 140px;
 }
 .skills img {
   width: 40px;
@@ -281,7 +281,7 @@ header .divButton a {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .mySkills i {
@@ -327,12 +327,12 @@ header .divButton a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 170px;
+  margin-top: 130px;
 }
 
 .h1-projects {
   margin-bottom: 60px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .project-container {
@@ -647,6 +647,12 @@ form button {
   }
   .skills li img {
     width: 70px;
+  }
+  .myProjects {
+    margin-top: 150px;
+  }
+  .h1-projects {
+    margin-top: 40px;
   }
 }
 @media (max-width: 500px) {
