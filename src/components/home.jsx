@@ -15,7 +15,7 @@ export function Home() {
 				</a>
 			</div>
 			<div className="divImg">
-				<img src="https://i.imgur.com/JOm9HPE.png" alt="foto de Davi Samuel" />
+				<img src="./assets/img/eu.png" alt="foto de Davi Samuel" />
 			</div>
 		</header>
 	);
