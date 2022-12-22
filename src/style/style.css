@@ -296,7 +296,7 @@ header .divButton a {
 }
 
 .skillList {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(17, 17, 17);
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -344,6 +344,7 @@ header .divButton a {
 .project {
   width: 350px;
   height: 320px;
+  background-color: rgb(17, 17, 17);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -367,6 +368,7 @@ header .divButton a {
   width: 100%;
   border-radius: 10px;
   padding: 0px;
+  box-shadow: 0px 0px 10px black;
 }
 
 .div-botao-project {

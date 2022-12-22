@@ -22,7 +22,7 @@
 	width: 350px;
 	height: 320px;
 	// border: 2px solid $primary-color;
-	// background-color: $terciary-color;
+	background-color: $terciary-color;
 	border-radius: 15px;
 	display: flex;
 	align-items: center;
@@ -46,6 +46,7 @@
 	width: 100%;
 	border-radius: 10px;
 	padding: 0px;
+	box-shadow: 0px 0px 10px black;
 }
 
 .div-botao-project {
