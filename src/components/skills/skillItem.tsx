@@ -30,7 +30,7 @@ export const SkillItem = (props: skillItemType) => {
 					transition={{ duration: 0.3 }}
 				>
 					<Image
-						loading="lazy"
+						loading="eager"
 						className={`mx-auto ${
 							props.tecImgAlt == "Prisma" ||
 							props.tecImgAlt == "NextJS" ||

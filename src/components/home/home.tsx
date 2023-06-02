@@ -63,6 +63,7 @@ export const Home = ({ children, home }: langDataType) => {
 				className="sm:w-[400px] w-[80%] mx-auto mt-24"
 			>
 				<Image
+					loading="eager"
 					width="400"
 					height="400"
 					className="rounded-t-full rounded-b-[1000px]"
