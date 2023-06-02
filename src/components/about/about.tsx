@@ -25,10 +25,8 @@ export const About = ({ about }: langDataType) => {
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ delay: 0.2, duration: 0.3 }}
 				>
-					<Image
+					<img
 						className="sm:w-80 w-full rounded-2xl"
-						width={580}
-						height={773}
 						src="/assets/img/fotoAboutMe.png"
 						alt="Foto de Davi Samuel"
 					/>
