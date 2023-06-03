@@ -45,6 +45,7 @@ export const ProjectItem = (props: projectItemType) => {
 								href={Tecnology.oficialWebsite}
 								key={index}
 								target="_blank"
+								title={`link para o site da tecnologia ${Tecnology.imgAlt}`}
 								className={`bg-secondaryColor rounded-md p-1 min-w-[31px]  flex justify-center items-center`}
 							>
 								<Image
@@ -64,6 +65,7 @@ export const ProjectItem = (props: projectItemType) => {
 				<p className="w-full text-center font-bold">{props.projectName}</p>
 				<div className="flex flex-row gap-5">
 					<a
+						title={`link para ver demonstração do projeto ${props.projectName}`}
 						className="lg:text-base md:text-[12px]  lg:w-full md:w-28 text-center bg-transparent text-textColor border-primaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-primaryColor sm:hover:text-bgColor duration-300 transition"
 						target="_blank"
 						href={props.projectSite}
@@ -71,6 +73,7 @@ export const ProjectItem = (props: projectItemType) => {
 						Ver Projeto
 					</a>
 					<a
+						title={`link para o repositorio do projeto ${props.projectName} no github`}
 						className="flex items-center justify-center w-fit text-center bg-primaryColor text-bgColor border-primaryColor border-2 px-4  rounded-md sm:hover:bg-transparent sm:hover:text-textColor duration-300 transition"
 						target="_blank"
 						href={props.projectGit}
