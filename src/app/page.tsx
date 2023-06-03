@@ -9,6 +9,8 @@ import { IconsAside } from "@/components/home/iconsAside";
 import { Nav } from "@/components/navBar";
 import { Projects } from "@/components/projects/projects";
 import { Skills } from "@/components/skills/skills";
+import { eng as engData } from "../assets/lang/en";
+import { pt_br as pt_brData } from "../assets/lang/pt-br";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 let lang_ = "";
@@ -53,8 +55,8 @@ export type langDataType = {
 export default function App() {
 	const [langName, setLangName] = useState<string>();
 	const [langData, setLangData] = useState<langDataType>();
-	const langJSON = async () => {
-		const data = await fetch(`./lang/${lang_}.json`).then((res) => res.json());
+	const langSwitch = async () => {
+		const data = lang_ == "pt-br" ? pt_brData : engData;
 		setLangData(data);
 	};
 
@@ -69,7 +71,7 @@ export default function App() {
 			lang_ = "pt-br";
 		}
 
-		langJSON();
+		langSwitch();
 	}, [langName]);
 
 	return (

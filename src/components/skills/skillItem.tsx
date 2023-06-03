@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
 import Image from "next/image";
 
@@ -24,28 +24,30 @@ export const SkillItem = (props: skillItemType) => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<motion.div
-					initial={{ scale: 0.6, opacity: 0 }}
-					whileInView={{ scale: 1, opacity: 1 }}
-					transition={{ duration: 0.3 }}
-				>
-					<Image
-						loading="eager"
-						className={`mx-auto ${
-							props.tecImgAlt == "Prisma" ||
-							props.tecImgAlt == "NextJS" ||
-							props.tecImgAlt == "Prisma" ||
-							props.tecImgAlt == "Babel" ||
-							props.tecImgAlt == "ExpressJS"
-								? "grayscale invert"
-								: null
-						}  ${props.tecImg == "/_next/static/media/prisma.effd950f.svg" ? "w-[80%]" : null}`}
-						width={130}
-						height={130}
-						src={props.tecImg}
-						alt={props.tecImgAlt}
-					/>
-				</motion.div>
+				<LazyMotion features={domAnimation}>
+					<m.div
+						initial={{ scale: 0.6, opacity: 0 }}
+						whileInView={{ scale: 1, opacity: 1 }}
+						transition={{ duration: 0.3 }}
+					>
+						<Image
+							loading="lazy"
+							className={`mx-auto ${
+								props.tecImgAlt == "Prisma" ||
+								props.tecImgAlt == "NextJS" ||
+								props.tecImgAlt == "Prisma" ||
+								props.tecImgAlt == "Babel" ||
+								props.tecImgAlt == "ExpressJS"
+									? "grayscale invert"
+									: null
+							}  ${props.tecImg == "/_next/static/media/prisma.effd950f.svg" ? "w-[80%]" : null}`}
+							width={130}
+							height={130}
+							src={props.tecImg}
+							alt={props.tecImgAlt}
+						/>
+					</m.div>
+				</LazyMotion>
 
 				<h3
 					className="text-center font-light text-xs mt-2 text-tex
