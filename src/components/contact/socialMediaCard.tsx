@@ -16,6 +16,7 @@ export const SocialMediaCard = (props: socialMediaCardType) => {
 	return (
 		<LazyMotion features={domAnimation}>
 			<m.a
+				title={`link para o ${lowerCaseSocialName} de Davi Samuel`}
 				initial={{ scale: 0.7, opacity: 0 }}
 				whileInView={{ scale: 1, opacity: 1 }}
 				transition={{ duration: 0.3, delay: 0, type: "spring", bounce: 0.5, damping: 10 }}

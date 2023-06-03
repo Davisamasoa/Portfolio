@@ -13,6 +13,7 @@ export const Nav = () => {
 			<ul className="flex w-fit justify-center text-[25px] border-2 border-transparent bg-secondaryColor bg-opacity-50 gap-2 px-3 py-2 rounded-full ">
 				<li className="flex items-center justify-center">
 					<a
+						title="link para a seção principal"
 						className={`iconNav transition duration-300 ${
 							section == "Home" ? "bg-primaryColor text-bgColor" : undefined
 						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
@@ -24,6 +25,7 @@ export const Nav = () => {
 				</li>
 				<li className="flex items-center justify-center">
 					<a
+						title="link para a seção sobre mim"
 						className={`iconNav transition duration-300 ${
 							section == "about" ? "bg-primaryColor text-bgColor" : undefined
 						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
@@ -35,6 +37,7 @@ export const Nav = () => {
 				</li>
 				<li className="flex items-center justify-center">
 					<a
+						title="link para a seção minhas habilidades"
 						className={`iconNav transition duration-300 ${
 							section == "skills" ? "bg-primaryColor text-bgColor" : undefined
 						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
@@ -46,6 +49,7 @@ export const Nav = () => {
 				</li>
 				<li className="flex items-center justify-center">
 					<a
+						title="link para a seção meus projetos"
 						className={`iconNav transition duration-300 ${
 							section == "project" ? "bg-primaryColor text-bgColor" : undefined
 						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
@@ -57,6 +61,7 @@ export const Nav = () => {
 				</li>
 				<li className="flex items-center justify-center">
 					<a
+						title="link para a seção contato"
 						className={`iconNav transition duration-300 ${
 							section == "contact" ? "bg-primaryColor text-bgColor" : undefined
 						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}

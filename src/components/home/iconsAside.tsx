@@ -10,6 +10,7 @@ export const IconsAside = () => {
 			data-aos-duration="1500"
 		>
 			<a
+				title="link para o github de Davi Samuel"
 				className="hover:scale-110 transition duration-300"
 				href="https://github.com/Davisamasoa"
 				target="_blank"
@@ -18,6 +19,7 @@ export const IconsAside = () => {
 			</a>
 
 			<a
+				title="link para o linkedin de Davi Samuel"
 				className="hover:scale-110 transition duration-300"
 				href="https://www.linkedin.com/in/davisamasoa/"
 				target="_blank"
@@ -25,7 +27,11 @@ export const IconsAside = () => {
 				<i className="bi bi-linkedin"></i>
 			</a>
 
-			<a className="hover:scale-110 transition duration-300" href="mailto:davisamasoa@gmail.com">
+			<a
+				title="link para o email de Davi Samuel"
+				className="hover:scale-110 transition duration-300"
+				href="mailto:davisamasoa@gmail.com"
+			>
 				<i className="bi bi-envelope"></i>
 			</a>
 		</motion.aside>

@@ -54,9 +54,8 @@ export const Projects = ({ projects }: langDataType) => {
 				})}
 			</div>
 			<div className="flex justify-center mt-16">
-				<button onClick={handleShowProjects}>
+				<button onClick={handleShowProjects} aria-label="Mostrar mais ou mostrar menos projetos">
 					<i className={`${moreLessClassName} text-2xl`}></i>
-					<span className="hidden">Mostrar mais ou mostrar menos</span>
 				</button>
 			</div>
 		</section>
