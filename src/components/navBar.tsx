@@ -4,9 +4,7 @@ import { useEffect, useState } from "react";
 export const Nav = () => {
 	const [section, setSection] = useState("Home");
 
-	useEffect(() => {
-		window.location.href = "#Home";
-	}, []);
+	useEffect(() => {}, []);
 
 	return (
 		<nav className="left-0 fixed bottom-0  w-full flex justify-center items-center mb-7 text-primaryColor ">

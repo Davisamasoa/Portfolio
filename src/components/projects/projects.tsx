@@ -42,6 +42,7 @@ export const Projects = ({ projects }: langDataType) => {
 				{projectData.map((project, index) => {
 					return (
 						<ProjectItem
+							id={project.id}
 							projectName={projects.lang == "pt-br" ? project.name.pt_br : project.name.eng}
 							projectImg={project.imgPath}
 							projectSite={project.website}

@@ -2,8 +2,8 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import Image from "next/image";
 
 type projectItemType = {
+	id?: string;
 	projectName: string;
-
 	projectImg: string;
 	projectSite: string;
 	projectGit: string;
@@ -20,6 +20,7 @@ export const ProjectItem = (props: projectItemType) => {
 	return (
 		<LazyMotion features={domAnimation}>
 			<m.div
+				id={props.id}
 				initial={{ opacity: 0 }}
 				transition={{ duration: 0.3 }}
 				whileInView={{ opacity: 1 }}
