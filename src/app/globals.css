@@ -21,8 +21,8 @@ html {
 }
 
 body {
-	background-color: #0f0f0f;
-	/* background: radial-gradient(ellipse at right, #111111 0%, #0c0c0c 100%); */
+	background-color: #080808;
+	color: #181818;
 }
 
 nav {
