@@ -1,0 +1,16 @@
+import Link from "next/link";
+import React from "react";
+
+type Props = {};
+
+export default function ThanksForSendingYourMessage({}: Props) {
+	return (
+		<main className="text-textColor h-screen w-screen flex justify-center items-center flex-col text-2xl font-bold">
+			<h1>Obrigado por enviar a sua mensagem!</h1>
+			<h1 className="opacity-50">Thank you for send your message!</h1>
+			<Link className="bg-primaryColor text-bgColor text-sm p-2 font-light rounded-md mt-5" href="/">
+				Voltar para o portfólio / Back to portfolio{" "}
+			</Link>
+		</main>
+	);
+}

@@ -120,7 +120,7 @@ export const Contact = ({ contact }: contactDataType) => {
 						</m.div>
 
 						<input type="hidden" name="_captcha" value="false" />
-						<input type="hidden" name="_next" value="https://davisamasoa.vercel.app/thanks.html" />
+						<input type="hidden" name="_next" value="https://davisamasoa.vercel.app/thanks" />
 					</form>
 				</div>
 			</m.section>
