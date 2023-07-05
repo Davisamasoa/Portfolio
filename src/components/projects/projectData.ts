@@ -16,7 +16,6 @@ type tecnologyType = {
 
 type tecnologiesType = {
 	NextJs: tecnologyType;
-
 	React: tecnologyType;
 	Angular: tecnologyType;
 	TypeScript: tecnologyType;
@@ -33,7 +32,7 @@ type tecnologiesType = {
 	PostgreSQL: tecnologyType;
 	Prisma: tecnologyType;
 	Figma: tecnologyType;
-};
+} & { [key: string]: tecnologyType };
 
 type projectDataType = {
 	name: {
