@@ -27,7 +27,7 @@ export const Projects = ({ projects }: langDataType) => {
 	};
 
 	return (
-		<section className="sm:pt-32 pt-16  mt-48  text-textColor" id="project">
+		<section className="sm:pt-32 pt-16  mt-56  text-textColor" id="project">
 			<LazyMotion features={domAnimation}>
 				<m.h1
 					initial={{ y: -100, opacity: 0 }}

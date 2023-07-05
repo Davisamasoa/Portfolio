@@ -18,7 +18,7 @@ type contactDataType = {
 export const Contact = ({ contact }: contactDataType) => {
 	return (
 		<LazyMotion features={domAnimation}>
-			<m.section className="sm:pt-32 pt-16 mt-48  text-textColor" id="contact">
+			<m.section className="sm:pt-32 pt-16 mt-56  text-textColor" id="contact">
 				<m.h1
 					initial={{ y: -100, opacity: 0 }}
 					whileInView={{ y: 0, opacity: 1 }}

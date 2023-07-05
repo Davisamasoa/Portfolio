@@ -11,7 +11,7 @@ export type langDataType = {
 export const Skills = ({ skills }: langDataType) => {
 	return (
 		<section
-			className="sm:pt-32 pt-16 mt-48 flex flex-col justify-center items-center text-textColor"
+			className="sm:pt-32 pt-16 mt-56 flex flex-col justify-center items-center text-textColor"
 			id="skills"
 		>
 			<LazyMotion features={domAnimation}>
