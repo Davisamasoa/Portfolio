@@ -15,7 +15,24 @@ type tecnologyType = {
 };
 
 type tecnologiesType = {
-	[key: string]: tecnologyType;
+	NextJs: tecnologyType;
+
+	React: tecnologyType;
+	Angular: tecnologyType;
+	TypeScript: tecnologyType;
+	Js: tecnologyType;
+	HTML: tecnologyType;
+	CSS: tecnologyType;
+	SASS: tecnologyType;
+	Bootstrap: tecnologyType;
+	Tailwind: tecnologyType;
+	Babel: tecnologyType;
+	NodeJs: tecnologyType;
+	Express: tecnologyType;
+	Mongodb: tecnologyType;
+	PostgreSQL: tecnologyType;
+	Prisma: tecnologyType;
+	Figma: tecnologyType;
 };
 
 type projectDataType = {
@@ -177,6 +194,18 @@ export const projectData = [
 		gitRepository: "https://github.com/Davisamasoa/movie-app-next",
 		display: true,
 		tecnologies: [tecnologies.NextJs, tecnologies.React, tecnologies.Js, tecnologies.Tailwind],
+	},
+	{
+		name: {
+			pt_br: "Blog Angular",
+			eng: "Blog Angular",
+		},
+		imgPath: "/assets/img/blog-angular.webp",
+		website: "https://blog-angular.davisamasoa.vercel.app/",
+		gitRepository: "https://github.com/Davisamasoa/blog-angular",
+		display: false,
+		tecnologies: [tecnologies.Angular, tecnologies.HTML, tecnologies.Tailwind],
+		id: "anchor",
 	},
 	{
 		name: {
