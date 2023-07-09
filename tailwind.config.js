@@ -8,10 +8,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				bgColor: "#000000",
-				primaryColor: "#FFFF",
-				secondaryColor: "#181818",
-				textColor: "#DADADA",
+				bgColor: "#03081B",
+				primaryColor: "#E8E2D8",
+				secondaryColor: "#212B50",
+				textColor: "#E8E2D8",
 			},
 			boxShadow: {
 				custom: "3px 3px 10px 1px",

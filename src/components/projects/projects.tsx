@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ProjectItem } from "./projectItem";
 import { projectData } from "./projectData";
-import { LazyMotion, domAnimation, m } from "framer-motion";
 
 type langDataType = {
 	projects: {
@@ -28,16 +27,8 @@ export const Projects = ({ projects }: langDataType) => {
 
 	return (
 		<section className="sm:pt-32 pt-16  mt-56  text-textColor" id="project">
-			<LazyMotion features={domAnimation}>
-				<m.h1
-					initial={{ y: -100, opacity: 0 }}
-					whileInView={{ y: 0, opacity: 1 }}
-					transition={{ duration: 0.3 }}
-					className="text-center text-5xl font-bold"
-				>
-					{projects.title}
-				</m.h1>
-			</LazyMotion>
+			<h1 className="text-center text-5xl font-bold">{projects.title}</h1>
+
 			<div className="pt-14 grid lg:grid-cols-3 md:grid-cols-2 place-items-center lg:w-[1050px] gap-10 w-full mx-auto">
 				{projectData.map((project, index) => {
 					return (

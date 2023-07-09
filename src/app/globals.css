@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--bgColor: theme("colors.bgColor");
+	--textColor: theme("colors.textColor");
+}
+
 a {
 	cursor: pointer;
 }
@@ -21,8 +26,8 @@ html {
 }
 
 body {
-	background-color: #080808;
-	color: #181818;
+	background-color: var(--bgColor);
+	color: var(--textColor);
 }
 
 nav {
