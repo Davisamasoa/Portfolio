@@ -109,7 +109,7 @@ export default function App() {
 					</Home>
 					<About about={langData?.about} />
 					<Skills skills={langData?.skills} />
-					{/* <Projects projects={langData?.projects} /> */}
+					<Projects projects={langData?.projects} />
 					<Contact contact={langData?.contact} />
 					<Footer footer={langData?.footer} />
 				</>
