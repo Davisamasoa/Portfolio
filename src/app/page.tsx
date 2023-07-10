@@ -111,7 +111,7 @@ export default function App() {
 						</div>
 					</Home>
 					<About about={langData?.about} />
-					{/* <Skills skills={langData?.skills} /> */}
+					<Skills skills={langData?.skills} />
 					<Projects projects={langData?.projects} />
 					<Contact contact={langData?.contact} />
 					<Footer footer={langData?.footer} />

@@ -33,13 +33,13 @@ export const Home = ({ children, home }: langDataType) => {
 				</a>
 			</div>
 			<div className="sm:w-[400px] w-[80%] mx-auto mt-24">
-				<img
+				{/* <img
 					width="400"
 					height="400"
 					className="rounded-t-full bg-secondaryColor rounded-b-[1000px]"
 					src="/assets/img/eu.gif"
 					alt="foto de Davi Samuel"
-				/>
+				/> */}
 			</div>
 		</section>
 	);
