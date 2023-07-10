@@ -11,7 +11,6 @@ import { Projects } from "@/components/projects/projects";
 import { Skills } from "@/components/skills/skills";
 import { eng as engData } from "../assets/lang/en";
 import { pt_br as pt_brData } from "../assets/lang/pt-br";
-import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 let lang_ = "";
 
@@ -88,11 +87,9 @@ export default function App() {
 
 									localStorage.setItem("lang", "pt-br");
 								}}
-								className={`fi fi-br text-2xl rounded-md cursor-pointer ${
-									langName == "pt-br" ? undefined : "grayscale"
-								}`}
-								width={10}
-								height={10}
+								className={` cursor-pointer ${langName == "pt-br" ? undefined : "grayscale"}`}
+								width={30}
+								height={20}
 								src="./assets/icon/brazil.png"
 								alt="Brazil Flag"
 							/>
@@ -102,9 +99,9 @@ export default function App() {
 									langName == "en" ? undefined : setLangName("en");
 									localStorage.setItem("lang", "en");
 								}}
-								className={`fi fi-um text-2xl cursor-pointer ${langName == "en" ? undefined : "grayscale"}`}
-								width={10}
-								height={10}
+								className={`cursor-pointer ${langName == "en" ? undefined : "grayscale"}`}
+								width={30}
+								height={20}
 								src="./assets/icon/usa.png"
 								alt="Usa Flag"
 							/>
