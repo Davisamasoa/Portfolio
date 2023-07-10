@@ -16,7 +16,8 @@ export const About = ({ about }: langDataType) => {
 						className="sm:w-80 w-full rounded-2xl"
 						src="/assets/img/fotoAboutMe.webp"
 						alt="Foto de Davi Samuel"
-						loading="lazy"
+						width={573}
+						height={763}
 					/>
 				</div>
 				<div className="flex items-center">

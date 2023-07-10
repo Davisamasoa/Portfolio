@@ -34,11 +34,10 @@ export const Home = ({ children, home }: langDataType) => {
 			</div>
 			<div className="sm:w-[400px] w-[80%] mx-auto mt-24">
 				<img
-					loading="lazy"
 					width="400"
 					height="400"
 					className="rounded-t-full bg-secondaryColor rounded-b-[1000px]"
-					src="https://github.com/Davisamasoa/Davisamasoa/assets/107278331/346df2bf-bdf2-46d9-828f-0dd59361550b"
+					src="/assets/img/eu.gif"
 					alt="foto de Davi Samuel"
 				/>
 			</div>
