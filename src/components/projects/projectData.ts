@@ -1,11 +1,3 @@
-import { DiHtml5, DiPostgresql } from "react-icons/di";
-import { DiCss3 } from "react-icons/di";
-import { DiJavascript1 } from "react-icons/di";
-import { DiReact } from "react-icons/di";
-import { DiBootstrap } from "react-icons/di";
-import { DiSass } from "react-icons/di";
-import { DiNodejsSmall } from "react-icons/di";
-import { DiMongodb } from "react-icons/di";
 import prisma from "../../assets/prisma.svg";
 
 type tecnologyType = {
