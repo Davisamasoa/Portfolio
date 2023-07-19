@@ -42,7 +42,7 @@ export const ProjectItem = (props: projectItemType) => {
 							className={`bg-secondaryColor rounded-md p-1 min-w-[31px]  flex justify-center items-center`}
 						>
 							<Image
-								loading="lazy"
+								loading="eager"
 								className={` ${
 									Tecnology.imgPath == "/_next/static/media/prisma.effd950f.svg" ? "w-[18px]" : "w-6"
 								} brightness-0 invert grayscale-0`}
