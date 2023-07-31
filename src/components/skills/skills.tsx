@@ -15,7 +15,7 @@ export const Skills = ({ skills }: langDataType) => {
 		>
 			<h1 className="text-5xl font-bold">{skills.title}</h1>
 
-			<ul className="pt-14 sm:gap-8 gap-4 grid grid-cols-3  sm:grid-cols-4">
+			<ul className="pt-14 sm:gap-6 gap-4 grid grid-cols-3  sm:grid-cols-4">
 				{Object.keys(tecnologies).map((skill, index) => {
 					return (
 						<SkillItem

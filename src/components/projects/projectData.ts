@@ -148,7 +148,7 @@ export const projectData = [
 			pt_br: "FinancePlan",
 			eng: "FinancePlan",
 		},
-		imgPath: "/assets/img/financePlan.webp",
+		imgPath: "/assets/img/finance.png",
 		website: "https://finance-plan.davisamasoa.vercel.app/",
 		gitRepository: "https://github.com/Davisamasoa/financePlan-frontend",
 		display: true,

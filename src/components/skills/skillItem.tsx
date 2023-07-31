@@ -15,7 +15,7 @@ export const SkillItem = (props: skillItemType) => {
 		invertColor = "";
 	}
 	return (
-		<li className="skillItem  sm:24 md:w-28 border-2 border-secondaryColor shadow-primaryColor hover:scale-110 transition duration-300  bg-secondaryColor rounded-lg p-3 ">
+		<li className="skillItem  sm:24 md:w-32 border-2 border-secondaryColor shadow-primaryColor hover:scale-110 transition duration-300  bg-secondaryColor rounded-lg p-3 ">
 			<a
 				href={props.tecLink}
 				className="flex justify-between items-center flex-col"
