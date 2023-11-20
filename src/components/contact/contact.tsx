@@ -16,11 +16,11 @@ type contactDataType = {
 
 export const Contact = ({ contact }: contactDataType) => {
 	return (
-		<section className="sm:pt-32 pt-16 mt-56  text-textColor" id="contact">
+		<section className="sm:pt-32 pt-16 mt-56  text-textColor dark:text-darktextColor" id="contact">
 			<h1 className="text-center text-5xl font-bold">{contact.title}</h1>
 
 			<div className=" pt-14 flex mx-auto gap-24 justify-center lg:w-[950px] md:w-full flex-col lg:flex-row items-center">
-				<aside className="w-full sm:w-fit text-bgColor flex flex-col gap-5 lg:order-1 order-2">
+				<aside className="w-full sm:w-fit text-bgColor dark:text-darkbgColor flex flex-col gap-5 lg:order-1 order-2">
 					<SocialMediaCard
 						contact={contact}
 						socialName="GitHub"
@@ -36,16 +36,16 @@ export const Contact = ({ contact }: contactDataType) => {
 				</aside>
 
 				<form
-					className="flex w-full sm:w-auto flex-col  text-textColor lg:order-2 order-1"
+					className="flex w-full sm:w-auto flex-col  text-textColor dark:text-darktextColor lg:order-2 order-1"
 					action="https://formsubmit.co/davisamasoa@gmail.com"
 					method="POST"
 				>
 					<div className="flex flex-col gap-1">
-						<label className="text-textColor mb-1" htmlFor="name">
+						<label className="text-textColor dark:text-darktextColor mb-1" htmlFor="name">
 							{contact.labelName}
 						</label>
 						<input
-							className="sm:w-96 w-full py-2 px-2 bg-transparent rounded-md border-2 border-primaryColor"
+							className="sm:w-96 w-full py-2 px-2 bg-transparent rounded-md border-2 border-primaryColor dark:border-darkprimaryColor"
 							type="text"
 							name="nome"
 							id="name"
@@ -54,12 +54,12 @@ export const Contact = ({ contact }: contactDataType) => {
 						/>
 					</div>
 					<div className="flex flex-col gap-1">
-						<label className="text-textColor mt-5 mb-1" htmlFor="email">
+						<label className="text-textColor dark:text-darktextColor mt-5 mb-1" htmlFor="email">
 							E-mail:
 						</label>
 						<input
 							id="email"
-							className="sm:w-96 w-full py-2 px-2 bg-transparent rounded-md border-2 border-primaryColor"
+							className="sm:w-96 w-full py-2 px-2 bg-transparent rounded-md border-2 border-primaryColor dark:border-darkprimaryColor"
 							type="email"
 							name="email"
 							required
@@ -67,11 +67,11 @@ export const Contact = ({ contact }: contactDataType) => {
 						/>
 					</div>
 					<div className="flex flex-col gap-1">
-						<label className="text-textColor mt-5 mb-1" htmlFor="mensagem">
+						<label className="text-textColor dark:text-darktextColor mt-5 mb-1" htmlFor="mensagem">
 							{contact.labelMessage}
 						</label>
 						<textarea
-							className="sm:w-96 w-full py-2 px-2 h-20 bg-transparent rounded-md border-2 border-primaryColor"
+							className="sm:w-96 w-full py-2 px-2 h-20 bg-transparent rounded-md border-2 border-primaryColor dark:border-darkprimaryColor"
 							name="mensagem"
 							required
 							id="mensagem"
@@ -83,7 +83,7 @@ export const Contact = ({ contact }: contactDataType) => {
 
 					<div className="w-full">
 						<button
-							className="w-36 hover:scale-105 bg-primaryColor mt-10 text-bgColor py-2 rounded-md transition duration-300"
+							className="w-36 hover:scale-105 bg-primaryColor dark:bg-darkprimaryColor mt-10 text-bgColor dark:text-darkbgColor  py-2 rounded-md transition duration-300"
 							id="submit"
 							type="submit"
 						>

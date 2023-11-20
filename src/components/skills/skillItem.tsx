@@ -15,7 +15,7 @@ export const SkillItem = (props: skillItemType) => {
 		invertColor = "";
 	}
 	return (
-		<li className="skillItem  sm:24 md:w-32 border-2 border-secondaryColor shadow-primaryColor hover:scale-110 transition duration-300  bg-secondaryColor rounded-lg p-3 ">
+		<li className="skillItem  sm:24 md:w-32 border-2 border-secondaryColor dark:border-darksecondaryColor shadow-primaryColor dark:shadow-darkprimaryColor hover:scale-110 transition duration-300  bg-secondaryColor dark:bg-darksecondaryColor rounded-lg py-5 px-5 ">
 			<a
 				href={props.tecLink}
 				className="flex justify-between items-center flex-col"
@@ -42,7 +42,7 @@ export const SkillItem = (props: skillItemType) => {
 				</div>
 
 				<h3
-					className="text-center font-normal text-xs mt-2 text-tex
+					className="text-center font-normal text-xs mt-2 text-white dark:text-darktextColor
 				"
 				>
 					{props.tecImgAlt}

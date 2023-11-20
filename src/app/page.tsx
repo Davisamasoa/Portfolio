@@ -11,6 +11,7 @@ import { Projects } from "@/components/projects/projects";
 import { Skills } from "@/components/skills/skills";
 import { eng as engData } from "../assets/lang/en";
 import { pt_br as pt_brData } from "../assets/lang/pt-br";
+import Darkmode from "@/components/darkmode";
 
 let lang_ = "";
 
@@ -80,31 +81,34 @@ export default function App() {
 					<Nav />
 					<IconsAside />
 					<Home home={langData?.home}>
-						<div className="mb-5 flex justify-end gap-2 items-center w-[300px] mx-auto">
-							<img
-								onClick={() => {
-									langName == "pt-br" ? undefined : setLangName("pt-br");
+						<div className="mb-5 flex justify-between  items-center w-[300px] mx-auto">
+							<Darkmode />
+							<div className="flex gap-1">
+								<img
+									onClick={() => {
+										langName == "pt-br" ? undefined : setLangName("pt-br");
 
-									localStorage.setItem("lang", "pt-br");
-								}}
-								className={` cursor-pointer ${langName == "pt-br" ? undefined : "grayscale"}`}
-								width={30}
-								height={20}
-								src="./assets/icon/brazil.png"
-								alt="Brazil Flag"
-							/>
+										localStorage.setItem("lang", "pt-br");
+									}}
+									className={` cursor-pointer ${langName == "pt-br" ? undefined : "grayscale"}`}
+									width={30}
+									height={20}
+									src="./assets/icon/brazil.png"
+									alt="Brazil Flag"
+								/>
 
-							<img
-								onClick={() => {
-									langName == "en" ? undefined : setLangName("en");
-									localStorage.setItem("lang", "en");
-								}}
-								className={`cursor-pointer ${langName == "en" ? undefined : "grayscale"}`}
-								width={30}
-								height={20}
-								src="./assets/icon/usa.png"
-								alt="Usa Flag"
-							/>
+								<img
+									onClick={() => {
+										langName == "en" ? undefined : setLangName("en");
+										localStorage.setItem("lang", "en");
+									}}
+									className={`cursor-pointer ${langName == "en" ? undefined : "grayscale"}`}
+									width={30}
+									height={20}
+									src="./assets/icon/usa.png"
+									alt="Usa Flag"
+								/>
+							</div>
 						</div>
 					</Home>
 					<About about={langData?.about} />

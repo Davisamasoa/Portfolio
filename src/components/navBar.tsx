@@ -7,14 +7,16 @@ export const Nav = () => {
 	useEffect(() => {}, []);
 
 	return (
-		<nav className="left-2/4 fixed bottom-0 translate-x-[-50%] flex justify-center items-center mb-7 text-primaryColor ">
-			<ul className="flex w-fit justify-center text-[25px] border-2 border-transparent bg-secondaryColor bg-opacity-50 gap-2 px-3 py-2 rounded-full ">
+		<nav className="left-2/4 fixed bottom-0 translate-x-[-50%] flex justify-center items-center mb-7 text-primaryColor dark:text-darkprimaryColor ">
+			<ul className="flex w-fit justify-center text-[25px] border-2 border-transparent bg-secondaryColor dark:bg-darksecondaryColor bg-opacity-40 dark:bg-opacity-50 gap-2 px-3 py-2 rounded-full ">
 				<li className="flex items-center justify-center">
 					<a
 						title="link para a seção principal"
 						className={`iconNav transition duration-300 ${
-							section == "Home" ? "bg-primaryColor text-bgColor" : undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
+							section == "Home"
+								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
+								: undefined
+						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
 						onClick={() => setSection("Home")}
 						href="#Home"
 					>
@@ -25,8 +27,10 @@ export const Nav = () => {
 					<a
 						title="link para a seção sobre mim"
 						className={`iconNav transition duration-300 ${
-							section == "about" ? "bg-primaryColor text-bgColor" : undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
+							section == "about"
+								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
+								: undefined
+						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor  dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
 						onClick={() => setSection("about")}
 						href="#aboutMe"
 					>
@@ -37,8 +41,10 @@ export const Nav = () => {
 					<a
 						title="link para a seção minhas habilidades"
 						className={`iconNav transition duration-300 ${
-							section == "skills" ? "bg-primaryColor text-bgColor" : undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
+							section == "skills"
+								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
+								: undefined
+						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor  dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
 						onClick={() => setSection("skills")}
 						href="#skills"
 					>
@@ -49,8 +55,10 @@ export const Nav = () => {
 					<a
 						title="link para a seção meus projetos"
 						className={`iconNav transition duration-300 ${
-							section == "project" ? "bg-primaryColor text-bgColor" : undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
+							section == "project"
+								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
+								: undefined
+						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor  dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
 						onClick={() => setSection("project")}
 						href="#project"
 					>
@@ -61,8 +69,10 @@ export const Nav = () => {
 					<a
 						title="link para a seção contato"
 						className={`iconNav transition duration-300 ${
-							section == "contact" ? "bg-primaryColor text-bgColor" : undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor sm:hover:text-bgColor`}
+							section == "contact"
+								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
+								: undefined
+						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor  dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
 						onClick={() => setSection("contact")}
 						href="#contact"
 					>

@@ -25,11 +25,6 @@ html {
 	}
 }
 
-body {
-	background-color: var(--bgColor);
-	color: var(--textColor);
-}
-
 nav {
 	z-index: 50;
 }

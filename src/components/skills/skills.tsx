@@ -10,7 +10,7 @@ export type langDataType = {
 export const Skills = ({ skills }: langDataType) => {
 	return (
 		<section
-			className="sm:pt-32 pt-16 mt-56 flex flex-col justify-center items-center text-textColor"
+			className="sm:pt-32 pt-16 mt-56 flex flex-col justify-center items-center text-textColor dark:text-darktextColor"
 			id="skills"
 		>
 			<h1 className="text-5xl font-bold">{skills.title}</h1>

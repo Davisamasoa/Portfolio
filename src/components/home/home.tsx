@@ -12,7 +12,7 @@ type langDataType = {
 
 export const Home = ({ children, home }: langDataType) => {
 	return (
-		<section className="text-center pt-10 text-textColor" id="Home">
+		<section className="text-center pt-10 text-textColor dark:text-darktextColor" id="Home">
 			{children}
 			<p>{home.greeting}</p>
 			<h1 className="font-bold text-5xl mt-0">Davi Samuel</h1>
@@ -21,13 +21,13 @@ export const Home = ({ children, home }: langDataType) => {
 				<a
 					download
 					href="./assets/Currículo  Davi Samuel.pdf"
-					className="sm:text-base text-[13px]  bg-transparent text-textColor border-primaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-primaryColor sm:hover:text-bgColor duration-300 transition"
+					className="sm:text-base text-[13px]  bg-transparent text-textColor dark:text-darktextColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-primaryColor dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor duration-300 transition"
 				>
 					{home.downloadButton}
 				</a>
 				<a
 					href="#contact"
-					className="sm:text-base text-[13px] bg-primaryColor text-bgColor border-primaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-transparent sm:hover:text-textColor duration-300 transition"
+					className="sm:text-base text-[13px] bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-transparent sm:hover:text-textColor dark:sm:hover:text-darktextColor duration-300 transition"
 				>
 					{home.letsWorkButton}
 				</a>
@@ -36,7 +36,7 @@ export const Home = ({ children, home }: langDataType) => {
 				<img
 					width="400"
 					height="400"
-					className="rounded-t-full bg-secondaryColor rounded-b-[1000px]"
+					className="rounded-t-full bg-secondaryColor dark:bg-darksecondaryColor rounded-b-[1000px]"
 					src="/assets/img/eu.gif"
 					alt="foto de Davi Samuel"
 				/>
