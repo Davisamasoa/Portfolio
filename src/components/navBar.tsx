@@ -7,8 +7,8 @@ export const Nav = () => {
 	useEffect(() => {}, []);
 
 	return (
-		<nav className="left-2/4 fixed bottom-0 translate-x-[-50%] flex justify-center items-center mb-7 text-primaryColor dark:text-darkprimaryColor ">
-			<ul className="flex w-fit justify-center text-[25px] border-2 border-transparent bg-secondaryColor dark:bg-darksecondaryColor bg-opacity-40 dark:bg-opacity-50 gap-2 px-3 py-2 rounded-full ">
+		<nav className="left-2/4 fixed bottom-0 translate-x-[-50%] flex justify-center items-center mb-7 text-bgColor dark:text-darkprimaryColor ">
+			<ul className="flex w-fit justify-center text-[25px] border-2 border-transparent bg-secondaryColor dark:bg-darksecondaryColor bg-opacity-60 dark:bg-opacity-50 gap-2 px-3 py-2 rounded-full ">
 				<li className="flex items-center justify-center">
 					<a
 						title="link para a seção principal"
