@@ -15,7 +15,7 @@ export const Home = ({ children, home }: langDataType) => {
 		<section className="text-center pt-10 text-textColor dark:text-darktextColor" id="Home">
 			{children}
 			<p>{home.greeting}</p>
-			<h1 className="font-bold text-5xl mt-0">Davi Samuel</h1>
+			<h1 className="font-bold text-5xl mt-0">Davi Machado</h1>
 			<p className="font-thin mt-3">{home.profission}</p>
 			<div className="flex justify-center gap-6 mt-8 w-full">
 				<a
