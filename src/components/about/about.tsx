@@ -13,8 +13,8 @@ export const About = ({ about }: langDataType) => {
 			<div className="pt-14 gap-10 flex lg:flex-row flex-col items-center w-full justify-center">
 				<div>
 					<img
-						className="sm:w-80 w-full rounded-2xl"
-						src="/assets/img/fotoAboutMe.webp"
+						className="sm:w-80 min-h-[384px] object-cover rounded-2xl"
+						src="/assets/img/eu.webp"
 						alt="Foto de Davi Samuel"
 						width={573}
 						height={763}

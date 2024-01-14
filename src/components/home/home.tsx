@@ -37,7 +37,7 @@ export const Home = ({ children, home }: langDataType) => {
 					width="400"
 					height="400"
 					className="rounded-t-full bg-secondaryColor dark:bg-darksecondaryColor rounded-b-[1000px]"
-					src="/assets/img/eu.gif"
+					src="/assets/img/eu1.webp"
 					alt="foto de Davi Samuel"
 				/>
 			</div>
