@@ -145,6 +145,17 @@ export const tecnologies: tecnologiesType = {
 export const projectData = [
 	{
 		name: {
+			pt_br: "Agência Passus",
+			eng: "Passus Agency",
+		},
+		imgPath: "/assets/img/Passus.webp",
+		website: "https://passus.in",
+		gitRepository: "https://github.com/Davisamasoa/passus-site",
+		display: true,
+		tecnologies: [tecnologies.NextJs, tecnologies.TypeScript, tecnologies.Tailwind],
+	},
+	{
+		name: {
 			pt_br: "FinancePlan",
 			eng: "FinancePlan",
 		},
@@ -183,7 +194,7 @@ export const projectData = [
 		imgPath: "/assets/img/movie.webp",
 		website: "https://movieapp.davisamasoa.vercel.app/",
 		gitRepository: "https://github.com/Davisamasoa/movie-app-next",
-		display: true,
+		display: false,
 		tecnologies: [tecnologies.NextJs, tecnologies.React, tecnologies.Js, tecnologies.Tailwind],
 	},
 	{
