@@ -81,33 +81,35 @@ export default function App() {
 					<Nav />
 					<IconsAside />
 					<Home home={langData?.home}>
-						<div className="mb-5 flex justify-between  items-center w-[300px] mx-auto">
-							<Darkmode />
-							<div className="flex gap-1">
-								<img
-									onClick={() => {
-										langName == "pt-br" ? undefined : setLangName("pt-br");
+						<div className="w-full absolute top-4 left-0 flex justify-between">
+							<div className="flex justify-between  items-center sm:w-[350px] w-[310px] mx-auto ">
+								<Darkmode />
+								<div className="flex gap-1 ">
+									<img
+										onClick={() => {
+											langName == "pt-br" ? undefined : setLangName("pt-br");
 
-										localStorage.setItem("lang", "pt-br");
-									}}
-									className={` cursor-pointer ${langName == "pt-br" ? undefined : "grayscale"}`}
-									width={30}
-									height={20}
-									src="./assets/icon/brazil.png"
-									alt="Brazil Flag"
-								/>
+											localStorage.setItem("lang", "pt-br");
+										}}
+										className={` cursor-pointer ${langName == "pt-br" ? undefined : "grayscale"}`}
+										width={30}
+										height={20}
+										src="./assets/icon/brazil.png"
+										alt="Brazil Flag"
+									/>
 
-								<img
-									onClick={() => {
-										langName == "en" ? undefined : setLangName("en");
-										localStorage.setItem("lang", "en");
-									}}
-									className={`cursor-pointer ${langName == "en" ? undefined : "grayscale"}`}
-									width={30}
-									height={20}
-									src="./assets/icon/usa.png"
-									alt="Usa Flag"
-								/>
+									<img
+										onClick={() => {
+											langName == "en" ? undefined : setLangName("en");
+											localStorage.setItem("lang", "en");
+										}}
+										className={`cursor-pointer ${langName == "en" ? undefined : "grayscale"}`}
+										width={30}
+										height={20}
+										src="./assets/icon/usa.png"
+										alt="Usa Flag"
+									/>
+								</div>
 							</div>
 						</div>
 					</Home>

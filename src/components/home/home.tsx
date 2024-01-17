@@ -12,7 +12,7 @@ type langDataType = {
 
 export const Home = ({ children, home }: langDataType) => {
 	return (
-		<section className="text-center pt-10 text-textColor dark:text-darktextColor" id="Home">
+		<section className="text-center pt-12 text-textColor dark:text-darktextColor" id="Home">
 			{children}
 			<p>{home.greeting}</p>
 			<h1 className="font-bold text-5xl mt-0">Davi Machado</h1>
