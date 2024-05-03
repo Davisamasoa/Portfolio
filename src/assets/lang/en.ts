@@ -8,7 +8,7 @@ export const eng = {
 
 	about: {
 		title: "About me",
-		text: "Hello, how is it going? My name is Davi Machado, I'm 19 and was born in Olinda - PE, but I live in Belo Horizonte  since I was 2. People would always tell me I'm a technology geek, because I was always sneaking up on cell phones or any electronic device. Well, a thing led to another and my passion for technology expanded, and ever since I can not see myself working in another field. Getting to know about programming simply felt right for me and my life. I hope we can work together soon!",
+		text: "Hello, how is it going? My name is Davi Machado, I'm 20 and was born in Olinda - PE, but I live in Belo Horizonte  since I was 2. People would always tell me I'm a technology geek, because I was always sneaking up on cell phones or any electronic device. Well, a thing led to another and my passion for technology expanded, and ever since I can not see myself working in another field. Getting to know about programming simply felt right for me and my life. I hope we can work together soon!",
 	},
 
 	skills: {
