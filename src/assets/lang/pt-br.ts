@@ -2,7 +2,7 @@ export const pt_br = {
 	home: {
 		greeting: "Olá, prazer!",
 		profission: "Desenvolvedor Full-Stack Júnior",
-		downloadButton: "Baixar CV",
+		downloadButton: "Ver CV",
 		letsWorkButton: "Vamos trabalhar juntos",
 	},
 

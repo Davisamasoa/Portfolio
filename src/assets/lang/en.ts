@@ -2,7 +2,7 @@ export const eng = {
 	home: {
 		greeting: "Hello, my pleasure!",
 		profission: "Full-Stack developer Jr",
-		downloadButton: "Download CV",
+		downloadButton: "View CV",
 		letsWorkButton: "Lets Work Together",
 	},
 

@@ -19,8 +19,8 @@ export const Home = ({ children, home }: langDataType) => {
 			<p className="font-thin mt-3">{home.profission}</p>
 			<div className="flex justify-center gap-6 mt-8 w-full">
 				<a
-					download
-					href="./assets/Currículo Davi Samuel.pdf"
+					target="_blank"
+					href="./assets/Currículo Davi Machado.pdf"
 					className="sm:text-base text-[13px]  bg-transparent text-textColor dark:text-darktextColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-primaryColor dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor duration-300 transition"
 				>
 					{home.downloadButton}
