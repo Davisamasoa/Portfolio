@@ -27,7 +27,7 @@ export const ProjectItem = (props: projectItemType) => {
 					height={143}
 					loading="lazy"
 					src={props.projectImg}
-					className="rounded-xl w-full md:w-auto"
+					className="rounded-xl w-full md:w-auto aspect-video"
 					alt=""
 				/>
 			</figure>
