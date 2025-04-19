@@ -7,7 +7,7 @@ type langDataType = {
 
 export const About = ({ about }: langDataType) => {
 	return (
-		<section className="sm:pt-32 pt-16 mt-56 text-textColor dark:text-darktextColor" id="aboutMe">
+		<section className="sm:pt-32 pt-16 mt-16 text-textColor dark:text-darktextColor" id="aboutMe">
 			<h1 className="text-center text-5xl font-bold">{about.title}</h1>
 
 			<div className="pt-14 gap-10 flex lg:flex-row flex-col items-center w-full justify-center">

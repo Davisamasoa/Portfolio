@@ -16,7 +16,7 @@ type contactDataType = {
 
 export const Contact = ({ contact }: contactDataType) => {
 	return (
-		<section className="sm:pt-32 pt-16 mt-56  text-textColor dark:text-darktextColor" id="contact">
+		<section className="sm:pt-32 pt-16 mt-16  text-textColor dark:text-darktextColor" id="contact">
 			<h1 className="text-center text-5xl font-bold">{contact.title}</h1>
 
 			<div className=" pt-14 flex mx-auto gap-24 justify-center lg:w-[950px] md:w-full flex-col lg:flex-row items-center">

@@ -26,7 +26,7 @@ export const Projects = ({ projects }: langDataType) => {
 	};
 
 	return (
-		<section className="sm:pt-32 pt-16  mt-56  text-textColor dark:text-darktextColor" id="project">
+		<section className="sm:pt-32 pt-16  mt-16  text-textColor dark:text-darktextColor" id="project">
 			<h1 className="text-center text-5xl font-bold">{projects.title}</h1>
 
 			<div className="pt-14 grid lg:grid-cols-3 md:grid-cols-2 place-items-center lg:w-[1050px] gap-10 w-full mx-auto">
