@@ -192,7 +192,7 @@ export const projectData = [
 		imgPath: "/assets/img/taskList.webp",
 		website: "https://tasklist-fullstack.vercel.app/",
 		gitRepository: "https://github.com/Davisamasoa/tasklist-fullstack",
-		display: true,
+		display: false,
 		tecnologies: [tecnologies.NextJs, tecnologies.Tailwind, tecnologies.NodeJs, tecnologies.Express],
 	},
 
