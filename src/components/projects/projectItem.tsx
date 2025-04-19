@@ -23,8 +23,8 @@ export const ProjectItem = (props: projectItemType) => {
 		>
 			<figure className="w-full rounded-2xl">
 				<Image
-					width={294}
-					height={143}
+					width={700}
+					height={500}
 					loading="lazy"
 					src={props.projectImg}
 					className="rounded-xl w-full md:w-auto aspect-video object-cover"
