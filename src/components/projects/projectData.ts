@@ -148,7 +148,7 @@ export const projectData = [
 			pt_br: "Sabbatai",
 			eng: "Sabbatai",
 		},
-		imgPath: "/assets/img/sabbatai.png",
+		imgPath: "/assets/img/sabbatai.jpg",
 		website: "https://sabbatai.in",
 		gitRepository: "https://github.com/Davisamasoa/sabbatai",
 		display: true,
