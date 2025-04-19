@@ -19,7 +19,7 @@ export const ProjectItem = (props: projectItemType) => {
 	return (
 		<div
 			id={props.id}
-			className={`${display} lg:w-80 md:w-72 w-full  flex justify-center gap-5  rounded-2xl items-center flex-col`}
+			className={`${display} lg:w-80 md:w-72 w-full  flex justify-center gap-5  rounded-2xl items-start flex-col`}
 		>
 			<figure className="w-full rounded-2xl">
 				<Image
