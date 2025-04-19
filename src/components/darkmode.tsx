@@ -9,7 +9,7 @@ export default function Darkmode({}: Props) {
 		const existingPreference = localStorage.getItem("themePreference");
 
 		if (!existingPreference) {
-			localStorage.setItem("themePreference", "white");
+			localStorage.setItem("themePreference", "dark");
 		}
 
 		setTheme(existingPreference);

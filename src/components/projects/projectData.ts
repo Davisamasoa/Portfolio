@@ -145,6 +145,16 @@ export const tecnologies: tecnologiesType = {
 export const projectData = [
 	{
 		name: {
+			pt_br: "Sabbatai",
+			eng: "Sabbatai",
+		},
+		imgPath: "/assets/img/sabbatai.png",
+		website: "https://sabbatai.in",
+		gitRepository: "https://github.com/Davisamasoa/sabbatai",
+		display: true,
+		tecnologies: [tecnologies.NextJs, tecnologies.TypeScript, tecnologies.Tailwind],
+	},{
+		name: {
 			pt_br: "Agência Passus",
 			eng: "Passus Agency",
 		},
@@ -221,29 +231,7 @@ export const projectData = [
 		tecnologies: [tecnologies.HTML, tecnologies.CSS, tecnologies.Js],
 		id: "anchor",
 	},
-	{
-		name: {
-			pt_br: "Blog",
-			eng: "Blog",
-		},
-		imgPath: "/assets/img/blog.webp",
-		website: "https://blog.davisamasoa.vercel.app/",
-		gitRepository: "https://github.com/Davisamasoa/blog-next",
-		display: false,
-		id: "anchor",
-		tecnologies: [tecnologies.NextJs, tecnologies.React, tecnologies.Js, tecnologies.Tailwind],
-	},
-	{
-		name: {
-			pt_br: "Tocador de música",
-			eng: "Music Player",
-		},
-		imgPath: "/assets/img/musicPlayer.webp",
-		website: "https://music-player-react.davisamasoa.vercel.app/",
-		gitRepository: "https://github.com/Davisamasoa/musicPlayer-React",
-		display: false,
-		tecnologies: [tecnologies.React, tecnologies.Js, tecnologies.CSS],
-	},
+	
 	{
 		name: {
 			pt_br: "Calculadora",
@@ -255,17 +243,7 @@ export const projectData = [
 		display: false,
 		tecnologies: [tecnologies.HTML, tecnologies.CSS, tecnologies.Js],
 	},
-	{
-		name: {
-			pt_br: "Temporizador Pomodoro",
-			eng: "Pomodoro Timer",
-		},
-		imgPath: "/assets/img/pomo.webp",
-		website: "https://pomodoro.davisamasoa.vercel.app/",
-		gitRepository: "https://github.com/Davisamasoa/pomodoro",
-		display: false,
-		tecnologies: [tecnologies.HTML, tecnologies.CSS, tecnologies.Js],
-	},
+	
 	{
 		name: {
 			pt_br: "Conversor dólar/real",
@@ -277,37 +255,6 @@ export const projectData = [
 		display: false,
 		tecnologies: [tecnologies.HTML, tecnologies.CSS, tecnologies.Js],
 	},
-	{
-		name: {
-			pt_br: "Mario Bross",
-			eng: "Mario Bross",
-		},
-		imgPath: "/assets/img/Mario.webp",
-		website: "https://supermario.davisamasoa.vercel.app",
-		gitRepository: "https://github.com/Davisamasoa/JogoSuperMario",
-		display: false,
-		tecnologies: [tecnologies.HTML, tecnologies.CSS, tecnologies.Js],
-	},
-	{
-		name: {
-			pt_br: "Jogo da velha",
-			eng: "Tic Tac Toe",
-		},
-		imgPath: "/assets/img/ticTacToe.webp",
-		website: "https://tictactoe.davisamasoa.vercel.app",
-		gitRepository: "https://github.com/Davisamasoa/ticTacToe",
-		display: false,
-		tecnologies: [tecnologies.HTML, tecnologies.CSS, tecnologies.Js],
-	},
-	{
-		name: {
-			pt_br: "Gerador de senha",
-			eng: "Password Generator",
-		},
-		imgPath: "/assets/img/passwordGenerator.webp",
-		website: "https://passwordgenerator.davisamasoa.vercel.app/",
-		gitRepository: "https://github.com/Davisamasoa/passwordGenerator",
-		display: false,
-		tecnologies: [tecnologies.HTML, tecnologies.CSS, tecnologies.Js],
-	},
+	
+	
 ];
