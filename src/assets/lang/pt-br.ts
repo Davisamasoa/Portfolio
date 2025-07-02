@@ -8,7 +8,7 @@ export const pt_br = {
 
 	about: {
 		title: "Sobre mim",
-		text: "Olá, tudo bem? Me chamo Davi Machado, tenho 21 anos e nasci em Olinda - PE, mas moro em Belo Horizonte - MG desde os meus 2 anos de idade. As pessoas sempre me diziam que eu tinha uma certa facilidade com coisas relacionadas à tecnologia, desde mexer em um celular ou qualquer outro dispostivo eletrônico. Bom, uma coisa levou a outra e a minha paixão pela tecnologia foi se expandindo, desde então nunca me enxerguei trabalhando em outra área. E quando conheci a programação ela simplesmente caiu como uma luva nos meus interesses para a vida. Espero que possamos trabalhar juntos em breve!",
+		text: "Oi! Eu sou o Davi Machado, tenho 22 anos e moro em Belo Horizonte – MG. Estudo programação há mais de 3 anos e atuo no desenvolvimento completo de sites e aplicações — do design à programação e deploy. Gosto de projetos bem estruturados, com foco em desempenho, organização e boa experiência para o usuário. Aqui no portfólio você encontra alguns dos trabalhos que desenvolvi ao longo da minha jornada. Cada projeto representa um pouco do que aprendi e continuo aprendendo. Estou sempre em busca de evoluir, encarar novos desafios e construir soluções que façam sentido de verdade.",
 	},
 
 	skills: {

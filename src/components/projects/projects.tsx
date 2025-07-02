@@ -26,14 +26,16 @@ export const Projects = ({ projects }: langDataType) => {
 	};
 
 	return (
-		<section className="sm:pt-32 pt-16  mt-16  text-textColor dark:text-darktextColor" id="project">
+		<section
+			className="sm:pt-32 pt-16 max-w-5xl mx-auto mt-16  text-textColor dark:text-darktextColor"
+			id="project"
+		>
 			<h1 className="text-center text-5xl font-bold">{projects.title}</h1>
 
-			<div className="pt-14 grid lg:grid-cols-3 md:grid-cols-2 place-items-center lg:w-[1050px] gap-10 w-full mx-auto">
+			<div className="pt-14 grid lg:grid-cols-3 sm:grid-cols-2 place-items-center gap-10 w-full mx-auto">
 				{projectData.map((project, index) => {
 					return (
 						<ProjectItem
-							id={project.id}
 							projectName={projects.lang == "pt-br" ? project.name.pt_br : project.name.eng}
 							projectImg={project.imgPath}
 							projectSite={project.website}
@@ -45,11 +47,11 @@ export const Projects = ({ projects }: langDataType) => {
 					);
 				})}
 			</div>
-			<div className="flex text-primaryColor dark:text-darkprimaryColor justify-center mt-16">
+			{/* <div className="flex text-primaryColor dark:text-darkprimaryColor justify-center mt-16">
 				<button onClick={handleShowProjects} aria-label="Mostrar mais ou mostrar menos projetos">
 					<i className={`${moreLessClassName} text-2xl`}></i>
 				</button>
-			</div>
+			</div> */}
 		</section>
 	);
 };

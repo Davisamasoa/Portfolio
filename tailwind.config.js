@@ -13,12 +13,12 @@ module.exports = {
 				bgColor: "#f0f0f0",
 				primaryColor: "#353536",
 				secondaryColor: "#353536",
-				textColor: "#1b1c1c",
+				textColor: "#353536",
 
-				darkbgColor: "#060606",
-				darkprimaryColor: "#FFFF",
+				darkbgColor: "#141414",
+				darkprimaryColor: "#f0f0f0",
 				darksecondaryColor: "#1f1f1f",
-				darktextColor: "#E8E2D8",
+				darktextColor: "#f0f0f0",
 			},
 			boxShadow: {
 				custom: "3px 3px 10px 1px",

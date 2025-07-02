@@ -19,7 +19,7 @@ export const ProjectItem = (props: projectItemType) => {
 	return (
 		<div
 			id={props.id}
-			className={`${display} lg:w-80 md:w-72 w-full  flex justify-center gap-5  rounded-2xl items-start flex-col`}
+			className={`${display} w-full  flex justify-center gap-5  rounded-2xl items-start flex-col`}
 		>
 			<figure className="w-full rounded-2xl">
 				<Image
@@ -55,11 +55,11 @@ export const ProjectItem = (props: projectItemType) => {
 					);
 				})}
 			</div>
-			<p className="w-full text-center font-bold">{props.projectName}</p>
-			<div className="flex flex-row gap-5">
+			<p className="w-full text-start font-bold">{props.projectName}</p>
+			<div className="flex flex-row gap-5 w-full">
 				<a
 					title={`link para ver demonstração do projeto ${props.projectName}`}
-					className="lg:text-base md:text-[12px]  lg:w-full md:w-28 text-center bg-transparent text-textColor dark:text-darktextColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-primaryColor dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor duration-300 transition"
+					className="lg:text-base md:text-[12px]  md:w-1/2 text-center bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2  rounded-md sm:hover:bg-transparent sm:hover:text-textColor dark:sm:hover:text-darktextColor duration-300 transition"
 					target="_blank"
 					href={props.projectSite}
 				>
@@ -67,7 +67,7 @@ export const ProjectItem = (props: projectItemType) => {
 				</a>
 				<a
 					title={`link para o repositorio do projeto ${props.projectName} no github`}
-					className="flex items-center justify-center w-fit text-center bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor border-primaryColor dark:border-darkprimaryColor border-2 px-4  rounded-md sm:hover:bg-transparent sm:hover:text-textColor dark:sm:hover:text-darktextColor duration-300 transition"
+					className=" items-center justify-center w-fit text-center bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor border-primaryColor dark:border-darkprimaryColor border-2 px-4  rounded-md sm:hover:bg-transparent sm:hover:text-textColor dark:sm:hover:text-darktextColor duration-300 transition hidden"
 					target="_blank"
 					href={props.projectGit}
 				>

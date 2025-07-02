@@ -10,12 +10,12 @@ export type langDataType = {
 export const Skills = ({ skills }: langDataType) => {
 	return (
 		<section
-			className="sm:pt-32 pt-16 mt-16 flex flex-col justify-center items-center text-textColor dark:text-darktextColor"
+			className="sm:pt-32  max-w-5xl mx-auto pt-16 mt-16 flex flex-col justify-center items-center text-textColor dark:text-darktextColor"
 			id="skills"
 		>
 			<h1 className="text-5xl font-bold">{skills.title}</h1>
 
-			<ul className="pt-14 sm:gap-6 gap-4 grid grid-cols-3  sm:grid-cols-4">
+			<ul className="pt-14 sm:gap-6 gap-4 grid grid-cols-4  sm:grid-cols-6">
 				{Object.keys(tecnologies).map((skill, index) => {
 					return (
 						<SkillItem

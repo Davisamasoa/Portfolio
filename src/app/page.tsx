@@ -79,8 +79,8 @@ export default function App() {
 			{langData ? (
 				<>
 					<Nav />
-					<IconsAside />
 					<Home home={langData?.home}>
+						<IconsAside />
 						<div className="w-full absolute top-4 left-0 flex justify-between">
 							<div className="flex justify-between  items-center sm:w-[350px] w-[310px] mx-auto ">
 								<Darkmode />

@@ -7,21 +7,28 @@ type langDataType = {
 
 export const About = ({ about }: langDataType) => {
 	return (
-		<section className="sm:pt-32 pt-16 mt-16 text-textColor dark:text-darktextColor" id="aboutMe">
+		<section
+			className="sm:pt-32 max-w-5xl mx-auto pt-16 mt-16 text-textColor dark:text-darktextColor"
+			id="aboutMe"
+		>
 			<h1 className="text-center text-5xl font-bold">{about.title}</h1>
 
 			<div className="pt-14 gap-10 flex lg:flex-row flex-col items-center w-full justify-center">
-				<div>
-					<img
-						className="sm:w-80 min-h-[384px] object-cover rounded-2xl"
-						src="/assets/img/eu.webp"
-						alt="Foto de Davi Samuel"
-						width={573}
-						height={763}
-					/>
-				</div>
+				<img
+					className="w-[350px] object-contain rounded-2xl"
+					src="/assets/img/eu.webp"
+					alt="Foto de Davi Samuel"
+					width={573}
+					height={763}
+				/>
+
 				<div className="flex items-center">
-					<p className="sm:w-96 w-full md:px-6">{about.text}</p>
+					<p
+						className="w-full md:px-6 md:text-lg
+					"
+					>
+						{about.text}
+					</p>
 				</div>
 			</div>
 		</section>
