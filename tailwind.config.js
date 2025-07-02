@@ -15,7 +15,7 @@ module.exports = {
 				secondaryColor: "#353536",
 				textColor: "#353536",
 
-				darkbgColor: "#141414",
+				darkbgColor: "#000000",
 				darkprimaryColor: "#f0f0f0",
 				darksecondaryColor: "#1f1f1f",
 				darktextColor: "#f0f0f0",
