@@ -5,6 +5,7 @@ export const pt_br = {
 		greeting: "Olá, prazer!",
 		profission: "Desenvolvedor Full-Stack Júnior",
 		downloadButton: "Ver CV",
+		cvLink: "cv - ptbr.pdf",
 		letsWorkButton: "Vamos trabalhar juntos",
 	},
 

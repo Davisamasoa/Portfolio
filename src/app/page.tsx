@@ -20,6 +20,7 @@ export type langDataType = {
 		greeting: string;
 		profission: string;
 		downloadButton: string;
+		cvLink: string;
 		letsWorkButton: string;
 	};
 

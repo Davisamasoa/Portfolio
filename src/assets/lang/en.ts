@@ -5,6 +5,7 @@ export const eng = {
 		greeting: "Hello, my pleasure!",
 		profission: "Full-Stack developer Jr",
 		downloadButton: "View CV",
+		cvLink: "cv - en.pdf",
 		letsWorkButton: "Lets Work Together",
 	},
 

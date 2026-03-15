@@ -5,6 +5,7 @@ type langDataType = {
 		greeting: string;
 		profission: string;
 		downloadButton: string;
+		cvLink: string;
 		letsWorkButton: string;
 	};
 	children: React.ReactNode;
@@ -23,7 +24,7 @@ export const Home = ({ children, home }: langDataType) => {
 			<div className="flex justify-center gap-6 mt-8 w-full">
 				<a
 					target="_blank"
-					href="./assets/Currículo Davi Machado.pdf"
+					href={`./assets/${home.cvLink}`}
 					className="sm:text-base text-[13px]  bg-transparent text-textColor dark:text-darktextColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-primaryColor dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor duration-300 transition"
 				>
 					{home.downloadButton}
