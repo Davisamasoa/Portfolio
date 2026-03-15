@@ -10,7 +10,11 @@ export const pt_br = {
 
 	about: {
 		title: "Sobre mim",
-		text: `Oi! Eu sou o Davi Machado, tenho ${calcularIdade()} anos e moro em Belo Horizonte – MG. Estudo programação há mais de 3 anos e atuo no desenvolvimento completo de sites e aplicações — do design à programação e deploy. Gosto de projetos bem estruturados, com foco em desempenho, organização e boa experiência para o usuário. Aqui no portfólio você encontra alguns dos trabalhos que desenvolvi ao longo da minha jornada. Cada projeto representa um pouco do que aprendi e continuo aprendendo. Estou sempre em busca de evoluir, encarar novos desafios e construir soluções que façam sentido de verdade.`,
+		text: `Oi! Eu sou o Davi Machado, tenho ${calcularIdade()} anos e moro em Ouro Preto, onde sou estudante de Ciência da Computação na Universidade Federal de Ouro Preto.
+
+Programo desde 2021 e, nesses mais de 3 anos de estrada, venho atuando no desenvolvimento completo de aplicações — cuidando de tudo, do design ao deploy. Curto projetos bem estruturados, com foco em performance, organização e, principalmente, em entregar uma boa experiência para o usuário.
+
+Aqui no portfólio você encontra alguns dos trabalhos que desenvolvi ao longo dessa jornada. Cada projeto reflete o que aprendi e o que sigo evoluindo agora, unindo a prática com a base acadêmica da universidade. Estou sempre em busca de novos desafios e de construir soluções que façam sentido de verdade.`,
 	},
 
 	skills: {
