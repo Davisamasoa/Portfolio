@@ -1,4 +1,20 @@
 import prisma from "../../assets/prisma.svg";
+import nextjsIcon from "../../assets/skills/nextjs-colored.svg";
+import reactIcon from "../../assets/skills/react-colored.svg";
+import angularIcon from "../../assets/skills/angularjs-colored.svg";
+import typescriptIcon from "../../assets/skills/typescript-colored.svg";
+import javascriptIcon from "../../assets/skills/javascript-colored.svg";
+import html5Icon from "../../assets/skills/html5-colored.svg";
+import css3Icon from "../../assets/skills/css3-colored.svg";
+import sassIcon from "../../assets/skills/sass-colored.svg";
+import bootstrapIcon from "../../assets/skills/bootstrap-colored.svg";
+import tailwindcssIcon from "../../assets/skills/tailwindcss-colored.svg";
+import babelIcon from "../../assets/skills/babel-colored.svg";
+import nodejsIcon from "../../assets/skills/nodejs-colored.svg";
+import expressIcon from "../../assets/skills/express-colored.svg";
+import mongodbIcon from "../../assets/skills/mongodb-colored.svg";
+import postgresqlIcon from "../../assets/skills/postgresql-colored.svg";
+import figmaIcon from "../../assets/skills/figma-colored.svg";
 
 type tecnologyType = {
 	oficialWebsite: string;
@@ -41,92 +57,77 @@ type projectDataType = {
 export const tecnologies: tecnologiesType = {
 	NextJs: {
 		oficialWebsite: "https://nextjs.org/docs",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg",
+		imgPath: nextjsIcon.src,
 		imgAlt: "NextJS",
 	},
 	React: {
 		oficialWebsite: "https://reactjs.org/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
+		imgPath: reactIcon.src,
 		imgAlt: "React",
 	},
 	Angular: {
 		oficialWebsite: "https://angular.io/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/angularjs-colored.svg",
+		imgPath: angularIcon.src,
 		imgAlt: "Angular",
 	},
 	TypeScript: {
 		oficialWebsite: "https://www.typescriptlang.org/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg",
+		imgPath: typescriptIcon.src,
 		imgAlt: "TypeScript",
 	},
 	Js: {
 		oficialWebsite: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+		imgPath: javascriptIcon.src,
 		imgAlt: "JavaScript",
 	},
 	HTML: {
 		oficialWebsite: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+		imgPath: html5Icon.src,
 		imgAlt: "HTML5",
 	},
 	CSS: {
 		oficialWebsite: "https://www.w3.org/TR/CSS/#css",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
+		imgPath: css3Icon.src,
 		imgAlt: "CSS3",
 	},
 	SASS: {
 		oficialWebsite: "https://sass-lang.com/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg",
+		imgPath: sassIcon.src,
 		imgAlt: "Sass",
 	},
 	Bootstrap: {
 		oficialWebsite: "https://getbootstrap.com/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg",
+		imgPath: bootstrapIcon.src,
 		imgAlt: "Bootstrap",
 	},
 	Tailwind: {
 		oficialWebsite: "https://tailwindcss.com/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg",
+		imgPath: tailwindcssIcon.src,
 		imgAlt: "TailwindCSS",
 	},
 	Babel: {
 		oficialWebsite: "https://babeljs.io/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/babel-colored.svg",
+		imgPath: babelIcon.src,
 		imgAlt: "Babel",
 	},
 	NodeJs: {
 		oficialWebsite: "https://nodejs.org/en/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
+		imgPath: nodejsIcon.src,
 		imgAlt: "NodeJS",
 	},
 	Express: {
 		oficialWebsite: "https://expressjs.com/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg",
+		imgPath: expressIcon.src,
 		imgAlt: "ExpressJS",
 	},
 	Mongodb: {
 		oficialWebsite: "https://www.mongodb.com/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg",
+		imgPath: mongodbIcon.src,
 		imgAlt: "MongoDB",
 	},
 	PostgreSQL: {
 		oficialWebsite: "https://www.postgresql.org/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg",
+		imgPath: postgresqlIcon.src,
 		imgAlt: "PostgreSQL",
 	},
 	Prisma: {
@@ -136,8 +137,7 @@ export const tecnologies: tecnologiesType = {
 	},
 	Figma: {
 		oficialWebsite: "https://www.figma.com/",
-		imgPath:
-			"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+		imgPath: figmaIcon.src,
 		imgAlt: "Figma",
 	},
 };
