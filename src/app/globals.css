@@ -4,8 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-	scroll-behavior: smooth;
+@media (pointer: fine) {
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
 body {
@@ -27,11 +29,13 @@ nav {
 
 @layer components {
 	.glass {
-		@apply transform-gpu border border-white/60 bg-white/50 shadow-glass backdrop-blur-md sm:backdrop-blur-2xl dark:border-white/10 dark:bg-white/[0.06] dark:shadow-glassDark;
+		@apply transform-gpu border border-white/60 bg-white/70 shadow-glass dark:border-white/10 dark:bg-white/10 dark:shadow-glassDark md:bg-white/50 md:backdrop-blur-xl dark:md:bg-white/[0.06];
 	}
 
+	/* Fixed elements stay on screen during scroll and get recomposited every frame,
+	   so they skip backdrop-blur entirely (at every breakpoint) to avoid scroll jank. */
 	.glass-pill {
-		@apply glass rounded-full;
+		@apply transform-gpu rounded-full border border-white/60 bg-surface/90 shadow-glass dark:border-white/10 dark:bg-black/70 dark:shadow-glassDark;
 	}
 
 	.glass-tile {
@@ -47,7 +51,7 @@ nav {
 	}
 
 	.input-glass {
-		@apply w-full rounded-xl border border-white/60 bg-white/40 px-4 py-3 text-ink outline-none backdrop-blur-sm transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/30 sm:backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:text-inkDark dark:placeholder:text-mutedDark;
+		@apply w-full rounded-xl border border-white/60 bg-white/60 px-4 py-3 text-ink outline-none transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-white/10 dark:bg-white/10 dark:text-inkDark dark:placeholder:text-mutedDark md:bg-white/40 md:backdrop-blur-md dark:md:bg-white/5;
 	}
 
 	.chip {

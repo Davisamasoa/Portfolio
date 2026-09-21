@@ -1,4 +1,8 @@
+import { StaticImageData } from "next/image";
 import prisma from "../../assets/prisma.svg";
+import sabbataiImg from "../../../public/assets/img/sabbatai.png";
+import passusImg from "../../../public/assets/img/passus.png";
+import doforteImg from "../../../public/assets/img/18doforte.png";
 import nextjsIcon from "../../assets/skills/nextjs-colored.svg";
 import reactIcon from "../../assets/skills/react-colored.svg";
 import angularIcon from "../../assets/skills/angularjs-colored.svg";
@@ -47,7 +51,7 @@ type projectDataType = {
 		pt_br: string;
 		eng: string;
 	};
-	imgPath: string;
+	imgPath: StaticImageData;
 	website: string;
 	gitRepository: string;
 	display: boolean;
@@ -148,7 +152,7 @@ export const projectData = [
 			pt_br: "Sabbatai",
 			eng: "Sabbatai",
 		},
-		imgPath: "/assets/img/sabbatai.png",
+		imgPath: sabbataiImg,
 		website: "https://sabbatai.in",
 		gitRepository: "https://github.com/Davisamasoa/sabbatai",
 		display: true,
@@ -159,7 +163,7 @@ export const projectData = [
 			pt_br: "Agência Passus",
 			eng: "Passus Agency",
 		},
-		imgPath: "/assets/img/passus.png",
+		imgPath: passusImg,
 		website: "https://passus.in",
 		gitRepository: "https://github.com/Davisamasoa/passus-site",
 		display: true,
@@ -170,7 +174,7 @@ export const projectData = [
 			pt_br: "18 do Forte",
 			eng: "18 do Forte",
 		},
-		imgPath: "/assets/img/18doforte.png",
+		imgPath: doforteImg,
 		website: "https://18doforte.vercel.app/",
 		gitRepository: "https://github.com/Davisamasoa/18doForte",
 		display: true,

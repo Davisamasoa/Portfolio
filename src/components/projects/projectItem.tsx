@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type projectItemType = {
 	projectName: string;
-	projectImg: string;
+	projectImg: StaticImageData;
 	projectSite: string;
 	viewProjectLabel: string;
 	tecnologies: {
@@ -19,6 +19,7 @@ export const ProjectItem = ({ projectName, projectImg, projectSite, tecnologies,
 				<Image
 					fill
 					loading="lazy"
+					placeholder="blur"
 					sizes="(min-width: 1024px) 360px, 100vw"
 					src={projectImg}
 					className="object-cover"
