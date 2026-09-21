@@ -27,7 +27,7 @@ nav {
 
 @layer components {
 	.glass {
-		@apply transform-gpu border border-white/60 bg-white/50 shadow-glass backdrop-blur-2xl dark:border-white/10 dark:bg-white/[0.06] dark:shadow-glassDark;
+		@apply transform-gpu border border-white/60 bg-white/50 shadow-glass backdrop-blur-md sm:backdrop-blur-2xl dark:border-white/10 dark:bg-white/[0.06] dark:shadow-glassDark;
 	}
 
 	.glass-pill {
@@ -47,7 +47,7 @@ nav {
 	}
 
 	.input-glass {
-		@apply w-full rounded-xl border border-white/60 bg-white/40 px-4 py-3 text-ink outline-none backdrop-blur-xl transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-white/10 dark:bg-white/5 dark:text-inkDark dark:placeholder:text-mutedDark;
+		@apply w-full rounded-xl border border-white/60 bg-white/40 px-4 py-3 text-ink outline-none backdrop-blur-sm transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/30 sm:backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:text-inkDark dark:placeholder:text-mutedDark;
 	}
 
 	.chip {
