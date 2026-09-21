@@ -1,35 +1,33 @@
 export const IconsAside = () => {
 	return (
-		<aside
-			className="z-50 hidden position absolute sm:top-[500px] top-[430px] left-0 sm:flex flex-col gap-3 sm:text-3xl text-2xl  text-primaryColor dark:text-darkprimaryColor"
-			data-aos="fade-right"
-			data-aos-duration="1500"
-		>
-			<a
-				title="link para o github de Davi Samuel"
-				className="hover:scale-110 transition duration-300"
-				href="https://github.com/Davisamasoa"
-				target="_blank"
-			>
-				<i className="bi bi-github"></i>
-			</a>
+		<aside className="fixed left-6 top-1/2 z-40 hidden -translate-y-1/2 transform-gpu sm:flex">
+			<div className="glass-pill flex flex-col gap-2 p-2">
+				<a
+					title="Link para o GitHub de Davi Machado"
+					className="flex h-11 w-11 items-center justify-center rounded-full text-lg transition duration-300 hover:-translate-y-0.5 hover:bg-white/40 dark:hover:bg-white/10"
+					href="https://github.com/Davisamasoa"
+					target="_blank"
+				>
+					<i className="bi bi-github"></i>
+				</a>
 
-			<a
-				title="link para o linkedin de Davi Samuel"
-				className="hover:scale-110 transition duration-300"
-				href="https://www.linkedin.com/in/davisamasoa/"
-				target="_blank"
-			>
-				<i className="bi bi-linkedin"></i>
-			</a>
+				<a
+					title="Link para o LinkedIn de Davi Machado"
+					className="flex h-11 w-11 items-center justify-center rounded-full text-lg transition duration-300 hover:-translate-y-0.5 hover:bg-white/40 dark:hover:bg-white/10"
+					href="https://www.linkedin.com/in/davisamasoa/"
+					target="_blank"
+				>
+					<i className="bi bi-linkedin"></i>
+				</a>
 
-			<a
-				title="link para o email de Davi Samuel"
-				className="hover:scale-110 transition duration-300"
-				href="mailto:davisamasoa@gmail.com"
-			>
-				<i className="bi bi-envelope"></i>
-			</a>
+				<a
+					title="Link para o e-mail de Davi Machado"
+					className="flex h-11 w-11 items-center justify-center rounded-full text-lg transition duration-300 hover:-translate-y-0.5 hover:bg-white/40 dark:hover:bg-white/10"
+					href="mailto:davisamasoa@gmail.com"
+				>
+					<i className="bi bi-envelope"></i>
+				</a>
+			</div>
 		</aside>
 	);
 };

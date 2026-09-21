@@ -1,12 +1,10 @@
 import Image from "next/image";
 
 type projectItemType = {
-	id?: string;
 	projectName: string;
 	projectImg: string;
 	projectSite: string;
-	projectGit: string;
-	display: boolean;
+	viewProjectLabel: string;
 	tecnologies: {
 		oficialWebsite: string;
 		imgPath: string;
@@ -14,66 +12,56 @@ type projectItemType = {
 	}[];
 };
 
-export const ProjectItem = (props: projectItemType) => {
-	const display = props.display ? "" : "hidden";
+export const ProjectItem = ({ projectName, projectImg, projectSite, tecnologies, viewProjectLabel }: projectItemType) => {
 	return (
-		<div
-			id={props.id}
-			className={`${display} w-full  flex justify-center gap-5  rounded-2xl items-start flex-col`}
-		>
-			<figure className="w-full rounded-2xl">
+		<article className="glass-tile flex flex-col gap-4 rounded-[1.75rem] p-4">
+			<div className="relative aspect-video w-full overflow-hidden rounded-2xl">
 				<Image
-					width={700}
-					height={500}
+					fill
 					loading="lazy"
-					src={props.projectImg}
-					className="rounded-xl w-full md:w-auto aspect-video object-cover"
-					alt=""
+					sizes="(min-width: 1024px) 360px, 100vw"
+					src={projectImg}
+					className="object-cover"
+					alt={`Captura de tela do projeto ${projectName}`}
 				/>
-			</figure>
-			<div className="flex justify-start w-full gap-1">
-				{props.tecnologies.map((Tecnology, index) => {
-					return (
-						<a
-							href={Tecnology.oficialWebsite}
-							key={index}
-							target="_blank"
-							title={`link para o site da tecnologia ${Tecnology.imgAlt}`}
-							className={`bg-secondaryColor dark:bg-darksecondaryColor rounded-md p-1 min-w-[31px]  flex justify-center items-center`}
-						>
-							<Image
-								loading="eager"
-								className={` ${
-									Tecnology.imgPath == "/_next/static/media/prisma.effd950f.svg" ? "w-[18px]" : "w-6"
-								} brightness-0 invert grayscale-0`}
-								src={Tecnology.imgPath}
-								alt={Tecnology.imgAlt}
-								width={10}
-								height={10}
-							/>
-						</a>
-					);
-				})}
 			</div>
-			<p className="w-full text-start font-bold">{props.projectName}</p>
-			<div className="flex flex-row gap-5 w-full">
-				<a
-					title={`link para ver demonstração do projeto ${props.projectName}`}
-					className="lg:text-base md:text-[12px]  md:w-1/2 text-center bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2  rounded-md sm:hover:bg-transparent sm:hover:text-textColor dark:sm:hover:text-darktextColor duration-300 transition"
-					target="_blank"
-					href={props.projectSite}
-				>
-					Ver Projeto
-				</a>
-				<a
-					title={`link para o repositorio do projeto ${props.projectName} no github`}
-					className=" items-center justify-center w-fit text-center bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor border-primaryColor dark:border-darkprimaryColor border-2 px-4  rounded-md sm:hover:bg-transparent sm:hover:text-textColor dark:sm:hover:text-darktextColor duration-300 transition hidden"
-					target="_blank"
-					href={props.projectGit}
-				>
-					<i className="bi bi-github text-3xl"></i>
-				</a>
+
+			<div className="flex flex-wrap gap-2">
+				{tecnologies.map((tecnology, index) => (
+					<a
+						key={index}
+						href={tecnology.oficialWebsite}
+						target="_blank"
+						title={`Tecnologia utilizada: ${tecnology.imgAlt}`}
+						className="chip flex h-8 w-8 items-center justify-center !p-0"
+					>
+						<Image
+							loading="eager"
+							className={`h-4 w-4 object-contain drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] ${
+								["NextJS", "Babel", "ExpressJS", "Prisma"].includes(tecnology.imgAlt)
+									? "dark:grayscale dark:invert"
+									: ""
+							}`}
+							src={tecnology.imgPath}
+							alt={tecnology.imgAlt}
+							width={16}
+							height={16}
+						/>
+					</a>
+				))}
 			</div>
-		</div>
+
+			<h3 className="text-lg font-bold">{projectName}</h3>
+
+			<a
+				title={`Ver o projeto ${projectName}`}
+				className="btn-primary w-full !py-2.5 text-sm"
+				target="_blank"
+				href={projectSite}
+			>
+				{viewProjectLabel}
+				<i className="bi bi-arrow-up-right"></i>
+			</a>
+		</article>
 	);
 };

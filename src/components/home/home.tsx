@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+
 type langDataType = {
 	home: {
 		greeting: string;
@@ -8,42 +8,42 @@ type langDataType = {
 		cvLink: string;
 		letsWorkButton: string;
 	};
-	children: React.ReactNode;
 };
 
-export const Home = ({ children, home }: langDataType) => {
+export const Home = ({ home }: langDataType) => {
 	return (
-		<section
-			className="text-center pt-12 sm:pt-20 text-textColor dark:text-darktextColor relative max-w-5xl mx-auto"
-			id="Home"
-		>
-			{children}
-			<p>{home.greeting}</p>
-			<h1 className="font-bold text-5xl mt-0">Davi Machado</h1>
-			<p className="font-thin mt-3">{home.profission}</p>
-			<div className="flex justify-center gap-6 mt-8 w-full">
-				<a
-					target="_blank"
-					href={`./assets/${home.cvLink}`}
-					className="sm:text-base text-[13px]  bg-transparent text-textColor dark:text-darktextColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-primaryColor dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor duration-300 transition"
-				>
+		<section id="Home" className="relative mx-auto max-w-5xl pt-24 text-center">
+			<span className="section-eyebrow">{home.greeting}</span>
+			<h1 className="mt-4 bg-accent-gradient bg-clip-text text-5xl font-extrabold text-transparent sm:text-7xl">
+				Davi Machado
+			</h1>
+			<p className="mt-4 text-base font-light text-muted dark:text-mutedDark sm:text-lg">{home.profission}</p>
+
+			<div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+				<a target="_blank" href={`/assets/${home.cvLink}`} className="btn-outline text-sm sm:text-base">
+					<i className="bi bi-download"></i>
 					{home.downloadButton}
 				</a>
-				<a
-					href="#contact"
-					className="sm:text-base text-[13px] bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor border-primaryColor dark:border-darkprimaryColor border-2 px-4 py-2 rounded-md sm:hover:bg-transparent sm:hover:text-textColor dark:sm:hover:text-darktextColor duration-300 transition"
-				>
+				<a href="#contact" className="btn-primary text-sm sm:text-base">
 					{home.letsWorkButton}
+					<i className="bi bi-arrow-down-right"></i>
 				</a>
 			</div>
-			<div className="sm:w-[400px] w-[80%] mx-auto mt-24 flex justify-center">
-				<img
-					width="400"
-					height="400"
-					className="rounded-t-full bg-secondaryColor dark:bg-darksecondaryColor rounded-b-[1000px]"
-					src="/assets/img/eu1.webp"
-					alt="foto de Davi Samuel"
-				/>
+
+			<div className="relative mx-auto mt-16 h-[260px] w-[260px] sm:h-[340px] sm:w-[340px]">
+				<div className="absolute inset-0 -z-10 rounded-full bg-accent-gradient opacity-40 blur-3xl" />
+				<div className="glass h-full w-full overflow-hidden rounded-[2.5rem] p-3">
+					<div className="relative h-full w-full overflow-hidden rounded-[2rem]">
+						<Image
+							fill
+							priority
+							sizes="340px"
+							className="object-cover"
+							src="/assets/img/eu1.webp"
+							alt="Foto de Davi Machado"
+						/>
+					</div>
+				</div>
 			</div>
 		</section>
 	);

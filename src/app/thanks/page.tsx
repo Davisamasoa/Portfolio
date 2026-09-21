@@ -1,19 +1,20 @@
 import Link from "next/link";
-import React from "react";
 
-type Props = {};
-
-export default function ThanksForSendingYourMessage({}: Props) {
+export default function ThanksForSendingYourMessage() {
 	return (
-		<main className="text-textColor dark:text-darktextColor h-screen w-screen flex justify-center items-center flex-col sm:text-2xl text-xl text-center font-bold">
-			<h1>Obrigado por enviar a sua mensagem!</h1>
-			<h1 className="opacity-50">Thank you for send your message!</h1>
-			<Link
-				className="bg-primaryColor dark:bg-darkbgColor text-bgColor dark:text-darkbgColor text-sm p-2 font-normal rounded-md mt-5 border-2"
-				href="/"
-			>
-				Voltar para o portfólio / Back to portfolio{" "}
-			</Link>
+		<main className="flex h-screen w-screen flex-col items-center justify-center gap-6 px-6 text-center">
+			<div className="glass flex flex-col items-center gap-4 rounded-[2rem] px-8 py-12 sm:px-14">
+				<i className="bi bi-check-circle text-4xl text-accent"></i>
+				<div className="space-y-1">
+					<h1 className="text-xl font-bold sm:text-2xl">Obrigado por enviar sua mensagem!</h1>
+					<h2 className="text-base font-light text-muted dark:text-mutedDark sm:text-lg">
+						Thank you for sending your message!
+					</h2>
+				</div>
+				<Link href="/" className="btn-primary mt-2 text-sm">
+					Voltar ao portfólio / Back to portfolio
+				</Link>
+			</div>
 		</main>
 	);
 }

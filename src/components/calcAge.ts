@@ -13,6 +13,3 @@ export function calcularIdade() {
 
 	return idade;
 }
-
-// Exemplo de uso:
-console.log(calcularIdade());

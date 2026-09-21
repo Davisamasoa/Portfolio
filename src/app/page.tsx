@@ -36,6 +36,7 @@ export type langDataType = {
 	projects: {
 		title: string;
 		lang: string;
+		viewProjectLabel: string;
 	};
 
 	contact: {
@@ -43,6 +44,7 @@ export type langDataType = {
 		lang: string;
 		labelName: string;
 		placeHolderName: string;
+		emailLabel: string;
 		placeHolderEmail: string;
 		labelMessage: string;
 		placeHolderMessage: string;
@@ -54,73 +56,66 @@ export type langDataType = {
 };
 
 export default function App() {
-	const [langName, setLangName] = useState<string>();
+	const [langName, setLangName] = useState<"pt-br" | "en">();
 	const [langData, setLangData] = useState<langDataType>();
-	const langSwitch = async () => {
-		const data = lang_ == "pt-br" ? pt_brData : engData;
-		setLangData(data);
-	};
 
 	useEffect(() => {
-		const lang = localStorage.getItem("lang");
-		if ((lang && lang == "en") || lang == "pt-br") {
-			document.documentElement.setAttribute("lang", lang);
-			setLangName(lang);
-			lang_ = lang;
-		} else {
-			setLangName("pt-br");
-			lang_ = "pt-br";
-		}
+		const stored = localStorage.getItem("lang");
+		const resolved = stored === "en" || stored === "pt-br" ? stored : "pt-br";
 
-		langSwitch();
-	}, [langName]);
+		document.documentElement.setAttribute("lang", resolved);
+		lang_ = resolved;
+		setLangName(resolved);
+		setLangData(resolved === "pt-br" ? pt_brData : engData);
+	}, []);
+
+	const changeLang = (lang: "pt-br" | "en") => {
+		if (langName === lang) return;
+
+		document.documentElement.setAttribute("lang", lang);
+		localStorage.setItem("lang", lang);
+		lang_ = lang;
+		setLangName(lang);
+		setLangData(lang === "pt-br" ? pt_brData : engData);
+	};
+
+	if (!langData) return null;
 
 	return (
-		<div className="px-6 font-montserrat z-50">
-			{langData ? (
-				<>
-					<Nav />
-					<Home home={langData?.home}>
-						<IconsAside />
-						<div className="w-full absolute top-4 left-0 flex justify-between">
-							<div className="flex justify-between  items-center sm:w-[350px] w-[310px] mx-auto ">
-								<Darkmode />
-								<div className="flex gap-1 ">
-									<img
-										onClick={() => {
-											langName == "pt-br" ? undefined : setLangName("pt-br");
+		<div className="relative z-10 px-4 sm:px-6">
+			<div className="pointer-events-none fixed inset-x-0 top-0 z-40 flex h-[100dvh] items-start justify-center pt-[calc(1.5rem+env(safe-area-inset-top))] transform-gpu">
+				<div className="glass-pill pointer-events-auto flex items-center gap-1 p-1.5">
+					<Darkmode />
+					<span className="mx-1 h-5 w-px bg-white/40 dark:bg-white/10" />
+					<button
+						title="Português"
+						onClick={() => changeLang("pt-br")}
+						className={`overflow-hidden rounded-full transition duration-300 ${
+							langName === "pt-br" ? "" : "opacity-40 grayscale hover:opacity-70"
+						}`}
+					>
+						<img width={28} height={20} className="block h-5 w-7 object-cover" src="/assets/icon/brazil.png" alt="Português" />
+					</button>
+					<button
+						title="English"
+						onClick={() => changeLang("en")}
+						className={`overflow-hidden rounded-full transition duration-300 ${
+							langName === "en" ? "" : "opacity-40 grayscale hover:opacity-70"
+						}`}
+					>
+						<img width={28} height={20} className="block h-5 w-7 object-cover" src="/assets/icon/usa.png" alt="English" />
+					</button>
+				</div>
+			</div>
 
-											localStorage.setItem("lang", "pt-br");
-										}}
-										className={` cursor-pointer ${langName == "pt-br" ? undefined : "grayscale"}`}
-										width={30}
-										height={20}
-										src="./assets/icon/brazil.png"
-										alt="Brazil Flag"
-									/>
-
-									<img
-										onClick={() => {
-											langName == "en" ? undefined : setLangName("en");
-											localStorage.setItem("lang", "en");
-										}}
-										className={`cursor-pointer ${langName == "en" ? undefined : "grayscale"}`}
-										width={30}
-										height={20}
-										src="./assets/icon/usa.png"
-										alt="Usa Flag"
-									/>
-								</div>
-							</div>
-						</div>
-					</Home>
-					<About about={langData?.about} />
-					<Skills skills={langData?.skills} />
-					<Projects projects={langData?.projects} />
-					<Contact contact={langData?.contact} />
-					<Footer footer={langData?.footer} />
-				</>
-			) : undefined}
+			<Nav />
+			<IconsAside />
+			<Home home={langData.home} />
+			<About about={langData.about} />
+			<Skills skills={langData.skills} />
+			<Projects projects={langData.projects} />
+			<Contact contact={langData.contact} />
+			<Footer footer={langData.footer} />
 		</div>
 	);
 }

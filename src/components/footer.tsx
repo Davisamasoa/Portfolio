@@ -6,21 +6,27 @@ type langDataType = {
 
 export const Footer = ({ footer }: langDataType) => {
 	return (
-		<footer className="mt-24 pb-24 flex gap-4 flex-col justify-center items-center text-textColor dark:text-darktextColor">
-			<p>{footer.credits}</p>
-			<figure className="flex gap-3 text-primaryColor dark:text-darkprimaryColor">
-				<a title="link para o github de Davi Samuel" href="https://github.com/Davisamasoa" target="_blank">
-					<i className="bi bi-github text-3xl"></i>
+		<footer className="mt-32 flex flex-col items-center gap-5 pb-28 text-center">
+			<div className="glass-pill flex gap-2 p-2">
+				<a
+					title="Link para o GitHub de Davi Machado"
+					href="https://github.com/Davisamasoa"
+					target="_blank"
+					className="flex h-11 w-11 items-center justify-center rounded-full transition duration-300 hover:bg-white/40 dark:hover:bg-white/10"
+				>
+					<i className="bi bi-github text-xl"></i>
 				</a>
 
 				<a
-					title="link para o linkedin de Davi Samuel"
+					title="Link para o LinkedIn de Davi Machado"
 					href="https://www.linkedin.com/in/davisamasoa/"
 					target="_blank"
+					className="flex h-11 w-11 items-center justify-center rounded-full transition duration-300 hover:bg-white/40 dark:hover:bg-white/10"
 				>
-					<i className="bi bi-linkedin text-3xl"></i>
+					<i className="bi bi-linkedin text-xl"></i>
 				</a>
-			</figure>
+			</div>
+			<p className="text-sm text-muted dark:text-mutedDark">{footer.credits}</p>
 		</footer>
 	);
 };

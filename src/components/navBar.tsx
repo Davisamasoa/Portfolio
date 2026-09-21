@@ -1,85 +1,49 @@
+"use client";
+
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+const navItems = [
+	{ id: "Home", href: "#Home", icon: "bi-house", label: "Início" },
+	{ id: "about", href: "#aboutMe", icon: "bi-person", label: "Sobre mim" },
+	{ id: "skills", href: "#skills", icon: "bi-stars", label: "Habilidades" },
+	{ id: "project", href: "#project", icon: "bi-grid-1x2", label: "Projetos" },
+	{ id: "contact", href: "#contact", icon: "bi-chat-dots", label: "Contato" },
+];
 
 export const Nav = () => {
 	const [section, setSection] = useState("Home");
 
-	useEffect(() => {}, []);
-
 	return (
-		<nav className="left-2/4 fixed bottom-0 translate-x-[-50%] flex justify-center items-center mb-7 text-bgColor dark:text-darkprimaryColor ">
-			<ul className="flex w-fit justify-center text-[25px] border-2 border-transparent bg-secondaryColor dark:bg-darksecondaryColor bg-opacity-60 dark:bg-opacity-50 gap-2 px-3 py-2 rounded-full ">
-				<li className="flex items-center justify-center">
-					<a
-						title="link para a seção principal"
-						className={`iconNav transition duration-300 ${
-							section == "Home"
-								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
-								: undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
-						onClick={() => setSection("Home")}
-						href="#Home"
-					>
-						<i className="bi bi-house"></i>
-					</a>
-				</li>
-				<li className="flex items-center justify-center">
-					<a
-						title="link para a seção sobre mim"
-						className={`iconNav transition duration-300 ${
-							section == "about"
-								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
-								: undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor  dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
-						onClick={() => setSection("about")}
-						href="#aboutMe"
-					>
-						<i className="bi bi-person" id="user"></i>
-					</a>
-				</li>
-				<li className="flex items-center justify-center">
-					<a
-						title="link para a seção minhas habilidades"
-						className={`iconNav transition duration-300 ${
-							section == "skills"
-								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
-								: undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor  dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
-						onClick={() => setSection("skills")}
-						href="#skills"
-					>
-						<i className="bi bi-journal-code"></i>
-					</a>
-				</li>
-				<li className="flex items-center justify-center">
-					<a
-						title="link para a seção meus projetos"
-						className={`iconNav transition duration-300 ${
-							section == "project"
-								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
-								: undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor  dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
-						onClick={() => setSection("project")}
-						href="#project"
-					>
-						<i className="bi bi-pc-display"></i>
-					</a>
-				</li>
-				<li className="flex items-center justify-center">
-					<a
-						title="link para a seção contato"
-						className={`iconNav transition duration-300 ${
-							section == "contact"
-								? "bg-primaryColor dark:bg-darkprimaryColor text-bgColor dark:text-darkbgColor"
-								: undefined
-						}       px-3 py-[5px] rounded-full sm:hover:bg-primaryColor  dark:sm:hover:bg-darkprimaryColor sm:hover:text-bgColor dark:sm:hover:text-darkbgColor`}
-						onClick={() => setSection("contact")}
-						href="#contact"
-					>
-						<i className="bi bi-telephone"></i>
-					</a>
-				</li>
-			</ul>
-		</nav>
+		<div
+			className="pointer-events-none fixed inset-x-0 top-0 z-50 flex h-[100dvh] items-end justify-center pb-[calc(1.5rem+env(safe-area-inset-bottom))] transform-gpu"
+			aria-hidden="false"
+		>
+			<motion.nav
+				initial={{ y: 40, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.6, ease: "easeOut" }}
+				className="pointer-events-auto"
+			>
+				<ul className="glass-pill flex items-center gap-1 p-2">
+					{navItems.map((item) => (
+						<li key={item.id} className="flex items-center justify-center">
+							<a
+								title={item.label}
+								href={item.href}
+								onClick={() => setSection(item.id)}
+								className={`flex h-10 w-10 items-center justify-center rounded-full text-lg transition duration-300 sm:h-11 sm:w-11 sm:hover:-translate-y-1 ${
+									section === item.id
+										? "bg-accent-gradient text-white shadow-glow"
+										: "text-ink hover:bg-white/40 dark:text-inkDark dark:hover:bg-white/10"
+								}`}
+							>
+								<i className={`bi ${item.icon}`}></i>
+							</a>
+						</li>
+					))}
+				</ul>
+			</motion.nav>
+		</div>
 	);
 };

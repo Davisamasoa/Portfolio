@@ -1,4 +1,3 @@
-import React from "react";
 import { SocialMediaCard } from "./socialMediaCard";
 
 type contactDataType = {
@@ -7,6 +6,7 @@ type contactDataType = {
 		lang: string;
 		labelName: string;
 		placeHolderName: string;
+		emailLabel: string;
 		placeHolderEmail: string;
 		labelMessage: string;
 		placeHolderMessage: string;
@@ -16,25 +16,36 @@ type contactDataType = {
 
 export const Contact = ({ contact }: contactDataType) => {
 	return (
-		<section
-			className="sm:pt-32 pt-16 mt-16 max-w-5xl mx-auto  text-textColor dark:text-darktextColor"
-			id="contact"
-		>
-			<h1 className="text-center text-5xl font-bold">{contact.title}</h1>
+		<section id="contact" className="mx-auto mt-16 max-w-5xl pt-24 sm:mt-28">
+			<span className="section-eyebrow block text-center">04</span>
+			<h2 className="section-title text-center">{contact.title}</h2>
 
-			<div className=" pt-14 gap-10 flex mx-auto justify-between w-full flex-col lg:flex-row items-center">
+			<div className="mt-14 grid gap-6 lg:grid-cols-[1fr_1.5fr]">
+				<div className="flex flex-row gap-4 lg:flex-col">
+					<SocialMediaCard
+						contact={contact}
+						socialName="GitHub"
+						userName="Davisamasoa"
+						link="https://github.com/Davisamasoa"
+					/>
+					<SocialMediaCard
+						contact={contact}
+						socialName="LinkedIn"
+						userName="davisamasoa"
+						link="https://www.linkedin.com/in/davisamasoa/"
+					/>
+				</div>
+
 				<form
-					className="flex w-full flex-col  text-textColor dark:text-darktextColor lg:order-2 order-1"
+					className="glass flex w-full flex-col gap-5 rounded-[2rem] p-6 sm:p-8"
 					action="https://formsubmit.co/davisamasoa@gmail.com"
 					method="POST"
 				>
-					<div className="flex flex-col md:flex-row gap-5">
-						<div className="flex flex-col gap-1 w-full">
-							<label className="text-textColor dark:text-darktextColor" htmlFor="name">
-								{contact.labelName}
-							</label>
+					<div className="flex flex-col gap-5 md:flex-row">
+						<div className="flex w-full flex-col gap-2">
+							<label htmlFor="name">{contact.labelName}</label>
 							<input
-								className="w-full md:h-14 py-2 px-2 bg-transparent rounded-md border-2 border-primaryColor dark:border-darkprimaryColor"
+								className="input-glass"
 								type="text"
 								name="nome"
 								id="name"
@@ -42,13 +53,11 @@ export const Contact = ({ contact }: contactDataType) => {
 								placeholder={contact.placeHolderName}
 							/>
 						</div>
-						<div className="flex flex-col gap-1 w-full">
-							<label className="text-textColor dark:text-darktextColor" htmlFor="email">
-								E-mail:
-							</label>
+						<div className="flex w-full flex-col gap-2">
+							<label htmlFor="email">{contact.emailLabel}</label>
 							<input
 								id="email"
-								className="w-full md:h-14 py-2 px-2 bg-transparent rounded-md border-2 border-primaryColor dark:border-darkprimaryColor"
+								className="input-glass"
 								type="email"
 								name="email"
 								required
@@ -56,30 +65,23 @@ export const Contact = ({ contact }: contactDataType) => {
 							/>
 						</div>
 					</div>
-					<div className="flex flex-col gap-1">
-						<label className="text-textColor dark:text-darktextColor mt-5 mb-1" htmlFor="mensagem">
-							{contact.labelMessage}
-						</label>
+
+					<div className="flex flex-col gap-2">
+						<label htmlFor="mensagem">{contact.labelMessage}</label>
 						<textarea
-							className="w-full py-2 px-2 h-36 bg-transparent rounded-md border-2 border-primaryColor dark:border-darkprimaryColor"
+							className="input-glass resize-none"
 							name="mensagem"
 							required
 							id="mensagem"
-							cols={30}
-							rows={10}
+							rows={6}
 							placeholder={contact.placeHolderMessage}
 						></textarea>
 					</div>
 
-					<div className="w-full">
-						<button
-							className="hover:scale-105 bg-primaryColor dark:bg-darkprimaryColor mt-10 text-bgColor dark:text-darkbgColor  py-2 rounded-md transition duration-300 px-20 font-bold md:h-14"
-							id="submit"
-							type="submit"
-						>
-							{contact.sendButton}
-						</button>
-					</div>
+					<button className="btn-primary mt-2 w-full" id="submit" type="submit">
+						{contact.sendButton}
+						<i className="bi bi-send"></i>
+					</button>
 
 					<input type="hidden" name="_captcha" value="false" />
 					<input type="hidden" name="_next" value="https://davisamasoa.vercel.app/thanks" />

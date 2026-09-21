@@ -1,30 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--bgColor: theme("colors.bgColor");
-	--textColor: theme("colors.textColor");
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	@apply bg-surface text-ink dark:bg-surfaceDark dark:text-inkDark;
+	transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 a {
 	cursor: pointer;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
-@media (max-width: 385px) {
-	#Home a,
-	#project a {
-		font-size: 12px !important;
-	}
-}
-
 nav {
 	z-index: 50;
+}
+
+::selection {
+	@apply bg-accent/30;
+}
+
+@layer components {
+	.glass {
+		@apply transform-gpu border border-white/60 bg-white/50 shadow-glass backdrop-blur-2xl dark:border-white/10 dark:bg-white/[0.06] dark:shadow-glassDark;
+	}
+
+	.glass-pill {
+		@apply glass rounded-full;
+	}
+
+	.glass-tile {
+		@apply glass rounded-2xl transition duration-300 hover:-translate-y-1 hover:shadow-glow;
+	}
+
+	.btn-primary {
+		@apply inline-flex items-center justify-center gap-2 rounded-full bg-accent-gradient px-6 py-3 font-medium text-white shadow-glow transition duration-300 hover:scale-[1.03] active:scale-[0.98];
+	}
+
+	.btn-outline {
+		@apply glass inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-medium transition duration-300 hover:-translate-y-0.5;
+	}
+
+	.input-glass {
+		@apply w-full rounded-xl border border-white/60 bg-white/40 px-4 py-3 text-ink outline-none backdrop-blur-xl transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-white/10 dark:bg-white/5 dark:text-inkDark dark:placeholder:text-mutedDark;
+	}
+
+	.chip {
+		@apply glass rounded-full px-3 py-1 text-xs font-medium text-muted dark:text-mutedDark;
+	}
+
+	.section-eyebrow {
+		@apply text-xs font-semibold uppercase tracking-[0.3em] text-accent;
+	}
+
+	.section-title {
+		@apply mt-2 text-3xl font-bold sm:text-4xl;
+	}
 }

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ProjectItem } from "./projectItem";
 import { projectData } from "./projectData";
 
@@ -6,52 +5,28 @@ type langDataType = {
 	projects: {
 		title: string;
 		lang: string;
+		viewProjectLabel: string;
 	};
 };
 
 export const Projects = ({ projects }: langDataType) => {
-	const [showProject, setShowProject] = useState<boolean>(false);
-	const [moreLessClassName, setMoreLessClassName] = useState<string>("bi bi-caret-down-fill");
-
-	const handleShowProjects = () => {
-		if (moreLessClassName == "bi bi-caret-down-fill") {
-			setShowProject(true);
-			setMoreLessClassName("bi bi-caret-up-fill");
-			window.location.href = "#anchor";
-		} else {
-			setShowProject(false);
-			setMoreLessClassName("bi bi-caret-down-fill");
-			window.location.href = "#project";
-		}
-	};
-
 	return (
-		<section
-			className="sm:pt-32 pt-16 max-w-5xl mx-auto mt-16  text-textColor dark:text-darktextColor"
-			id="project"
-		>
-			<h1 className="text-center text-5xl font-bold">{projects.title}</h1>
+		<section id="project" className="mx-auto mt-16 max-w-5xl pt-24 sm:mt-28">
+			<span className="section-eyebrow block text-center">03</span>
+			<h2 className="section-title text-center">{projects.title}</h2>
 
-			<div className="pt-14 grid lg:grid-cols-3 sm:grid-cols-2 place-items-center gap-10 w-full mx-auto">
-				{projectData.map((project, index) => {
-					return (
-						<ProjectItem
-							projectName={projects.lang == "pt-br" ? project.name.pt_br : project.name.eng}
-							projectImg={project.imgPath}
-							projectSite={project.website}
-							projectGit={project.gitRepository}
-							display={project.display ? project.display : showProject}
-							tecnologies={project.tecnologies}
-							key={index}
-						/>
-					);
-				})}
+			<div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+				{projectData.map((project, index) => (
+					<ProjectItem
+						key={index}
+						projectName={projects.lang === "pt-br" ? project.name.pt_br : project.name.eng}
+						projectImg={project.imgPath}
+						projectSite={project.website}
+						tecnologies={project.tecnologies}
+						viewProjectLabel={projects.viewProjectLabel}
+					/>
+				))}
 			</div>
-			{/* <div className="flex text-primaryColor dark:text-darkprimaryColor justify-center mt-16">
-				<button onClick={handleShowProjects} aria-label="Mostrar mais ou mostrar menos projetos">
-					<i className={`${moreLessClassName} text-2xl`}></i>
-				</button>
-			</div> */}
 		</section>
 	);
 };

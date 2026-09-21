@@ -6,46 +6,28 @@ type skillItemType = {
 	tecImgAlt: string;
 };
 
-export const SkillItem = (props: skillItemType) => {
-	let invertColor;
+const invertOnDark = ["NextJS", "Babel", "ExpressJS", "Prisma"];
 
-	if (props.tecImgAlt == "NextJs" || props.tecImgAlt == "Babel" || props.tecImgAlt == "ExpressJs") {
-		invertColor = "grayscale invert";
-	} else {
-		invertColor = "";
-	}
+export const SkillItem = ({ tecLink, tecImg, tecImgAlt }: skillItemType) => {
+	const invert = invertOnDark.includes(tecImgAlt) ? "dark:grayscale dark:invert" : "";
+	const isPrisma = tecImgAlt === "Prisma";
+
 	return (
-		<li className="skillItem  w-full border-2 border-secondaryColor dark:border-darksecondaryColor shadow-primaryColor dark:shadow-darkprimaryColor hover:scale-110 transition duration-300  bg-secondaryColor dark:bg-darksecondaryColor rounded-lg py-4 px-4 md:px-8">
-			<a
-				href={props.tecLink}
-				className="flex justify-between items-center flex-col"
-				target="_blank"
-				rel="noreferrer"
-			>
-				<div>
-					<Image
-						loading="lazy"
-						className={`mx-auto ${
-							props.tecImgAlt == "Prisma" ||
-							props.tecImgAlt == "NextJS" ||
-							props.tecImgAlt == "Prisma" ||
-							props.tecImgAlt == "Babel" ||
-							props.tecImgAlt == "ExpressJS"
-								? "grayscale invert"
-								: null
-						}  ${props.tecImg == "/_next/static/media/prisma.effd950f.svg" ? "w-[80%]" : null}`}
-						width={130}
-						height={130}
-						src={props.tecImg}
-						alt={props.tecImgAlt}
-					/>
-				</div>
+		<li className="glass-tile group flex flex-col items-center gap-3 px-3 py-5 sm:px-4">
+			<a href={tecLink} className="flex flex-col items-center gap-3" target="_blank" rel="noreferrer">
+				<Image
+					loading="lazy"
+					width={48}
+					height={48}
+					className={`h-10 w-10 object-contain drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition duration-300 group-hover:scale-110 sm:h-12 sm:w-12 ${invert} ${
+						isPrisma ? "w-[70%]" : ""
+					}`}
+					src={tecImg}
+					alt={tecImgAlt}
+				/>
 
-				<h3
-					className="text-center font-normal text-xs mt-4 text-white dark:text-darktextColor
-				"
-				>
-					{props.tecImgAlt}
+				<h3 className="text-center text-[11px] font-medium text-muted dark:text-mutedDark sm:text-xs">
+					{tecImgAlt}
 				</h3>
 			</a>
 		</li>

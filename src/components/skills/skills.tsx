@@ -9,23 +9,19 @@ export type langDataType = {
 
 export const Skills = ({ skills }: langDataType) => {
 	return (
-		<section
-			className="sm:pt-32  max-w-5xl mx-auto pt-16 mt-16 flex flex-col justify-center items-center text-textColor dark:text-darktextColor"
-			id="skills"
-		>
-			<h1 className="text-5xl font-bold">{skills.title}</h1>
+		<section id="skills" className="mx-auto mt-16 max-w-5xl pt-24 sm:mt-28">
+			<span className="section-eyebrow block text-center">02</span>
+			<h2 className="section-title text-center">{skills.title}</h2>
 
-			<ul className="pt-14 sm:gap-4 md:gap-6 gap-3 grid grid-cols-3  sm:grid-cols-6">
-				{Object.keys(tecnologies).map((skill, index) => {
-					return (
-						<SkillItem
-							tecLink={tecnologies[`${skill}`].oficialWebsite}
-							tecImg={tecnologies[`${skill}`].imgPath}
-							key={index}
-							tecImgAlt={tecnologies[`${skill}`].imgAlt}
-						/>
-					);
-				})}
+			<ul className="mt-14 grid grid-cols-3 gap-3 sm:grid-cols-6 sm:gap-4">
+				{Object.keys(tecnologies).map((skill, index) => (
+					<SkillItem
+						key={index}
+						tecLink={tecnologies[skill].oficialWebsite}
+						tecImg={tecnologies[skill].imgPath}
+						tecImgAlt={tecnologies[skill].imgAlt}
+					/>
+				))}
 			</ul>
 		</section>
 	);

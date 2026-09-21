@@ -7,27 +7,23 @@ type socialMediaCardType = {
 	link: string;
 };
 
-export const SocialMediaCard = (props: socialMediaCardType) => {
-	const upperCaseSocialName = props.socialName.toUpperCase();
-	const lowerCaseSocialName = props.socialName.toLowerCase();
+export const SocialMediaCard = ({ contact, socialName, userName, link }: socialMediaCardType) => {
+	const lowerCaseSocialName = socialName.toLowerCase();
+	const upperCaseSocialName = socialName.toUpperCase();
 
 	return (
-		<a title={`link para o ${lowerCaseSocialName} de Davi Samuel`} href={props.link} target="_blank">
-			<div className="sm:hover:scale-105 bg-primaryColor dark:bg-darkprimaryColor rounded-2xl px-14 py-10 !aspect-video transition duration-300">
-				<div className="text-center">
-					<i className={`bi bi-${lowerCaseSocialName} text-3xl`}></i>
-				</div>
-
-				<h3 className="text-center">{props.socialName}</h3>
-				<p className="text-center">{props.userName}</p>
-				<div className="text-center font-bold mt-3">
-					<p id="linkSocial">{`${
-						props.contact.lang == "pt-br"
-							? `VISITAR PERFIL DO ${upperCaseSocialName}`
-							: `VISIT ${upperCaseSocialName} PROFILE`
-					} `}</p>
-				</div>
-			</div>
+		<a
+			title={`Link para o ${lowerCaseSocialName} de Davi Machado`}
+			href={link}
+			target="_blank"
+			className="glass-tile flex w-full flex-1 flex-col items-center justify-center gap-2 rounded-[1.75rem] px-6 py-8 text-center"
+		>
+			<i className={`bi bi-${lowerCaseSocialName} text-3xl text-accent`}></i>
+			<h3 className="font-semibold">{socialName}</h3>
+			<p className="text-sm text-muted dark:text-mutedDark">{userName}</p>
+			<p className="mt-2 text-xs font-semibold text-accent">
+				{contact.lang === "pt-br" ? `VISITAR ${upperCaseSocialName}` : `VISIT ${upperCaseSocialName}`}
+			</p>
 		</a>
 	);
 };
