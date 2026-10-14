@@ -8,4 +8,4 @@ npm run dev     # http://localhost:3000
 npm run build
 ```
 
-Todo o texto, os projetos e os links ficam em `src/content.ts`. Imagens dos projetos em `public/work/`, foto em `public/davi.webp` e currículos em `public/cv-pt.pdf` / `public/cv-en.pdf`.
+Todo o texto, os projetos e os links ficam em `src/content.ts`. Imagens dos projetos em `public/work/`, foto em `public/portrait.webp` e currículos em `public/cv-pt.pdf` / `public/cv-en.pdf`.

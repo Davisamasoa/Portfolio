@@ -10,7 +10,7 @@ export const profile = {
   email: "davisamasoa@gmail.com",
   github: "https://github.com/Davisamasoa",
   linkedin: "https://www.linkedin.com/in/davisamasoa/",
-  photo: "/davi.webp",
+  photo: "/portrait.webp",
 };
 
 export type Project = {
@@ -70,21 +70,17 @@ const pt = {
       {
         slug: "sabbatai",
         name: "Sabbatai",
-        image: "/work/sabbatai-redesign.jpg",
-        links: [
-          { label: "Redesign (prévia)", url: "https://sabbatai-git-redesign-davi-machado-projects.vercel.app" },
-          { label: "Versão atual", url: "https://sabbatai.in" },
-        ],
+        image: "/work/sabbatai.jpg",
+        links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
         stack: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
         category: "Site institucional",
         role: "Design e desenvolvimento",
-        status: "Redesign em andamento",
         challenge:
           "A Sabbatai é uma consultoria em commodities que atende uma clientela de alto padrão com um serviço exclusivo. O site precisava estar à altura desse posicionamento: moderno, sofisticado e sem nada de genérico.",
         solution:
           "Desenhei e desenvolvi o site do zero: uma página única contada em capítulos, com tipografia editorial, gravuras clássicas e animações discretas que reforçam a sensação de exclusividade.",
         result:
-          "O cliente voltou para contratar um redesign, que aparece na imagem, e passou a me indicar para outros contatos do seu círculo.",
+          "O cliente voltou a me contratar para o redesign do site e passou a me indicar para outros contatos do seu círculo.",
       },
       {
         slug: "passus",
@@ -155,8 +151,12 @@ const pt = {
       { label: "Base", value: "Ouro Preto, MG" },
       { label: "Atendimento", value: "Remoto, em português e inglês" },
     ],
-    toolsTitle: "Tecnologias",
-    tools: ["Figma", "Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL", "Supabase", "React Native"],
+    stack: [
+      { label: "Front-end", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+      { label: "Back-end", items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Supabase"] },
+      { label: "Mobile", items: ["React Native", "Expo"] },
+      { label: "Ferramentas", items: ["Figma", "Git"] },
+    ],
     cv: "Currículo (PDF)",
     cvHref: "/cv-pt.pdf",
   },
@@ -215,21 +215,17 @@ const en: Dictionary = {
       {
         slug: "sabbatai",
         name: "Sabbatai",
-        image: "/work/sabbatai-redesign.jpg",
-        links: [
-          { label: "Redesign (preview)", url: "https://sabbatai-git-redesign-davi-machado-projects.vercel.app" },
-          { label: "Current site", url: "https://sabbatai.in" },
-        ],
+        image: "/work/sabbatai.jpg",
+        links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
         stack: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
         category: "Corporate website",
         role: "Design and development",
-        status: "Redesign in progress",
         challenge:
           "Sabbatai is a commodity advisory firm serving high-end clients with an exclusive service. The website had to live up to that positioning: modern, sophisticated and nothing generic.",
         solution:
           "I designed and built the site from scratch: a single page told in chapters, with editorial typography, classic engravings and restrained motion that reinforce a sense of exclusivity.",
         result:
-          "The client came back to hire me for a redesign, pictured here, and has been referring me to other contacts in their circle.",
+          "The client hired me again for the site's redesign and has been referring me to other contacts in their circle.",
       },
       {
         slug: "passus",
@@ -300,8 +296,12 @@ const en: Dictionary = {
       { label: "Based in", value: "Ouro Preto, Brazil" },
       { label: "Working", value: "Remotely, in English and Portuguese" },
     ],
-    toolsTitle: "Technologies",
-    tools: pt.about.tools,
+    stack: [
+      { label: "Front-end", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+      { label: "Back-end", items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Supabase"] },
+      { label: "Mobile", items: ["React Native", "Expo"] },
+      { label: "Tools", items: ["Figma", "Git"] },
+    ],
     cv: "Résumé (PDF)",
     cvHref: "/cv-en.pdf",
   },

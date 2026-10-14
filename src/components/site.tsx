@@ -120,7 +120,7 @@ function PortraitCard({ t }: { t: Dictionary }) {
         height={800}
         priority
         sizes="(min-width: 1024px) 384px, 90vw"
-        className="aspect-[4/5] w-full rounded-xl object-cover grayscale"
+        className="aspect-[4/5] w-full rounded-xl object-cover"
       />
       <figcaption className="flex items-end justify-between gap-4 px-3 pb-2 pt-4">
         <div>
@@ -312,14 +312,22 @@ function About({ t }: { t: Dictionary }) {
               </p>
             ))}
           </div>
-          <p className="mt-10 text-xs uppercase tracking-[0.16em] text-subtle">{t.about.toolsTitle}</p>
-          <ul className="mt-3 flex flex-wrap gap-1.5">
-            {t.about.tools.map((tool) => (
-              <li key={tool} className="rounded-md border border-line bg-surface px-2.5 py-1 text-xs text-muted">
-                {tool}
-              </li>
+          <dl className="mt-10 divide-y divide-line border-y border-line">
+            {t.about.stack.map((group) => (
+              <div key={group.label} className="grid gap-3 py-4 sm:grid-cols-[7.5rem_1fr] sm:items-center">
+                <dt className="text-xs uppercase tracking-[0.16em] text-subtle">{group.label}</dt>
+                <dd>
+                  <ul className="flex flex-wrap gap-1.5">
+                    {group.items.map((item) => (
+                      <li key={item} className="rounded-md border border-line bg-surface px-2.5 py-1 text-xs text-muted">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </dd>
+              </div>
             ))}
-          </ul>
+          </dl>
           <a
             href={t.about.cvHref}
             target="_blank"
