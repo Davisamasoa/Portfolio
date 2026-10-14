@@ -53,6 +53,15 @@ function Header({ t }: { t: Dictionary }) {
             </a>
           ))}
           <a
+            href={t.about.cvHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 hidden items-center gap-1.5 rounded-md border border-accent/40 px-3 py-1.5 text-sm text-accent transition-colors hover:border-accent hover:bg-accent/10 sm:inline-flex"
+          >
+            <IconDownload />
+            {t.nav.cv}
+          </a>
+          <a
             href={t.nav.switchHref}
             aria-label={t.nav.switchAria}
             hrefLang={t.locale === "pt" ? "en" : "pt-BR"}
@@ -99,6 +108,15 @@ function Hero({ t }: { t: Dictionary }) {
               className="inline-flex h-11 items-center rounded-lg border border-line bg-surface px-5 text-sm font-medium transition-colors hover:border-subtle"
             >
               {t.hero.secondary}
+            </a>
+            <a
+              href={t.about.cvHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-11 items-center gap-2 rounded-lg px-3 text-sm font-medium text-accent transition-colors hover:text-fg"
+            >
+              <IconDownload />
+              {t.hero.cv}
             </a>
           </div>
         </div>
@@ -332,10 +350,10 @@ function About({ t }: { t: Dictionary }) {
             href={t.about.cvHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-1.5 text-sm text-subtle transition-colors hover:text-fg"
+            className="mt-8 inline-flex h-11 items-center gap-2 rounded-lg border border-accent/40 px-5 text-sm font-medium text-accent transition-colors hover:border-accent hover:bg-accent/10"
           >
+            <IconDownload />
             {t.about.cv}
-            <Arrow external />
           </a>
         </div>
       </div>
@@ -405,6 +423,14 @@ function Arrow({ external = false }: { external?: boolean }) {
   return (
     <svg aria-hidden width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
       {external ? <path d="M5 11 11 5M6 5h5v5" /> : <path d="M3 8h10M9 4l4 4-4 4" />}
+    </svg>
+  );
+}
+
+function IconDownload() {
+  return (
+    <svg aria-hidden width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+      <path d="M8 2.5v8M4.5 7 8 10.5 11.5 7M3 13.5h10" />
     </svg>
   );
 }
