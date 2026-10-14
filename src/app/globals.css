@@ -1,68 +1,112 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-bg: #0e0e0f;
+  --color-surface: #151516;
+  --color-raised: #1c1c1e;
+  --color-line: #29282a;
+  --color-fg: #f1efea;
+  --color-muted: #a3a09a;
+  --color-subtle: #6e6b66;
+  --color-accent: #c9b48a;
 
-@media (pointer: fine) {
-	html {
-		scroll-behavior: smooth;
-	}
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+
+  --animate-rise: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
 }
 
-body {
-	@apply bg-surface text-ink dark:bg-surfaceDark dark:text-inkDark;
-	transition: background-color 0.4s ease, color 0.4s ease;
+@layer base {
+  :root {
+    --lamp-room:
+      radial-gradient(ellipse 50% 45% at 16% -8%, rgb(255 184 112 / 0.2), transparent 70%),
+      radial-gradient(ellipse 85% 75% at 14% -12%, rgb(255 160 84 / 0.09), transparent 75%),
+      radial-gradient(ellipse 120% 105% at 14% 0%, transparent 50%, rgb(0 0 0 / 0.45) 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-bg font-sans text-fg antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/25 text-fg;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
 }
 
-a {
-	cursor: pointer;
+@utility container-page {
+  @apply mx-auto w-full max-w-[1200px] px-5 md:px-8;
 }
 
-nav {
-	z-index: 50;
+/* Very faint 56px grid, faded out towards the edges. */
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(241 239 234 / 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(241 239 234 / 0.03) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, black 30%, transparent 100%);
 }
 
-::selection {
-	@apply bg-accent/30;
+/*
+ * Warm desk-lamp light, in two fixed, non-interactive layers. The lamp sits
+ * just above the top-left corner.
+ * - lamp-room: behind the content — the pool of light on the "wall" and the
+ *   shadow settling on the far side.
+ * - lamp-tint: over the content — a faint warm cast, so text and cards look
+ *   lit by the same lamp without being darkened.
+ * Plain gradients (no blur, no blend modes), so scrolling stays cheap.
+ */
+@utility lamp-room {
+  background: var(--lamp-room);
 }
 
-@layer components {
-	.glass {
-		@apply transform-gpu border border-white/60 bg-white/70 shadow-glass dark:border-white/10 dark:bg-white/10 dark:shadow-glassDark md:bg-white/50 md:backdrop-blur-xl dark:md:bg-white/[0.06];
-	}
+/* The sticky header sits on the same light, sized to the viewport so it lines up. */
+@utility lamp-header {
+  background-color: rgb(14 14 15 / 0.94);
+  background-image: var(--lamp-room);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
 
-	/* Fixed elements stay on screen during scroll and get recomposited every frame,
-	   so they skip backdrop-blur entirely (at every breakpoint) to avoid scroll jank. */
-	.glass-pill {
-		@apply transform-gpu rounded-full border border-white/60 bg-surface/90 shadow-glass dark:border-white/10 dark:bg-black/70 dark:shadow-glassDark;
-	}
+@utility lamp-tint {
+  background: radial-gradient(ellipse 70% 60% at 16% -8%, rgb(255 176 100 / 0.08), transparent 72%);
+}
 
-	.glass-tile {
-		@apply glass rounded-2xl transition duration-300 hover:-translate-y-1 hover:shadow-glow;
-	}
+@keyframes lamp-on {
+  from {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.55;
+  }
+  38% {
+    opacity: 0.35;
+  }
+}
 
-	.btn-primary {
-		@apply inline-flex items-center justify-center gap-2 rounded-full bg-accent-gradient px-6 py-3 font-medium text-white shadow-glow transition duration-300 hover:scale-[1.03] active:scale-[0.98];
-	}
-
-	.btn-outline {
-		@apply glass inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-medium transition duration-300 hover:-translate-y-0.5;
-	}
-
-	.input-glass {
-		@apply w-full rounded-xl border border-white/60 bg-white/60 px-4 py-3 text-ink outline-none transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-white/10 dark:bg-white/10 dark:text-inkDark dark:placeholder:text-mutedDark md:bg-white/40 md:backdrop-blur-md dark:md:bg-white/5;
-	}
-
-	.chip {
-		@apply glass rounded-full px-3 py-1 text-xs font-medium text-muted dark:text-mutedDark;
-	}
-
-	.section-eyebrow {
-		@apply text-xs font-semibold uppercase tracking-[0.3em] text-accent;
-	}
-
-	.section-title {
-		@apply mt-2 text-3xl font-bold sm:text-4xl;
-	}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
