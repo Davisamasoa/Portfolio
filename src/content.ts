@@ -72,7 +72,7 @@ const pt = {
       {
         slug: "sabbatai",
         name: "Sabbatai",
-        image: "/work/sabbatai-bw.jpg",
+        image: "/work/sabbatai-hero.jpg",
         links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
         stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Motion"],
         category: "Site institucional",
@@ -219,7 +219,7 @@ const en: Dictionary = {
       {
         slug: "sabbatai",
         name: "Sabbatai",
-        image: "/work/sabbatai-bw.jpg",
+        image: "/work/sabbatai-hero.jpg",
         links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
         stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Motion"],
         category: "Corporate website",
