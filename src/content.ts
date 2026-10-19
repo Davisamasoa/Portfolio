@@ -72,15 +72,15 @@ const pt = {
       {
         slug: "sabbatai",
         name: "Sabbatai",
-        image: "/work/sabbatai.jpg",
+        image: "/work/sabbatai-bw.jpg",
         links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
-        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Motion"],
         category: "Site institucional",
         role: "Design e desenvolvimento",
         challenge:
           "A Sabbatai é uma consultoria em commodities que atende uma clientela de alto padrão com um serviço exclusivo. O site precisava estar à altura desse posicionamento: moderno, sofisticado e sem nada de genérico.",
         solution:
-          "Desenhei e desenvolvi o site do zero: uma página única contada em capítulos, com tipografia editorial, gravuras clássicas e animações discretas que reforçam a sensação de exclusividade.",
+          "Desenhei e desenvolvi o site do zero e, no redesign, levei a marca para o preto e branco: uma página única em capítulos em que uma nuvem de partículas em WebGL se transforma, conforme o scroll, em cada commodity com que a empresa trabalha (minério, ouro, petróleo, café, soja…), ao lado de uma tabela periódica dos setores.",
         result:
           "O cliente voltou a me contratar para o redesign do site e passou a me indicar para outros contatos do seu círculo.",
       },
@@ -219,15 +219,15 @@ const en: Dictionary = {
       {
         slug: "sabbatai",
         name: "Sabbatai",
-        image: "/work/sabbatai.jpg",
+        image: "/work/sabbatai-bw.jpg",
         links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
-        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Motion"],
         category: "Corporate website",
         role: "Design and development",
         challenge:
           "Sabbatai is a commodity advisory firm serving high-end clients with an exclusive service. The website had to live up to that positioning: modern, sophisticated and nothing generic.",
         solution:
-          "I designed and built the site from scratch: a single page told in chapters, with editorial typography, classic engravings and restrained motion that reinforce a sense of exclusivity.",
+          "I designed and built the site from scratch and, for the redesign, took the brand to black and white: a single page told in chapters, where a WebGL particle cloud turns into each commodity the firm trades (ore, gold, crude, coffee, soy…) as you scroll, beside a periodic table of its sectors.",
         result:
           "The client hired me again for the site's redesign and has been referring me to other contacts in their circle.",
       },
