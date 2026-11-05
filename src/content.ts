@@ -32,7 +32,7 @@ const pt = {
   locale: "pt" as Locale,
   htmlLang: "pt-BR",
   meta: {
-    title: "Davi Machado — Desenvolvedor web",
+    title: "Davi Machado · Desenvolvedor web",
     description:
       "Sites institucionais, landing pages e aplicações web sob medida, do planejamento ao lançamento. Davi Machado, desenvolvedor web em Ouro Preto, MG.",
   },
@@ -56,7 +56,7 @@ const pt = {
     secondary: "Ver trabalhos",
     cv: "Baixar currículo",
     role: "Desenvolvedor web",
-    location: "Ouro Preto, MG — Brasil",
+    location: "Ouro Preto, MG, Brasil",
   },
   work: {
     title: "Trabalhos selecionados",
@@ -169,7 +169,7 @@ const pt = {
     copied: "Copiado",
   },
   footer: {
-    location: "Ouro Preto, MG — Brasil",
+    location: "Ouro Preto, MG, Brasil",
   },
 };
 
@@ -179,7 +179,7 @@ const en: Dictionary = {
   locale: "en",
   htmlLang: "en",
   meta: {
-    title: "Davi Machado — Web developer",
+    title: "Davi Machado · Web developer",
     description:
       "Corporate websites, landing pages and custom web applications, from planning to launch. Davi Machado, web developer based in Brazil.",
   },
@@ -316,7 +316,7 @@ const en: Dictionary = {
     copied: "Copied",
   },
   footer: {
-    location: "Ouro Preto, MG — Brazil",
+    location: "Ouro Preto, MG, Brazil",
   },
 };
 

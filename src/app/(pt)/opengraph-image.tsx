@@ -1,6 +1,6 @@
 import { ogSize, renderOgImage } from "@/components/og-image";
 
-export const alt = "Davi Machado — Desenvolvedor web";
+export const alt = "Davi Machado · Desenvolvedor web";
 export const size = ogSize;
 export const contentType = "image/png";
 
