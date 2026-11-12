@@ -85,6 +85,21 @@ const pt = {
           "O cliente voltou a me contratar para o redesign do site e passou a me indicar para outros contatos do seu círculo.",
       },
       {
+        slug: "federal-folia",
+        name: "Federal Folia",
+        image: "/work/federalfolia.jpg",
+        links: [{ label: "federalfolia.com", url: "https://www.federalfolia.com" }],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+        category: "Landing page de evento",
+        role: "Design e desenvolvimento",
+        challenge:
+          "O Federal Folia vende pacotes completos para o Carnaval de Ouro Preto, com hospedagem, open bar, festas e os principais blocos. O site precisava ter a energia da festa, explicar com clareza o que cada pacote inclui e levar o visitante até a compra.",
+        solution:
+          "Desenvolvi uma landing page fiel à identidade visual da marca, com vídeo no topo, line up dos blocos, galeria e aftermovies, e uma tela inicial que se ajusta a qualquer aparelho. Os preços, lotes e pacotes esgotados são lidos automaticamente da plataforma de ingressos, e o SEO técnico inclui dados estruturados de evento para o Google.",
+        result:
+          "Site no ar em federalfolia.com, com os preços sempre atualizados sem edição manual e a página reconhecida pelo Google como evento, apta a aparecer com data e preço nos resultados de busca.",
+      },
+      {
         slug: "passus",
         name: "Agência Passus",
         image: "/work/passus.png",
@@ -230,6 +245,21 @@ const en: Dictionary = {
           "I designed and built the site from scratch and, for the redesign, took the brand to black and white: a single page told in chapters, where a WebGL particle cloud turns into each commodity the firm trades (ore, gold, crude, coffee, soy…) as you scroll, beside a periodic table of its sectors.",
         result:
           "The client hired me again for the site's redesign and has been referring me to other contacts in their circle.",
+      },
+      {
+        slug: "federal-folia",
+        name: "Federal Folia",
+        image: "/work/federalfolia.jpg",
+        links: [{ label: "federalfolia.com", url: "https://www.federalfolia.com" }],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+        category: "Event landing page",
+        role: "Design and development",
+        challenge:
+          "Federal Folia sells all-inclusive packages for Carnival in Ouro Preto, with lodging, open bar, parties and the main street blocos. The site had to carry the energy of the festival, explain clearly what each package includes and lead visitors to checkout.",
+        solution:
+          "I built a landing page true to the brand's visual identity, with a video hero, the blocos line-up, a photo gallery and aftermovies, and an opening screen that fits any device. Prices, ticket batches and sold-out packages are read automatically from the ticketing platform, and the technical SEO includes event structured data for Google.",
+        result:
+          "Live at federalfolia.com, with prices that stay up to date without manual edits and a page Google recognises as an event, eligible to show dates and prices in search results.",
       },
       {
         slug: "passus",
