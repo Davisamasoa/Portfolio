@@ -115,20 +115,36 @@ const pt = {
           "Feedback extremamente positivo, vindo do mesmo cliente que já havia confiado a mim o projeto da Sabbatai.",
       },
       {
-        slug: "ascend",
-        name: "Ascend",
-        image: "/work/ascend.png",
-        links: [{ label: "Site do app", url: "https://ascend-gym-levelup.vercel.app" }],
+        slug: "niveling",
+        name: "Niveling",
+        image: "/work/niveling.jpg",
+        links: [{ label: "Site do app", url: "https://niveling.vercel.app" }],
         stack: ["React Native", "Expo", "TypeScript", "Supabase", "Astro"],
         category: "Produto próprio · App Android",
         role: "Produto e desenvolvimento",
         status: "Em lançamento",
         challenge:
-          "Manter a constância na academia é difícil. A proposta do Ascend é transformar o treino num RPG, em que cada série vira XP, rank e recompensa.",
+          "Manter a constância na academia é difícil. A proposta do Niveling é transformar o treino num RPG: cada treino é um portal, cada exercício é um monstro e cada série vira XP, rank e recompensa.",
         solution:
-          "Concebi e desenvolvi o produto inteiro: app Android em React Native com backend no Supabase, login com Google, backup na nuvem, ligas semanais, assinatura Premium e o site de divulgação.",
+          "Concebi e desenvolvi o produto inteiro: app Android em React Native com backend no Supabase, login com Google, backup na nuvem, ligas semanais e mensais com amigos, duelos, 180 avatares, planos de treino gerados por IA, assinatura Premium, versões em português, inglês e espanhol, e o site de divulgação.",
         result:
           "Em fase de lançamento na Google Play. É um produto completo, do conceito à loja, conduzido de ponta a ponta por mim.",
+      },
+      {
+        slug: "papo-cheio",
+        name: "Papo Cheio",
+        image: "/work/papo-cheio.jpg",
+        links: [{ label: "Site do app", url: "https://papo-cheio.vercel.app" }],
+        stack: ["React Native", "Expo", "TypeScript", "Supabase", "Astro"],
+        category: "Produto próprio · App de orçamento",
+        role: "Produto e desenvolvimento",
+        status: "Uso pessoal",
+        challenge:
+          "Planilha dá trabalho e o extrato do banco só mostra o passado: diz quanto você gastou, não quanto ainda pode gastar até o fim do mês. Cartões, parcelas e contas fixas embaralham a conta.",
+        solution:
+          "Criei um app de orçamento do mês em React Native com Supabase: o saldo atualiza a cada gasto, as categorias comparam o previsto com o real, e cartões, parcelas e contas fixas entram na conta. Funciona sem internet e sincroniza entre celulares. Na tela do mês fica o Joca, um joão-pinto com 4 humores que reagem ao ritmo dos gastos. A landing foi feita em Astro, com tema claro e escuro.",
+        result:
+          "Em uso no meu dia a dia para organizar o orçamento do mês. Um produto completo, do app à landing, conduzido de ponta a ponta por mim.",
       },
     ] satisfies Project[],
   },
@@ -277,20 +293,36 @@ const en: Dictionary = {
           "Extremely positive feedback, from the same client who had already trusted me with the Sabbatai project.",
       },
       {
-        slug: "ascend",
-        name: "Ascend",
-        image: "/work/ascend.png",
-        links: [{ label: "App website", url: "https://ascend-gym-levelup.vercel.app" }],
+        slug: "niveling",
+        name: "Niveling",
+        image: "/work/niveling.jpg",
+        links: [{ label: "App website", url: "https://niveling.vercel.app" }],
         stack: ["React Native", "Expo", "TypeScript", "Supabase", "Astro"],
         category: "Own product · Android app",
         role: "Product and development",
         status: "Launching",
         challenge:
-          "Staying consistent at the gym is hard. Ascend turns training into an RPG, where every set becomes XP, rank and rewards.",
+          "Staying consistent at the gym is hard. Niveling turns training into an RPG: every workout is a portal, every exercise is a monster and every set becomes XP, rank and rewards.",
         solution:
-          "I conceived and built the entire product: an Android app in React Native with a Supabase backend, Google sign-in, cloud backup, weekly leagues, a Premium subscription and the marketing website.",
+          "I conceived and built the entire product: an Android app in React Native with a Supabase backend, Google sign-in, cloud backup, weekly and monthly leagues with friends, duels, 180 avatars, AI-generated workout plans, a Premium subscription, Portuguese, English and Spanish versions, and the marketing website.",
         result:
           "Currently launching on Google Play. A complete product, from concept to store, that I led end to end.",
+      },
+      {
+        slug: "papo-cheio",
+        name: "Papo Cheio",
+        image: "/work/papo-cheio.jpg",
+        links: [{ label: "App website", url: "https://papo-cheio.vercel.app" }],
+        stack: ["React Native", "Expo", "TypeScript", "Supabase", "Astro"],
+        category: "Own product · Budgeting app",
+        role: "Product and development",
+        status: "Personal use",
+        challenge:
+          "Spreadsheets are a chore and bank statements only show the past: they tell you what you spent, not how much you can still spend before the month ends. Cards, instalments and recurring bills muddle the numbers.",
+        solution:
+          "I built a monthly budgeting app in React Native with Supabase: the balance updates with every expense, categories compare the plan with what was actually spent, and cards, instalments and recurring bills are all accounted for. It works offline and syncs across phones. The month screen is home to Joca, a Brazilian songbird with 4 moods that react to your spending pace. The landing page is built in Astro, with light and dark themes.",
+        result:
+          "I use it every day to manage my monthly budget. A complete product, from the app to the landing page, that I led end to end.",
       },
     ],
   },
