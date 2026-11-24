@@ -70,6 +70,22 @@ const pt = {
     },
     projects: [
       {
+        slug: "geb",
+        name: "GEB",
+        image: "/work/geb.jpg",
+        links: [{ label: "Demonstração", url: "https://geb-estoque.pages.dev" }],
+        stack: ["React", "Vite", "TypeScript", "Supabase", "Cloudflare Pages"],
+        category: "SaaS · Estoque de blocos de rocha",
+        role: "Produto e desenvolvimento, com um sócio",
+        status: "Demonstração no ar",
+        challenge:
+          "Numa pedreira, cada bloco de rocha passa pelo pátio, pelo estoque e pela venda, e a diretoria depende de planilha para ver o mês. Quem lança os blocos está no pátio, de celular na mão e muitas vezes sem sinal, e quem usa o sistema não é da área de tecnologia.",
+        solution:
+          "Com um sócio, desenvolvi um sistema web em React e Supabase em que cada bloco lançado no pátio aparece no estoque, na venda e no painel da diretoria. O lançamento pelo celular funciona sem internet, a venda aceita dólar, o relatório sai em PDF pronto para o WhatsApp e cada pessoa vê só o que a função dela precisa. Volume, preço e cliente são cifrados no próprio aparelho: nem o servidor consegue ler.",
+        result:
+          "Demonstração no ar em geb-estoque.pages.dev. O sistema nasceu para a GEB e foi construído como SaaS, pensado para atender outras pedreiras e serrarias.",
+      },
+      {
         slug: "federal-folia",
         name: "Federal Folia",
         image: "/work/federalfolia.jpg",
@@ -247,6 +263,22 @@ const en: Dictionary = {
       result: "Outcome",
     },
     projects: [
+      {
+        slug: "geb",
+        name: "GEB",
+        image: "/work/geb.jpg",
+        links: [{ label: "Live demo", url: "https://geb-estoque.pages.dev" }],
+        stack: ["React", "Vite", "TypeScript", "Supabase", "Cloudflare Pages"],
+        category: "SaaS · Stone block inventory",
+        role: "Product and development, with a partner",
+        status: "Live demo",
+        challenge:
+          "At a quarry, every stone block moves through the yard, the stock and the sale, and management relies on spreadsheets to see the month. The people logging blocks are out in the yard, phone in hand and often without signal, and the people using the system are not tech professionals.",
+        solution:
+          "Together with a partner, I built a web system in React and Supabase where every block logged in the yard shows up in the stock, in sales and on the management dashboard. Logging from a phone works offline, sales can be priced in dollars, reports come out as PDFs ready for WhatsApp and each person only sees what their role needs. Volume, price and customer are encrypted on the device itself: not even the server can read them.",
+        result:
+          "Live demo at geb-estoque.pages.dev. The system was born for GEB and built as a SaaS, designed to serve other quarries and stone mills.",
+      },
       {
         slug: "federal-folia",
         name: "Federal Folia",
