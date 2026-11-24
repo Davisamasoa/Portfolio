@@ -70,21 +70,6 @@ const pt = {
     },
     projects: [
       {
-        slug: "sabbatai",
-        name: "Sabbatai",
-        image: "/work/sabbatai-hero.jpg",
-        links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
-        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Motion"],
-        category: "Site institucional",
-        role: "Design e desenvolvimento",
-        challenge:
-          "A Sabbatai é uma consultoria em commodities que atende uma clientela de alto padrão com um serviço exclusivo. O site precisava estar à altura desse posicionamento: moderno, sofisticado e sem nada de genérico.",
-        solution:
-          "Desenhei e desenvolvi o site do zero e, no redesign, levei a marca para o preto e branco: uma página única em capítulos em que uma nuvem de partículas em WebGL se transforma, conforme o scroll, em cada commodity com que a empresa trabalha (minério, ouro, petróleo, café, soja…), ao lado de uma tabela periódica dos setores.",
-        result:
-          "O cliente voltou a me contratar para o redesign do site e passou a me indicar para outros contatos do seu círculo.",
-      },
-      {
         slug: "federal-folia",
         name: "Federal Folia",
         image: "/work/federalfolia.jpg",
@@ -100,19 +85,19 @@ const pt = {
           "Site no ar em federalfolia.com, com os preços sempre atualizados sem edição manual e a página reconhecida pelo Google como evento, apta a aparecer com data e preço nos resultados de busca.",
       },
       {
-        slug: "passus",
-        name: "Agência Passus",
-        image: "/work/passus.png",
-        links: [{ label: "passus.in", url: "https://passus.in" }],
-        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        slug: "sabbatai",
+        name: "Sabbatai",
+        image: "/work/sabbatai-hero.jpg",
+        links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Motion"],
         category: "Site institucional",
-        role: "Desenvolvimento",
+        role: "Design e desenvolvimento",
         challenge:
-          "A Passus precisava apresentar seus serviços e os clientes que já atendeu, de uma forma tão elegante quanto as campanhas que assina.",
+          "A Sabbatai é uma consultoria em commodities que atende uma clientela de alto padrão com um serviço exclusivo. O site precisava estar à altura desse posicionamento: moderno, sofisticado e sem nada de genérico.",
         solution:
-          "Desenvolvi um site em que o trabalho da agência é o protagonista: grade editorial de cases com imagens em destaque, tipografia refinada e navegação direta entre serviços e clientes.",
+          "Desenhei e desenvolvi o site do zero e, no redesign, levei a marca para o preto e branco: uma página única em capítulos em que uma nuvem de partículas em WebGL se transforma, conforme o scroll, em cada commodity com que a empresa trabalha (minério, ouro, petróleo, café, soja…), ao lado de uma tabela periódica dos setores.",
         result:
-          "Feedback extremamente positivo, vindo do mesmo cliente que já havia confiado a mim o projeto da Sabbatai.",
+          "O cliente voltou a me contratar para o redesign do site e passou a me indicar para outros contatos do seu círculo.",
       },
       {
         slug: "niveling",
@@ -129,6 +114,21 @@ const pt = {
           "Concebi e desenvolvi o produto inteiro: app Android em React Native com backend no Supabase, login com Google, backup na nuvem, ligas semanais e mensais com amigos, duelos, 180 avatares, planos de treino gerados por IA, assinatura Premium, versões em português, inglês e espanhol, e o site de divulgação.",
         result:
           "Em fase de lançamento na Google Play. É um produto completo, do conceito à loja, conduzido de ponta a ponta por mim.",
+      },
+      {
+        slug: "passus",
+        name: "Agência Passus",
+        image: "/work/passus.png",
+        links: [{ label: "passus.in", url: "https://passus.in" }],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        category: "Site institucional",
+        role: "Desenvolvimento",
+        challenge:
+          "A Passus precisava apresentar seus serviços e os clientes que já atendeu, de uma forma tão elegante quanto as campanhas que assina.",
+        solution:
+          "Desenvolvi um site em que o trabalho da agência é o protagonista: grade editorial de cases com imagens em destaque, tipografia refinada e navegação direta entre serviços e clientes.",
+        result:
+          "Feedback extremamente positivo, vindo do mesmo cliente que já havia confiado a mim o projeto da Sabbatai.",
       },
       {
         slug: "papo-cheio",
@@ -248,21 +248,6 @@ const en: Dictionary = {
     },
     projects: [
       {
-        slug: "sabbatai",
-        name: "Sabbatai",
-        image: "/work/sabbatai-hero.jpg",
-        links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
-        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Motion"],
-        category: "Corporate website",
-        role: "Design and development",
-        challenge:
-          "Sabbatai is a commodity advisory firm serving high-end clients with an exclusive service. The website had to live up to that positioning: modern, sophisticated and nothing generic.",
-        solution:
-          "I designed and built the site from scratch and, for the redesign, took the brand to black and white: a single page told in chapters, where a WebGL particle cloud turns into each commodity the firm trades (ore, gold, crude, coffee, soy…) as you scroll, beside a periodic table of its sectors.",
-        result:
-          "The client hired me again for the site's redesign and has been referring me to other contacts in their circle.",
-      },
-      {
         slug: "federal-folia",
         name: "Federal Folia",
         image: "/work/federalfolia.jpg",
@@ -278,19 +263,19 @@ const en: Dictionary = {
           "Live at federalfolia.com, with prices that stay up to date without manual edits and a page Google recognises as an event, eligible to show dates and prices in search results.",
       },
       {
-        slug: "passus",
-        name: "Passus Agency",
-        image: "/work/passus.png",
-        links: [{ label: "passus.in", url: "https://passus.in" }],
-        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        slug: "sabbatai",
+        name: "Sabbatai",
+        image: "/work/sabbatai-hero.jpg",
+        links: [{ label: "sabbatai.in", url: "https://sabbatai.in" }],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Motion"],
         category: "Corporate website",
-        role: "Development",
+        role: "Design and development",
         challenge:
-          "Passus needed to present its services and the clients it has worked with, in a way as elegant as the campaigns it creates.",
+          "Sabbatai is a commodity advisory firm serving high-end clients with an exclusive service. The website had to live up to that positioning: modern, sophisticated and nothing generic.",
         solution:
-          "I built a site where the agency's work takes centre stage: an editorial grid of case studies with large imagery, refined typography and direct navigation between services and clients.",
+          "I designed and built the site from scratch and, for the redesign, took the brand to black and white: a single page told in chapters, where a WebGL particle cloud turns into each commodity the firm trades (ore, gold, crude, coffee, soy…) as you scroll, beside a periodic table of its sectors.",
         result:
-          "Extremely positive feedback, from the same client who had already trusted me with the Sabbatai project.",
+          "The client hired me again for the site's redesign and has been referring me to other contacts in their circle.",
       },
       {
         slug: "niveling",
@@ -307,6 +292,21 @@ const en: Dictionary = {
           "I conceived and built the entire product: an Android app in React Native with a Supabase backend, Google sign-in, cloud backup, weekly and monthly leagues with friends, duels, 180 avatars, AI-generated workout plans, a Premium subscription, Portuguese, English and Spanish versions, and the marketing website.",
         result:
           "Currently launching on Google Play. A complete product, from concept to store, that I led end to end.",
+      },
+      {
+        slug: "passus",
+        name: "Passus Agency",
+        image: "/work/passus.png",
+        links: [{ label: "passus.in", url: "https://passus.in" }],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        category: "Corporate website",
+        role: "Development",
+        challenge:
+          "Passus needed to present its services and the clients it has worked with, in a way as elegant as the campaigns it creates.",
+        solution:
+          "I built a site where the agency's work takes centre stage: an editorial grid of case studies with large imagery, refined typography and direct navigation between services and clients.",
+        result:
+          "Extremely positive feedback, from the same client who had already trusted me with the Sabbatai project.",
       },
       {
         slug: "papo-cheio",
