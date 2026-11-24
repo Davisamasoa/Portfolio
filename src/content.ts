@@ -116,6 +116,21 @@ const pt = {
           "Demonstração no ar em geb-estoque.pages.dev. O sistema nasceu para a GEB e foi construído como SaaS, pensado para atender outras pedreiras e serrarias.",
       },
       {
+        slug: "passus",
+        name: "Agência Passus",
+        image: "/work/passus.png",
+        links: [{ label: "passus.in", url: "https://passus.in" }],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        category: "Site institucional",
+        role: "Desenvolvimento",
+        challenge:
+          "A Passus precisava apresentar seus serviços e os clientes que já atendeu, de uma forma tão elegante quanto as campanhas que assina.",
+        solution:
+          "Desenvolvi um site em que o trabalho da agência é o protagonista: grade editorial de cases com imagens em destaque, tipografia refinada e navegação direta entre serviços e clientes.",
+        result:
+          "Feedback extremamente positivo, vindo do mesmo cliente que já havia confiado a mim o projeto da Sabbatai.",
+      },
+      {
         slug: "niveling",
         name: "Niveling",
         image: "/work/niveling.jpg",
@@ -130,21 +145,6 @@ const pt = {
           "Concebi e desenvolvi o produto inteiro: app Android em React Native com backend no Supabase, login com Google, backup na nuvem, ligas semanais e mensais com amigos, duelos, 180 avatares, planos de treino gerados por IA, assinatura Premium, versões em português, inglês e espanhol, e o site de divulgação.",
         result:
           "Em fase de lançamento na Google Play. É um produto completo, do conceito à loja, conduzido de ponta a ponta por mim.",
-      },
-      {
-        slug: "passus",
-        name: "Agência Passus",
-        image: "/work/passus.png",
-        links: [{ label: "passus.in", url: "https://passus.in" }],
-        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-        category: "Site institucional",
-        role: "Desenvolvimento",
-        challenge:
-          "A Passus precisava apresentar seus serviços e os clientes que já atendeu, de uma forma tão elegante quanto as campanhas que assina.",
-        solution:
-          "Desenvolvi um site em que o trabalho da agência é o protagonista: grade editorial de cases com imagens em destaque, tipografia refinada e navegação direta entre serviços e clientes.",
-        result:
-          "Feedback extremamente positivo, vindo do mesmo cliente que já havia confiado a mim o projeto da Sabbatai.",
       },
       {
         slug: "papo-cheio",
@@ -310,6 +310,21 @@ const en: Dictionary = {
           "Live demo at geb-estoque.pages.dev. The system was born for GEB and built as a SaaS, designed to serve other quarries and stone mills.",
       },
       {
+        slug: "passus",
+        name: "Passus Agency",
+        image: "/work/passus.png",
+        links: [{ label: "passus.in", url: "https://passus.in" }],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        category: "Corporate website",
+        role: "Development",
+        challenge:
+          "Passus needed to present its services and the clients it has worked with, in a way as elegant as the campaigns it creates.",
+        solution:
+          "I built a site where the agency's work takes centre stage: an editorial grid of case studies with large imagery, refined typography and direct navigation between services and clients.",
+        result:
+          "Extremely positive feedback, from the same client who had already trusted me with the Sabbatai project.",
+      },
+      {
         slug: "niveling",
         name: "Niveling",
         image: "/work/niveling.jpg",
@@ -324,21 +339,6 @@ const en: Dictionary = {
           "I conceived and built the entire product: an Android app in React Native with a Supabase backend, Google sign-in, cloud backup, weekly and monthly leagues with friends, duels, 180 avatars, AI-generated workout plans, a Premium subscription, Portuguese, English and Spanish versions, and the marketing website.",
         result:
           "Currently launching on Google Play. A complete product, from concept to store, that I led end to end.",
-      },
-      {
-        slug: "passus",
-        name: "Passus Agency",
-        image: "/work/passus.png",
-        links: [{ label: "passus.in", url: "https://passus.in" }],
-        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-        category: "Corporate website",
-        role: "Development",
-        challenge:
-          "Passus needed to present its services and the clients it has worked with, in a way as elegant as the campaigns it creates.",
-        solution:
-          "I built a site where the agency's work takes centre stage: an editorial grid of case studies with large imagery, refined typography and direct navigation between services and clients.",
-        result:
-          "Extremely positive feedback, from the same client who had already trusted me with the Sabbatai project.",
       },
       {
         slug: "papo-cheio",
